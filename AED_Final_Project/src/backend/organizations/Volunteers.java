@@ -4,10 +4,23 @@
  */
 package backend.organizations;
 
+import backend.roles.Role;
+import backend.roles.VolunRole;
+import java.util.ArrayList;
 /**
  *
  * @author kunal
  */
-public class Volunteers {
+public class Volunteers extends Organization{
+     public Volunteers()
+    {
+        super(Organization.Type.Volunteer.getValue());
+    }
     
+      @Override
+    public ArrayList<Role> getSupportedRole() {
+        ArrayList<Role> roles = new ArrayList<>();
+        roles.add(new VolunRole());
+        return roles;
+    }
 }

@@ -5,15 +5,15 @@
 package backend.shared;
 
 import backend.ConfSetup;
-import backend.enterprisepkg.Enterprise;
-import backend.networkpkg.Network;
-import backend.organizationpkg.DoctorOrganization;
-import backend.organizationpkg.DonorOrganization;
-import backend.organizationpkg.Organization;
-import backend.organizationpkg.SupervisorOrganization;
-import backend.organizationpkg.TransportOrganization;
-import backend.organizationpkg.VolunteerOrganization;
-import backend.userAccountpkg.UserAccount;
+import backend.enterprises.Enterprises;
+import backend.coverage.Coverage;
+import backend.organizations.Doctor;
+import backend.organizations.Donor;
+import backend.organizations.Organization;
+import backend.organizations.Supervisor;
+import backend.organizations.Transportation;
+import backend.organizations.Volunteers;
+import backend.account.UserAcc;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -46,24 +46,24 @@ public class Validations {
     }
     
     
-    public static VolunteerOrganization getVolunteerOrganization(EcoSystem ecoSystem, UserAccount userAccount)
+    public static Volunteers getVolunteerOrganization(ConfSetup ecoSystem, UserAcc userAccount)
     {
-        VolunteerOrganization volunteerOrganization = null;
+        Volunteers volunteerOrganization = null;
         try
         {
-        for(Network network : ecoSystem.getNetworkList())
+        for(Coverage network : ecoSystem.getNetworkList())
         {
          if(network.equals(userAccount.getNetwork()))
          {
-          for(Enterprise enterprise : network.getEnterpriseDirectory().getEnterpriseList())
+          for(Enterprises enterprise : network.getEnterpriseDirectory().getEnterpriseList())
           {
-            if(enterprise.getEnterpriseType().equals(Enterprise.EnterpriseType.School))
+            if(enterprise.getEnterpriseType().equals(Enterprises.EnterpriseType.School))
             {
             for(Organization organization : enterprise.getOrganizationDirectory().getOrganizationList())
             {
-             if(organization instanceof VolunteerOrganization)
+             if(organization instanceof Volunteers)
              {
-              volunteerOrganization = (VolunteerOrganization)organization; 
+              volunteerOrganization = (Volunteers)organization; 
              }
             }
             }
@@ -79,24 +79,24 @@ public class Validations {
         return volunteerOrganization;
     }
     
-    public static VolunteerOrganization getVolunteerOrganizationInNw(EcoSystem ecoSystem, Network nw)
+    public static Volunteers getVolunteerOrganizationInNw(ConfSetup ecoSystem, Coverage nw)
     {
-        VolunteerOrganization volunteerOrganization = null;
+        Volunteers volunteerOrganization = null;
         try
         {
-        for(Network network : ecoSystem.getNetworkList())
+        for(Coverage network : ecoSystem.getNetworkList())
         {
          if(network.equals(nw))
          {
-          for(Enterprise enterprise : network.getEnterpriseDirectory().getEnterpriseList())
+          for(Enterprises enterprise : network.getEnterpriseDirectory().getEnterpriseList())
           {
-            if(enterprise.getEnterpriseType().equals(Enterprise.EnterpriseType.School))
+            if(enterprise.getEnterpriseType().equals(Enterprises.EnterpriseType.School))
             {
             for(Organization organization : enterprise.getOrganizationDirectory().getOrganizationList())
             {
-             if(organization instanceof VolunteerOrganization)
+             if(organization instanceof Volunteers)
              {
-              volunteerOrganization = (VolunteerOrganization)organization; 
+              volunteerOrganization = (Volunteers)organization; 
              }
             }
             }
@@ -112,23 +112,23 @@ public class Validations {
         return volunteerOrganization;
     }
     
-      public static DonorOrganization getDonorOrganization(EcoSystem ecoSystem, UserAccount userAccount)
+      public static Donor getDonorOrganization(ConfSetup ecoSystem, UserAcc userAccount)
     {
-        DonorOrganization donorOrganization = null;
+        Donor donorOrganization = null;
         
-        for(Network network : ecoSystem.getNetworkList())
+        for(Coverage network : ecoSystem.getNetworkList())
         {
          if(network.equals(userAccount.getNetwork()))
          {
-          for(Enterprise enterprise : network.getEnterpriseDirectory().getEnterpriseList())
+          for(Enterprises enterprise : network.getEnterpriseDirectory().getEnterpriseList())
           {
-            if(enterprise.getEnterpriseType().equals(Enterprise.EnterpriseType.NonProfit))
+            if(enterprise.getEnterpriseType().equals(Enterprises.EnterpriseType.NonProfit))
             {
             for(Organization organization : enterprise.getOrganizationDirectory().getOrganizationList())
             {
-             if(organization instanceof DonorOrganization)
+             if(organization instanceof Donor)
              {
-              donorOrganization = (DonorOrganization)organization; 
+              donorOrganization = (Donor)organization; 
              }
             }
             }
@@ -138,23 +138,23 @@ public class Validations {
         return donorOrganization;
     }
       
-       public static TransportOrganization getTransportOrganization(EcoSystem ecoSystem, UserAccount userAccount)
+       public static Transportation getTransportOrganization(ConfSetup ecoSystem, UserAcc userAccount)
     {
-        TransportOrganization transportOrganization = null;
+        Transportation transportOrganization = null;
         
-        for(Network network : ecoSystem.getNetworkList())
+        for(Coverage network : ecoSystem.getNetworkList())
         {
          if(network.equals(userAccount.getNetwork()))
          {
-          for(Enterprise enterprise : network.getEnterpriseDirectory().getEnterpriseList())
+          for(Enterprises enterprise : network.getEnterpriseDirectory().getEnterpriseList())
           {
-            if(enterprise.getEnterpriseType().equals(Enterprise.EnterpriseType.School))
+            if(enterprise.getEnterpriseType().equals(Enterprises.EnterpriseType.School))
             {
             for(Organization organization : enterprise.getOrganizationDirectory().getOrganizationList())
             {
-             if(organization instanceof TransportOrganization)
+             if(organization instanceof Transportation)
              {
-              transportOrganization = (TransportOrganization)organization; 
+              transportOrganization = (Transportation)organization; 
              }
             }
             }
@@ -164,24 +164,24 @@ public class Validations {
         return transportOrganization;
     } 
        
-     public static DoctorOrganization getDoctorOrganization(EcoSystem ecoSystem, UserAccount userAccount)
+     public static Doctor getDoctorOrganization(ConfSetup ecoSystem, UserAcc userAccount)
     {
-        DoctorOrganization doctorOrganization = null;
+        Doctor doctorOrganization = null;
         try
         {
-        for(Network network : ecoSystem.getNetworkList())
+        for(Coverage network : ecoSystem.getNetworkList())
         {
          if(network.equals(userAccount.getNetwork()))
          {
-          for(Enterprise enterprise : network.getEnterpriseDirectory().getEnterpriseList())
+          for(Enterprises enterprise : network.getEnterpriseDirectory().getEnterpriseList())
           {
-            if(enterprise.getEnterpriseType().equals(Enterprise.EnterpriseType.Hospital))
+            if(enterprise.getEnterpriseType().equals(Enterprises.EnterpriseType.Hospital))
             {
             for(Organization organization : enterprise.getOrganizationDirectory().getOrganizationList())
             {
-             if(organization instanceof DoctorOrganization)
+             if(organization instanceof Doctor)
              {
-              doctorOrganization = (DoctorOrganization)organization; 
+              doctorOrganization = (Doctor)organization; 
              }
             }
             }
@@ -197,24 +197,24 @@ public class Validations {
         return doctorOrganization;
     }   
      
-      public static SupervisorOrganization getSupervisorOrganization(EcoSystem ecoSystem, UserAccount userAccount)
+      public static Supervisor getSupervisorOrganization(ConfSetup ecoSystem, UserAcc userAccount)
     {
-        SupervisorOrganization supervisorOrganization = null;
+        Supervisor supervisorOrganization = null;
         try
         {
-        for(Network network : ecoSystem.getNetworkList())
+        for(Coverage network : ecoSystem.getNetworkList())
         {
          if(network.equals(userAccount.getNetwork()))
          {
-          for(Enterprise enterprise : network.getEnterpriseDirectory().getEnterpriseList())
+          for(Enterprises enterprise : network.getEnterpriseDirectory().getEnterpriseList())
           {
-            if(enterprise.getEnterpriseType().equals(Enterprise.EnterpriseType.HeartHelp))
+            if(enterprise.getEnterpriseType().equals(Enterprises.EnterpriseType.HeartHelp))
             {
             for(Organization organization : enterprise.getOrganizationDirectory().getOrganizationList())
             {
-             if(organization instanceof SupervisorOrganization)
+             if(organization instanceof Supervisor)
              {
-              supervisorOrganization = (SupervisorOrganization)organization; 
+              supervisorOrganization = (Supervisor)organization; 
              }
             }
             }

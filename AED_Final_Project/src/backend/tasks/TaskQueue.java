@@ -4,10 +4,19 @@
  */
 package backend.tasks;
 
+import java.util.ArrayList;
 /**
  *
  * @author kunal
  */
 public class TaskQueue {
-    
+      private ArrayList<TaskRequest> workRequestList;
+
+    public TaskQueue() {
+        workRequestList = new ArrayList<>();
+    }
+
+    public ArrayList<TaskRequest> getWorkRequestList() {
+        return workRequestList;
+    }
 }

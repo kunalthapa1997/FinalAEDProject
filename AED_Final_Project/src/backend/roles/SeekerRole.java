@@ -4,10 +4,24 @@
  */
 package backend.roles;
 
+import backend.ConfSetup;
+import backend.enterprises.Enterprises;
+import backend.organizations.Organization;
+import backend.account.UserAcc;
+import javax.swing.JPanel;
+import userInterface.helpSeeker.HelpSeekerWorkAreaJPanel;
 /**
  *
  * @author kunal
  */
-public class SeekerRole {
-    
+public class SeekerRole extends Role{
+     @Override
+    public JPanel createWorkArea(JPanel userProcessContainer, UserAcc account, 
+            Organization organization, Enterprises enterprise, ConfSetup business) {
+        return new HelpSeekerWorkAreaJPanel(userProcessContainer, enterprise, account, business);
+    }
+    @Override
+    public String toString() {
+        return getClass().getSimpleName();
+    }
 }
