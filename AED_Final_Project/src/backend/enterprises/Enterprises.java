@@ -10,7 +10,7 @@ import backend.organizations.OrgDir;
  *
  * @author kunal
  */
-public class Enterprises extends Organization{
+public abstract class Enterprises extends Organization{
     private String enterpriseId;
     private static int count = 1;
     private OrgDir organizationDirectory;

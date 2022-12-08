@@ -4,10 +4,26 @@
  */
 package backend.roles;
 
+import backend.ConfSetup;
+import backend.enterprises.Enterprises;
+import backend.organizations.Organization;
+import backend.account.UserAcc;
+import javax.swing.JPanel;
+import userInterface.doctor.DoctorWorkAreaJPanel;
+
 /**
  *
  * @author kunal
  */
-public class DocRole {
+public class DocRole extends Role{
     
+    @Override
+    public JPanel createWorkArea(JPanel userProcessContainer, UserAcc account, 
+            Organization organization, Enterprises enterprise, ConfSetup business) {
+        return new DocRole(userProcessContainer, account);
+    }
+    @Override
+    public String toString() {
+        return getClass().getSimpleName();
+    } 
 }

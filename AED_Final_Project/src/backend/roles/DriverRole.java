@@ -4,10 +4,25 @@
  */
 package backend.roles;
 
+import backend.ConfSetup;
+import backend.enterprises.Enterprises;
+import backend.organizations.Organization;
+import backend.account.UserAcc;
+import javax.swing.JPanel;
+import userInterface.transport.DriverWorkAreaJPanel;
 /**
  *
  * @author kunal
  */
-public class DriverRole {
+public class DriverRole extends Role{
+      @Override
+    public JPanel createWorkArea(JPanel userProcessContainer, UserAcc account, 
+            Organization organization, Enterprises enterprise, ConfSetup business) {
+        return new DriverWorkAreaJPanel(userProcessContainer, account, organization, enterprise.getOrganizationDirectory());
+    }
+    @Override
+    public String toString() {
+        return getClass().getSimpleName();
+    }
     
 }
