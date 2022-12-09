@@ -9,7 +9,7 @@ import backend.enterprises.Enterprises;
 import backend.organizations.Organization;
 import backend.account.UserAcc;
 import javax.swing.JPanel;
-import userInterface.doctor.DoctorWorkAreaJPanel;
+import userInterface.doctor.doctorPanel;
 
 /**
  *

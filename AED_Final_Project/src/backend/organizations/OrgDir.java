@@ -26,7 +26,7 @@ public class OrgDir {
             organizationList.add(organization);
         }
         else if (type.getValue().equals(Type.HelpSeeker.getValue())){
-            organization = new Seeker();
+            organization = new OrganizationSeeker();
             organizationList.add(organization);
         }
         else if (type.getValue().equals(Type.Supervisor.getValue())){
