@@ -12,9 +12,9 @@ import java.util.ArrayList;
  *
  * @author kunal
  */
-public class Seeker extends Organization {
+public class OrganizationSeeker extends Organization {
     
-     public Seeker()
+     public OrganizationSeeker()
     {
         super(Organization.Type.HelpSeeker.getValue());
     }
