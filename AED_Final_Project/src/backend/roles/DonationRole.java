@@ -9,7 +9,7 @@ import backend.enterprises.Enterprises;
 import backend.organizations.Organization;
 import backend.account.UserAcc;
 import javax.swing.JPanel;
-import userInterface.donorpkg.DonorWorkAreaJPanel;
+import userInterface.donorpkg.DonorWorkPanel;
 /**
  *
  * @author kunal
@@ -19,7 +19,7 @@ public class DonationRole extends Role{
       @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAcc account, 
             Organization organization, Enterprises enterprise, ConfSetup business) {
-        return new DonorWorkAreaJPanel(userProcessContainer, account, enterprise,organization, business);
+        return new DonorWorkPanel(userProcessContainer, account, enterprise,organization, business);
     }
     @Override
     public String toString() {
