@@ -9,7 +9,7 @@ import backend.shared.HelpRequired;
  *
  * @author kunal
  */
-public class HelpTask {
+public class HelpTask extends TravelTask{
     
     private String requestId;
     private static int count = 000;
