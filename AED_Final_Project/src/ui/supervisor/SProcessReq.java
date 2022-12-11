@@ -138,13 +138,13 @@ public class SProcessReq extends javax.swing.JPanel {
     private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed
 private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {                                            
 
-        userProcessContainer.remove(this);
+        //userProcessContainer.remove(this);
         Component[] componentArray = userProcessContainer.getComponents();
         Component component = componentArray[componentArray.length - 1];
-        SupervisorWorkAreaJPanel supervisorWorkAreaJPanel = (SupervisorWorkAreaJPanel) component;
+        //SupervisorWorkAreaJPanel supervisorWorkAreaJPanel = (SupervisorWorkAreaJPanel) component;
         supervisorWorkAreaJPanel.populateWorkRequestTable();
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
-        layout.previous(userProcessContainer);
+        //layout.previous(userProcessContainer);
     }//GEN-LAST:event_backJButtonActionPerformed
 
     private void submitJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitJButtonActionPerformed
@@ -160,19 +160,18 @@ private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {
         if((request.getSender().getRole().toString()).equalsIgnoreCase("VolunteerRole"))
         {
             
-        if((request.getSender().getRole().toString()).equalsIgnoreCase("VolunteerRole"))
+       // if((request.getSender().getRole().toString()).equalsIgnoreCase("VolunteerRole"))
 
             
             volunteer.setLongitude(longlat[0]);
-            volunteer.setLatitiude(longlat[1]);
+            //volunteer.setLatitiude(longlat[1]);
         }
 
-        request.setStatus(SupervisorWorkRequest.REQUEST_COMPLETED);
+        //request.setStatus(SupervisorWorkRequest.REQUEST_COMPLETED);
         
         request.setTestResult((String)resultComboBox.getSelectedItem());
         request.setComments(commentsJTextField.getText());
 
-        if(request.getTestResult().equals(SupervisorWorkRequest.REQUEST_APPROVED))
         {
             
         if(request.getTestResult().equals(SupervisorWorkRequest.REQUEST_APPROVED))
