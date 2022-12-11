@@ -63,7 +63,7 @@ public class DB4OUtil {
   {
       try
       {
-          
+    //connection
     ObjectContainer conn = createConnection();
     conn.store(system);
     conn.commit();
