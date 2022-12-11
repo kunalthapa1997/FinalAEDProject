@@ -121,7 +121,7 @@
           <Font name="Malayalam MN" size="24" style="3"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="0" green="cc" red="cc" type="rgb"/>
+          <Color blue="33" green="33" red="ff" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Process Work Request:"/>
       </Properties>
@@ -129,7 +129,7 @@
     <Component class="javax.swing.JComboBox" name="resultComboBox">
       <Properties>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="99" green="ff" red="33" type="rgb"/>
+          <Color blue="66" green="ff" red="0" type="rgb"/>
         </Property>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
           <StringArray count="4">
@@ -144,7 +144,7 @@
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="66" red="66" type="rgb"/>
+          <Color blue="0" green="cc" red="0" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Add comments: "/>
       </Properties>
@@ -152,7 +152,7 @@
     <Component class="javax.swing.JTextField" name="commentsJTextField">
       <Properties>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="66" green="66" red="ff" type="rgb"/>
+          <Color blue="99" green="99" red="0" type="rgb"/>
         </Property>
       </Properties>
     </Component>
@@ -177,7 +177,7 @@
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="0" green="66" red="ff" type="rgb"/>
+          <Color blue="0" green="cc" red="cc" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Assign Location"/>
       </Properties>

@@ -57,16 +57,16 @@ public class SProcessReq extends javax.swing.JPanel {
         jLabel1.setText("Request Result");
 
         jLabel7.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(204, 204, 0));
+        jLabel7.setForeground(new java.awt.Color(255, 51, 51));
         jLabel7.setText("Process Work Request:");
 
-        resultComboBox.setForeground(new java.awt.Color(51, 255, 153));
+        resultComboBox.setForeground(new java.awt.Color(0, 255, 102));
         resultComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        jLabel2.setForeground(new java.awt.Color(102, 102, 255));
+        jLabel2.setForeground(new java.awt.Color(0, 204, 0));
         jLabel2.setText("Add comments: ");
 
-        commentsJTextField.setForeground(new java.awt.Color(255, 102, 102));
+        commentsJTextField.setForeground(new java.awt.Color(0, 153, 153));
 
         assignNetworkCombo.setForeground(new java.awt.Color(255, 102, 102));
         assignNetworkCombo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
@@ -76,7 +76,7 @@ public class SProcessReq extends javax.swing.JPanel {
             }
         });
 
-        jLabel3.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel3.setForeground(new java.awt.Color(204, 204, 0));
         jLabel3.setText("Assign Location");
 
         org.jdesktop.layout.GroupLayout layout = new org.jdesktop.layout.GroupLayout(this);
@@ -171,7 +171,6 @@ private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {
         
         request.setTestResult((String)resultComboBox.getSelectedItem());
         request.setComments(commentsJTextField.getText());
-        request.getSender().setNetwork(net);
 
         if(request.getTestResult().equals(SupervisorWorkRequest.REQUEST_APPROVED))
         {
@@ -180,7 +179,6 @@ private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {
 
             String emailId = request.getSender().getPerson().getEmailId();
             String userName = request.getSender().getUserName();
-            String password = request.getSender().getPassword();
 
             StringBuilder emailMsgTxt = new StringBuilder();
             emailMsgTxt.append("Your account is enabled. Please find username and password");
