@@ -54,7 +54,7 @@
                   <Group type="102" attributes="0">
                       <Component id="manageEnt5" min="-2" pref="469" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
-                      <Component id="manageEnt2" min="-2" pref="155" max="-2" attributes="0"/>
+                      <Component id="manageEnt2" min="-2" pref="245" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -124,10 +124,10 @@
           <Properties>
             <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
               <Table columnCount="4" rowCount="0">
-                <Column editable="false" title="Help Id" type="java.lang.Object"/>
-                <Column editable="false" title="Help Needed" type="java.lang.Object"/>
-                <Column editable="false" title="Help Type" type="java.lang.Object"/>
-                <Column editable="false" title="Help Details" type="java.lang.Object"/>
+                <Column editable="false" title="Service Id" type="java.lang.Object"/>
+                <Column editable="false" title="Service Needed" type="java.lang.Object"/>
+                <Column editable="false" title="Service Type" type="java.lang.Object"/>
+                <Column editable="false" title="Service Details" type="java.lang.Object"/>
               </Table>
             </Property>
             <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
@@ -222,7 +222,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Malayalam MN" size="14" style="3"/>
             </Property>
-            <Property name="text" type="java.lang.String" value=" Enter details about the help needed."/>
+            <Property name="text" type="java.lang.String" value=" Enter details about the service needed."/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="serviceType">
@@ -247,7 +247,7 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Enter details of help needed: "/>
+            <Property name="text" type="java.lang.String" value="Enter details of service needed: "/>
           </Properties>
         </Component>
       </SubComponents>
@@ -257,7 +257,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Malayalam MN" size="14" style="3"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Select the radio button  "/>
+        <Property name="text" type="java.lang.String" value="Request New Service  "/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="manageEnt1">
@@ -265,7 +265,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Malayalam MN" size="14" style="3"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Required Help not in the Table:"/>
+        <Property name="text" type="java.lang.String" value="Service not available in the Table:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="manageEnt5">
@@ -273,7 +273,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Malayalam MN" size="24" style="3"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Request Help : Anonymous Volunteer"/>
+        <Property name="text" type="java.lang.String" value="Request Service : Random Volunteer"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="manageEnt2">
@@ -281,7 +281,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Malayalam MN" size="24" style="3"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Heart Help"/>
+        <Property name="text" type="java.lang.String" value="StepOne Application"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="manageEnt3">
@@ -289,7 +289,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Malayalam MN" size="24" style="3"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Help Requests History:"/>
+        <Property name="text" type="java.lang.String" value="Services Availed History:"/>
       </Properties>
     </Component>
     <Container class="javax.swing.JScrollPane" name="jScrollPane2">
@@ -303,8 +303,8 @@
           <Properties>
             <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
               <Table columnCount="5" rowCount="0">
-                <Column editable="false" title="Request ID" type="java.lang.Object"/>
-                <Column editable="false" title="Help Recieved" type="java.lang.Object"/>
+                <Column editable="false" title="Service ID" type="java.lang.Object"/>
+                <Column editable="false" title="Service Recieved" type="java.lang.Object"/>
                 <Column editable="false" title="Requested Date" type="java.lang.Object"/>
                 <Column editable="false" title="Volunteer Name" type="java.lang.Object"/>
                 <Column editable="false" title="Status" type="java.lang.Object"/>

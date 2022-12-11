@@ -23,10 +23,6 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="236" max="-2" attributes="0"/>
-                      <Component id="manageEnt" min="-2" pref="390" max="-2" attributes="0"/>
-                  </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="134" max="-2" attributes="0"/>
                       <Component id="jScrollPane2" min="-2" pref="646" max="-2" attributes="0"/>
@@ -34,6 +30,10 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
                       <Component id="backJButton" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="282" max="-2" attributes="0"/>
+                      <Component id="manageEnt" min="-2" pref="302" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace pref="154" max="32767" attributes="0"/>
@@ -66,7 +66,7 @@
           <Properties>
             <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
               <Table columnCount="5" rowCount="0">
-                <Column editable="false" title="Help Recieved" type="java.lang.Object"/>
+                <Column editable="false" title="Service Recieved" type="java.lang.Object"/>
                 <Column editable="false" title="Requested Date" type="java.lang.Object"/>
                 <Column editable="false" title="Reciever " type="java.lang.Object"/>
                 <Column editable="false" title="Status" type="java.lang.Object"/>
@@ -114,7 +114,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Malayalam MN" size="24" style="3"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="View History of Help Requests"/>
+        <Property name="text" type="java.lang.String" value="Service Requests History"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="backJButton">

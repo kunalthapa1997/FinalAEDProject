@@ -160,10 +160,10 @@ public class RequestVolunteerForHelp extends javax.swing.JPanel {
         newHelpRadioBtn = new javax.swing.JRadioButton();
 
         manageEnt2.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
-        manageEnt2.setText("Heart Help");
+        manageEnt2.setText("StepOne App");
 
         manageEnt1.setFont(new java.awt.Font("Malayalam MN", 3, 14)); // NOI18N
-        manageEnt1.setText("Required Help not in the Table:");
+        manageEnt1.setText("Service not available in the Table:");
 
         createRequestButton.setText("Create Request");
         createRequestButton.addActionListener(new java.awt.event.ActionListener() {
@@ -173,10 +173,10 @@ public class RequestVolunteerForHelp extends javax.swing.JPanel {
         });
 
         manageEnt3.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
-        manageEnt3.setText("Help Requests History:");
+        manageEnt3.setText("Services Availed History:");
 
         manageEnt4.setFont(new java.awt.Font("Malayalam MN", 3, 14)); // NOI18N
-        manageEnt4.setText("Select the radio button  ");
+        manageEnt4.setText("Request New Service");
 
         LastName.setText("Last Name:");
 
@@ -204,7 +204,7 @@ public class RequestVolunteerForHelp extends javax.swing.JPanel {
 
         serviceTypeCombo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Please Select Amount", "5$", "10$", "15$", "20$" }));
 
-        jLabel1.setText("Enter details of help needed: ");
+        jLabel1.setText("Enter details of Service needed: ");
 
         serviceType.setText("Service Type");
 
@@ -246,7 +246,7 @@ public class RequestVolunteerForHelp extends javax.swing.JPanel {
 
             },
             new String [] {
-                "Request ID", "Help Recieved", "Requested Date", "Volunteer ID", "Status"
+                "Service ID", "Service Recieved", "Requested Date", "Volunteer ID", "Status"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -260,7 +260,7 @@ public class RequestVolunteerForHelp extends javax.swing.JPanel {
         jScrollPane2.setViewportView(workRequestHistoryTable);
 
         manageEnt5.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
-        manageEnt5.setText("Request Volunteer For Help:");
+        manageEnt5.setText("Request Volunteer Service:");
 
         backJButton1.setText("<< Back");
         backJButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -274,7 +274,7 @@ public class RequestVolunteerForHelp extends javax.swing.JPanel {
 
             },
             new String [] {
-                "Help ID", "Help Needed", "Help Type", "Help Details"
+                "Service ID", "Service Needed", "Service Type", "Service Details"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -436,7 +436,7 @@ public class RequestVolunteerForHelp extends javax.swing.JPanel {
         needHelp = (HelpRequired)helpjTable.getValueAt(selectedRow, 0);
          }
        
-        SubmitHelpRequestJPanel submitHelpRequestJPanel = new SubmitHelpRequestJPanel(userProcessContainer, userAccount,volunteer, needHelp, organization);
+        SaveHelpRequestPanel submitHelpRequestJPanel = new SaveHelpRequestPanel(userProcessContainer, userAccount,volunteer, needHelp, organization);
         userProcessContainer.add("SubmitHelpRequestJPanel", submitHelpRequestJPanel);
         newHelpRadioBtn.setSelected(false);
         helpDetailsTxtField.setText("");

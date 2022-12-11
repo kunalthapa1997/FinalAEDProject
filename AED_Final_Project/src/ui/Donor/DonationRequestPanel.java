@@ -30,7 +30,7 @@ public class DonationRequestPanel extends javax.swing.JPanel {
     
     private JPanel userProcessContainer;
     private DeviceTask needSensorDeviceWorkRequest;
-   private  UserAcc userAccount;
+    private  UserAcc userAccount;
     /**
      * Creates new form DonationProcessRequestAreaJPanel
      */

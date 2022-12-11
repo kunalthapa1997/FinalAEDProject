@@ -42,56 +42,58 @@
           </Group>
           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="394" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="103" groupAlignment="1" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
-                          <Component id="manageEnt1" min="-2" pref="155" max="-2" attributes="0"/>
-                          <EmptySpace min="88" pref="88" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="manageEnt1" min="-2" pref="243" max="-2" attributes="0"/>
                       </Group>
-                      <Group type="103" alignment="1" groupAlignment="0" max="-2" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="zipCode" alignment="0" min="-2" pref="78" max="-2" attributes="0"/>
-                                  <Component id="town" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="394" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="zipCode" alignment="0" min="-2" pref="78" max="-2" attributes="0"/>
+                                      <Component id="town" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="134" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="townField" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="zipCodeField" alignment="0" min="-2" pref="184" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
-                              <EmptySpace min="-2" pref="134" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="townField" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="zipCodeField" alignment="0" min="-2" pref="184" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Group type="103" groupAlignment="1" attributes="0">
-                                          <Component id="LastName" alignment="1" min="-2" pref="194" max="-2" attributes="0"/>
-                                          <Component id="firstName" alignment="1" min="-2" pref="194" max="-2" attributes="0"/>
-                                          <Component id="viewYourProfile1" alignment="1" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Group type="103" groupAlignment="1" attributes="0">
+                                              <Component id="LastName" alignment="1" min="-2" pref="194" max="-2" attributes="0"/>
+                                              <Component id="firstName" alignment="1" min="-2" pref="194" max="-2" attributes="0"/>
+                                              <Component id="viewYourProfile1" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
                                       </Group>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Component id="occupation" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="134" max="-2" attributes="0"/>
+                                      </Group>
                                   </Group>
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Component id="occupation" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="134" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="lastNameField" alignment="0" pref="184" max="32767" attributes="0"/>
+                                      <Component id="occupationField" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="firstNameField" alignment="0" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="lastNameField" alignment="0" pref="184" max="32767" attributes="0"/>
-                                  <Component id="occupationField" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="firstNameField" alignment="0" max="32767" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Component id="address2" alignment="0" min="-2" pref="107" max="-2" attributes="0"/>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="dateOfBirth" alignment="0" min="-2" pref="194" max="-2" attributes="0"/>
-                                  <Component id="gender" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="viewYourProfile2" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="dobField" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="genderComboBox" alignment="0" max="32767" attributes="0"/>
+                              <Component id="address2" alignment="0" min="-2" pref="107" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="dateOfBirth" alignment="0" min="-2" pref="194" max="-2" attributes="0"/>
+                                      <Component id="gender" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="viewYourProfile2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="dobField" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="genderComboBox" alignment="0" max="32767" attributes="0"/>
+                                  </Group>
                               </Group>
                           </Group>
                       </Group>
@@ -288,7 +290,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Malayalam MN" size="24" style="3"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Heart Help"/>
+        <Property name="text" type="java.lang.String" value="Stepone Application"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="gender">

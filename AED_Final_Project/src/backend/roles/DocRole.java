@@ -9,7 +9,7 @@ import backend.enterprises.Enterprises;
 import backend.organizations.Organization;
 import backend.account.UserAcc;
 import javax.swing.JPanel;
-import userInterface.doctor.doctorPanel;
+import ui.Doctor.doctorPanel;
 
 /**
  *
@@ -20,7 +20,7 @@ public class DocRole extends Role{
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAcc account, 
             Organization organization, Enterprises enterprise, ConfSetup business) {
-        return new DocRole(userProcessContainer, account);
+        return new doctorPanel(userProcessContainer, account);
     }
     @Override
     public String toString() {

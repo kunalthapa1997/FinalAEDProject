@@ -47,12 +47,12 @@
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="349" max="-2" attributes="0"/>
-                      <Component id="manageEnt1" min="-2" pref="155" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
                       <Component id="backJButton" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="349" max="-2" attributes="0"/>
+                      <Component id="manageEnt1" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace pref="263" max="32767" attributes="0"/>
@@ -102,12 +102,12 @@
   <SubComponents>
     <Component class="javax.swing.JLabel" name="getAlert2">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Get alert from Heart Help:"/>
+        <Property name="text" type="java.lang.String" value="Accept alert from Stepone"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="getAlert3">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Sensor device to track Vital Signs"/>
+        <Property name="text" type="java.lang.String" value="Device to track Vital Signs"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JRadioButton" name="getAlertJRadioNo1">
@@ -118,7 +118,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Vital Signs you would like to track:"/>
+        <Property name="text" type="java.lang.String" value="Critical Vital Signs:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JRadioButton" name="hasSensorRadioNo1">
@@ -169,7 +169,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Malayalam MN" size="24" style="3"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Heart Help"/>
+        <Property name="text" type="java.lang.String" value="Stepone Application"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="backJButton">

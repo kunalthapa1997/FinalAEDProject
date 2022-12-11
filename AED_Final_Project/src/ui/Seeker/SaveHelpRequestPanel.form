@@ -30,13 +30,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="backJButton" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="126" max="-2" attributes="0"/>
-                              <Component id="submitRequest" min="-2" pref="472" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
+                      <Component id="backJButton" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="108" max="-2" attributes="0"/>
@@ -101,17 +95,21 @@
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="cancelHelpRequest" min="-2" max="-2" attributes="0"/>
                   </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="220" max="-2" attributes="0"/>
+                      <Component id="submitRequest" min="-2" max="-2" attributes="0"/>
+                  </Group>
               </Group>
-              <EmptySpace pref="324" max="32767" attributes="0"/>
+              <EmptySpace pref="331" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
               <Component id="submitRequest" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <Component id="viewYourProfile" min="-2" max="-2" attributes="0"/>
@@ -173,7 +171,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Malayalam MN" size="24" style="3"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Submit Request toVolunteer For Help:"/>
+        <Property name="text" type="java.lang.String" value="Request Volunteer for Service:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="LastName">
@@ -228,7 +226,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="LastName1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Help Type:"/>
+        <Property name="text" type="java.lang.String" value="Service Type:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="commentsTextField">
@@ -244,12 +242,12 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Lucida Grande" size="18" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Help Request Details:"/>
+        <Property name="text" type="java.lang.String" value="Service Request Details:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="firstName1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Need Help:"/>
+        <Property name="text" type="java.lang.String" value="Need Service:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="gender1">

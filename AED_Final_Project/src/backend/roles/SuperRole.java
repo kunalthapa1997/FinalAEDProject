@@ -8,7 +8,7 @@ import backend.ConfSetup;
 import backend.enterprises.Enterprises;
 import backend.organizations.Organization;
 import backend.account.UserAcc;
-import userInterface.supervisor.SupervisorWorkAreaJPanel;
+import ui.Supervisor.SuperActionAreaPanel;
 import javax.swing.JPanel;
 /**
  *
@@ -18,7 +18,7 @@ public class SuperRole extends Role{
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAcc account, 
             Organization organization, Enterprises enterprise, ConfSetup business) {
-        return new SupervisorWorkAreaJPanel(userProcessContainer, account, organization, business);
+        return new SuperActionAreaPanel(userProcessContainer, account, organization, business);
     }
     @Override
     public String toString() {

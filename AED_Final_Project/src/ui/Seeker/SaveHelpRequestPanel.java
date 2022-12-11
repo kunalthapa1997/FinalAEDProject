@@ -123,7 +123,7 @@ public class SaveHelpRequestPanel extends javax.swing.JPanel {
         manageEnt3.setText("Request Volunteer For Help:");
 
         submitRequest.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
-        submitRequest.setText("Submit Request toVolunteer For Help:");
+        submitRequest.setText("Request Volunteer for Service:");
 
         LastName.setText("Last Name:");
 
@@ -146,15 +146,15 @@ public class SaveHelpRequestPanel extends javax.swing.JPanel {
         firstNameField.setEditable(false);
         firstNameField.setEnabled(false);
 
-        LastName1.setText("Help Type:");
+        LastName1.setText("Service Type:");
 
         serviceTypeTxtField.setEditable(false);
         serviceTypeTxtField.setEnabled(false);
 
         viewYourProfile1.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        viewYourProfile1.setText("Help Request Details:");
+        viewYourProfile1.setText("Service Request Details:");
 
-        firstName1.setText("Need Help:");
+        firstName1.setText("Need Service:");
 
         gender1.setText("Comments:");
 
@@ -185,11 +185,7 @@ public class SaveHelpRequestPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(46, 46, 46)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(backJButton)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(126, 126, 126)
-                                .addComponent(submitRequest, javax.swing.GroupLayout.PREFERRED_SIZE, 472, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addComponent(backJButton))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(108, 108, 108)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -197,17 +193,14 @@ public class SaveHelpRequestPanel extends javax.swing.JPanel {
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(dateOfBirth)
-                                                .addComponent(LastName))
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED))
+                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(dateOfBirth)
+                                            .addComponent(LastName))
                                         .addGroup(layout.createSequentialGroup()
                                             .addComponent(gender)
                                             .addGap(12, 12, 12)))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(firstName, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(21, 21, 21)))
+                                    .addComponent(firstName, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(13, 13, 13)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                     .addComponent(genderField)
                                     .addComponent(lastNameField, javax.swing.GroupLayout.Alignment.LEADING)
@@ -237,15 +230,18 @@ public class SaveHelpRequestPanel extends javax.swing.JPanel {
                         .addGap(328, 328, 328)
                         .addComponent(submitHelpRequest)
                         .addGap(18, 18, 18)
-                        .addComponent(cancelHelpRequest)))
-                .addContainerGap(324, Short.MAX_VALUE))
+                        .addComponent(cancelHelpRequest))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(220, 220, 220)
+                        .addComponent(submitRequest)))
+                .addContainerGap(331, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(19, 19, 19)
+                .addGap(21, 21, 21)
                 .addComponent(submitRequest)
-                .addGap(59, 59, 59)
+                .addGap(57, 57, 57)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(viewYourProfile)
