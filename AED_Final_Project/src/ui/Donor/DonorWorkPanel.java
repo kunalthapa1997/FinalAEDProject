@@ -164,6 +164,7 @@ public class DonorWorkPanel extends javax.swing.JPanel {
     private void donationHistoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_donationHistoryActionPerformed
         if(userAccount.getWorkQueue().getWorkRequestList().isEmpty())
         {
+            //message display in Joption pane
         JOptionPane.showMessageDialog(null, "No Donations Recorded as of now","warning",JOptionPane.WARNING_MESSAGE);
            return;     
         }

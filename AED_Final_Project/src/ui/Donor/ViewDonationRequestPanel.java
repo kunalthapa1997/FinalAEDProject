@@ -66,6 +66,7 @@ public class ViewDonationRequestPanel extends javax.swing.JPanel {
     
       public void populateDonationWorkRequestTable()
     {
+        //get the table model
         DefaultTableModel model = (DefaultTableModel)workRequestJTable.getModel();
         model.setRowCount(0);
         
