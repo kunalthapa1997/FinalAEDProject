@@ -53,11 +53,11 @@ public class SProcessReq extends javax.swing.JPanel {
             }
         });
 
-        jLabel1.setForeground(new java.awt.Color(153, 153, 255));
+        jLabel1.setForeground(new java.awt.Color(0, 153, 51));
         jLabel1.setText("Request Result");
 
         jLabel7.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(255, 51, 51));
+        jLabel7.setForeground(new java.awt.Color(51, 153, 0));
         jLabel7.setText("Process Work Request:");
 
         resultComboBox.setForeground(new java.awt.Color(0, 255, 102));
@@ -66,9 +66,9 @@ public class SProcessReq extends javax.swing.JPanel {
         jLabel2.setForeground(new java.awt.Color(0, 204, 0));
         jLabel2.setText("Add comments: ");
 
-        commentsJTextField.setForeground(new java.awt.Color(0, 153, 153));
+        commentsJTextField.setForeground(new java.awt.Color(153, 0, 204));
 
-        assignNetworkCombo.setForeground(new java.awt.Color(255, 102, 102));
+        assignNetworkCombo.setForeground(new java.awt.Color(0, 204, 153));
         assignNetworkCombo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         assignNetworkCombo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
