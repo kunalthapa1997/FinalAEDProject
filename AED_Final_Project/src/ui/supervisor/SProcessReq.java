@@ -173,7 +173,7 @@ private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {
 
         if(request.getTestResult().equals(SupervisorWorkRequest.REQUEST_APPROVED))
         {
-            request.getSender().setEnabled(true);
+            
 
             String emailId = request.getSender().getPerson().getEmailId();
             String userName = request.getSender().getUserName();
