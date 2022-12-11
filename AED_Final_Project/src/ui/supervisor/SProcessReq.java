@@ -15,6 +15,7 @@ public class SProcessReq extends javax.swing.JPanel {
      */
     public SProcessReq() {
         initComponents();
+        public SProcessReq() {
     }
 
     /**
@@ -63,6 +64,9 @@ public class SProcessReq extends javax.swing.JPanel {
         jLabel2.setForeground(new java.awt.Color(102, 102, 255));
         jLabel2.setText("Add comments: ");
 
+        commentsJTextField.setForeground(new java.awt.Color(255, 102, 102));
+
+        assignNetworkCombo.setForeground(new java.awt.Color(255, 102, 102));
         assignNetworkCombo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         assignNetworkCombo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -129,6 +133,7 @@ public class SProcessReq extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed
+private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {                                            
 
         userProcessContainer.remove(this);
         Component[] componentArray = userProcessContainer.getComponents();
@@ -144,13 +149,15 @@ public class SProcessReq extends javax.swing.JPanel {
             assignNetworkCombo.getSelectedIndex()<1)
         {
             JOptionPane.showMessageDialog(null, "Please enter data in all fields", "warning", JOptionPane.WARNING_MESSAGE);
-           
+         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
+        layout.previous(userProcessContainer);  
         }
         Network net = (Network)assignNetworkCombo.getSelectedItem();
 
         if((request.getSender().getRole().toString()).equalsIgnoreCase("VolunteerRole"))
         {
             
+        if((request.getSender().getRole().toString()).equalsIgnoreCase("VolunteerRole"))
 
             
             volunteer.setLongitude(longlat[0]);
@@ -180,7 +187,8 @@ public class SProcessReq extends javax.swing.JPanel {
             emailMsgTxt.append(System.lineSeparator());
             emailMsgTxt.append(System.lineSeparator());
             emailMsgTxt.append("Thank You");
-            
+            request.setComments(commentsJTextField.getText());
+        request.getSender().setNetwork(net);
 
             boolean emailSent = SendEmailAndTextMessage.sendEmail(emailMsgTxt.toString(),emailId,userName, password);
             if(!emailSent)
