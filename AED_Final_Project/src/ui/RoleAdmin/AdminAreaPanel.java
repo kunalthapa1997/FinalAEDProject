@@ -99,7 +99,7 @@ public class AdminAreaPanel extends javax.swing.JPanel {
         enterpriseLabel.setText("Enterprise");
 
         manageEnt2.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
-        manageEnt2.setText("Heart Help Admin Work Area");
+        manageEnt2.setText("StepOne Admin Operations");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -122,8 +122,8 @@ public class AdminAreaPanel extends javax.swing.JPanel {
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel1Layout.createSequentialGroup()
                     .addGap(196, 196, 196)
-                    .addComponent(manageEnt2, javax.swing.GroupLayout.PREFERRED_SIZE, 394, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(592, Short.MAX_VALUE)))
+                    .addComponent(manageEnt2, javax.swing.GroupLayout.PREFERRED_SIZE, 324, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(662, Short.MAX_VALUE)))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -170,7 +170,7 @@ public class AdminAreaPanel extends javax.swing.JPanel {
 
     private void userJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userJButtonActionPerformed
         // TODO add your handling code here:
-        ManageUserAccountJPanel muajp = new ManageUserAccountJPanel(userProcessContainer, enterprise,userAccount);
+        UserAccPanel muajp = new UserAccPanel(userProcessContainer, enterprise,userAccount);
         userProcessContainer.add("ManageUserAccountJPanel", muajp);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.next(userProcessContainer);
@@ -178,7 +178,7 @@ public class AdminAreaPanel extends javax.swing.JPanel {
 
     private void manageEmployeeJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_manageEmployeeJButtonActionPerformed
 
-        ManageEmployeeJPanel manageEmployeeJPanel = new ManageEmployeeJPanel(userProcessContainer, enterprise.getOrganizationDirectory());
+        ManageEmpPanel manageEmployeeJPanel = new ManageEmpPanel(userProcessContainer, enterprise.getOrganizationDirectory());
         userProcessContainer.add("manageEmployeeJPanel", manageEmployeeJPanel);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.next(userProcessContainer);
@@ -187,7 +187,7 @@ public class AdminAreaPanel extends javax.swing.JPanel {
 
     private void manageOrganizationJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_manageOrganizationJButtonActionPerformed
 
-        ManageOrganizationJPanel manageOrganizationJPanel = new ManageOrganizationJPanel(userProcessContainer, enterprise);
+        OrganizationPanel manageOrganizationJPanel = new OrganizationPanel(userProcessContainer, enterprise);
         userProcessContainer.add("manageOrganizationJPanel", manageOrganizationJPanel);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.next(userProcessContainer);

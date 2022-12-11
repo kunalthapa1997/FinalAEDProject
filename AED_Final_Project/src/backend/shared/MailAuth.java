@@ -12,8 +12,8 @@ import javax.mail.PasswordAuthentication;
  * @author kunal
  */
 public class MailAuth extends Authenticator {
-     public static final String SMTP_AUTH_USER = "hearthelpbyvolunteer@gmail.com";                                 
-    public static final String SMTP_AUTH_PWD  = "helpbyvolunteer"; 
+     public static final String SMTP_AUTH_USER = "stepone@gmail.com";                                 
+    public static final String SMTP_AUTH_PWD  = "helpbysteponevolunteer"; 
     
     @Override                                                                                                                   
     public PasswordAuthentication getPasswordAuthentication()                                             

@@ -46,7 +46,7 @@ import org.jfree.data.general.DefaultPieDataset;
 
 /**
  *
- * @author tejageetla
+ * @author kunal
  */
 public class EnterpriseManagerWorkPanel extends javax.swing.JPanel {
     private JPanel userProcessContainer;
@@ -127,7 +127,7 @@ public class EnterpriseManagerWorkPanel extends javax.swing.JPanel {
         valueLabel.setText("<value>");
 
         manageEnt1.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
-        manageEnt1.setText("Heart Help Manager Work Area");
+        manageEnt1.setText("StepOne Manager Operations");
 
         manageEnt2.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
         manageEnt2.setText("Enterprise:");
@@ -143,7 +143,7 @@ public class EnterpriseManagerWorkPanel extends javax.swing.JPanel {
             .addGap(0, 398, Short.MAX_VALUE)
         );
 
-        top3VolunteersBtn.setText("View Top 3 Volunteers");
+        top3VolunteersBtn.setText("Display Top 3 Volunteers");
         top3VolunteersBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 top3VolunteersBtnActionPerformed(evt);
@@ -151,7 +151,7 @@ public class EnterpriseManagerWorkPanel extends javax.swing.JPanel {
         });
 
         totalHelpReq.setFont(new java.awt.Font("Malayalam MN", 3, 18)); // NOI18N
-        totalHelpReq.setText("Total No of Help Requests");
+        totalHelpReq.setText("Total No of Service Requests");
 
         totSenDevReq.setFont(new java.awt.Font("Malayalam MN", 3, 18)); // NOI18N
         totSenDevReq.setText("Total No of Sensor Device Requests");
@@ -168,7 +168,7 @@ public class EnterpriseManagerWorkPanel extends javax.swing.JPanel {
         totHelpReqField.setEditable(false);
         totHelpReqField.setBackground(new java.awt.Color(153, 204, 0));
 
-        findTop3Donors.setText("View Top 3 Donors");
+        findTop3Donors.setText("Display Top 3 Donors");
         findTop3Donors.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 findTop3DonorsActionPerformed(evt);
@@ -286,7 +286,7 @@ public class EnterpriseManagerWorkPanel extends javax.swing.JPanel {
         JOptionPane.showMessageDialog(null, " No Data to display as of now!","warning", JOptionPane.WARNING_MESSAGE);
         return;     
        }
-        ViewDetailedReportJPanel vdrjp = new ViewDetailedReportJPanel(userProcessContainer, topVolunteeerList, topDonorList);
+        DisplayReportPanel vdrjp = new DisplayReportPanel(userProcessContainer, topVolunteeerList, topDonorList);
         userProcessContainer.add("ViewDetailedReportJPanel", vdrjp);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.next(userProcessContainer);

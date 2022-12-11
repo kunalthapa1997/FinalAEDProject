@@ -23,7 +23,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author tejageetla
+ * @author kunal
  */
 public class HelpRequestHistory extends javax.swing.JPanel {
     private JPanel userProcessContainer;
@@ -116,7 +116,7 @@ public class HelpRequestHistory extends javax.swing.JPanel {
 
             },
             new String [] {
-                "Help Recieved", "Requested Date", "Reciever ", "Status", "Request Result"
+                "Service Recieved", "Requested Date", "Reciever ", "Status", "Request Result"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -130,7 +130,7 @@ public class HelpRequestHistory extends javax.swing.JPanel {
         jScrollPane2.setViewportView(workRequestHistoryTable);
 
         manageEnt.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
-        manageEnt.setText("View History of Help Requests");
+        manageEnt.setText("Service Requests History");
 
         backJButton.setText("<< Back");
         backJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -146,14 +146,14 @@ public class HelpRequestHistory extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(236, 236, 236)
-                        .addComponent(manageEnt, javax.swing.GroupLayout.PREFERRED_SIZE, 390, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
                         .addGap(134, 134, 134)
                         .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 646, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(61, 61, 61)
-                        .addComponent(backJButton)))
+                        .addComponent(backJButton))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(282, 282, 282)
+                        .addComponent(manageEnt, javax.swing.GroupLayout.PREFERRED_SIZE, 302, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(154, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(

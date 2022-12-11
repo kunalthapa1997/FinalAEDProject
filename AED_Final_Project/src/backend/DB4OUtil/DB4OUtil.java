@@ -5,12 +5,11 @@
 package backend.DB4OUtil;
 
 import backend.BasicConf;
-
+import backend.ConfSetup;
 import com.db4o.Db4oEmbedded;
-
 import com.db4o.ObjectContainer;
 import com.db4o.ObjectSet;
-
+import com.db4o.config.EmbeddedConfiguration;
 import com.db4o.ta.TransparentPersistenceSupport;
 import java.util.ConcurrentModificationException;
 /**
@@ -35,9 +34,7 @@ public class DB4OUtil {
   {
     if (conn != null) {
       conn.close();
-      if (conn != null)
     }
-    conn.close();
   }
   
   private ObjectContainer createConnection()
@@ -51,7 +48,7 @@ public class DB4OUtil {
       
       config.common().updateDepth(Integer.MAX_VALUE);
       
-      
+      config.common().objectClass(ConfSetup.class).cascadeOnUpdate(true);
       
       return Db4oEmbedded.openFile(config, FILENAME);
     }
@@ -66,7 +63,7 @@ public class DB4OUtil {
   {
       try
       {
-    //connection
+          
     ObjectContainer conn = createConnection();
     conn.store(system);
     conn.commit();
@@ -75,28 +72,22 @@ public class DB4OUtil {
       }
       catch(ConcurrentModificationException cme)
       {
-               catch(ConcurrentModificationException cme)
-
+         
       }
   }
   
- public ConfSetup retrieveSystem()
+  public ConfSetup retrieveSystem()
   {
     ObjectContainer conn = createConnection();
     ObjectSet<ConfSetup> systems = conn.query(ConfSetup.class);
     
     ConfSetup system;
     if (systems.size() == 0) {
-            ObjectSet<ConfSetup> systems = conn.query(ConfSetup.class);
-
       system = BasicConf.configure();
     } else {
       system = (ConfSetup)systems.get(systems.size() - 1);
     }
     conn.close();
     return system;
-    conn.close();
   }  
-        system = (ConfSetup)systems.get(systems.size() - 1);
-        
 }

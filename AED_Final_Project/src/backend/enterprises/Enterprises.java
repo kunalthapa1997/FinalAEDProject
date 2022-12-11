@@ -31,7 +31,7 @@ public abstract class Enterprises extends Organization{
     public enum EnterpriseType{
         
        School("School"),
-       HeartHelp("HeartHelp"),
+       StepOneService("StepOneService"),
        NonProfit("NonProfit"),
        Government("Government"),
        Hospital("Hospital");
@@ -41,7 +41,7 @@ public abstract class Enterprises extends Organization{
        
        private EnterpriseType(String value)
        {
-           
+         this.value = value;  
        }
 
         public String getValue() {
@@ -50,11 +50,11 @@ public abstract class Enterprises extends Organization{
     }
 
     public OrgDir getOrganizationDirectory() {
-        
+        return organizationDirectory;
     }
 
     public EnterpriseType getEnterpriseType() {
-       
+        return enterpriseType;
     }
 
     @Override

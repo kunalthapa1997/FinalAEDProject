@@ -16,18 +16,13 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
-              <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                   <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="258" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
                       <Component id="backJButton1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="422" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace min="0" pref="440" max="32767" attributes="0"/>
@@ -35,19 +30,23 @@
           <Group type="102" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="328" max="-2" attributes="0"/>
-                      <Component id="getHelpFromVolunteerBtn" min="-2" pref="220" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="331" max="-2" attributes="0"/>
                       <Component id="SearchForVolunteer" min="-2" pref="220" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="304" max="-2" attributes="0"/>
-                      <Component id="manageEnt" min="-2" pref="306" max="-2" attributes="0"/>
+                      <Component id="manageEnt" min="-2" pref="353" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="329" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="330" max="-2" attributes="0"/>
+                      <Component id="getHelpFromVolunteerBtn" min="-2" pref="220" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="274" max="-2" attributes="0"/>
+                      <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="334" max="-2" attributes="0"/>
                       <Component id="viewHelpHistoryBtn" min="-2" pref="214" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -64,11 +63,11 @@
               <Component id="SearchForVolunteer" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-              <Component id="getHelpFromVolunteerBtn" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="getHelpFromVolunteerBtn" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
               <Component id="viewHelpHistoryBtn" min="-2" max="-2" attributes="0"/>
               <EmptySpace pref="165" max="32767" attributes="0"/>
               <Component id="backJButton1" min="-2" max="-2" attributes="0"/>
@@ -80,7 +79,7 @@
   <SubComponents>
     <Component class="javax.swing.JButton" name="getHelpFromVolunteerBtn">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Get Help from a Volunteer"/>
+        <Property name="text" type="java.lang.String" value="Service from a Volunteer"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="getHelpFromVolunteerBtnActionPerformed"/>
@@ -88,7 +87,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="SearchForVolunteer">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Find Volunteer to get Help"/>
+        <Property name="text" type="java.lang.String" value="Find Volunteer to avail Service"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SearchForVolunteerActionPerformed"/>
@@ -109,7 +108,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Malayalam MN" size="24" style="3"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Manage Volunteer Help"/>
+        <Property name="text" type="java.lang.String" value="Manage Volunteer Services"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="backJButton1">
@@ -122,7 +121,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="viewHelpHistoryBtn">
       <Properties>
-        <Property name="text" type="java.lang.String" value="View Help Request History"/>
+        <Property name="text" type="java.lang.String" value="Service Request History"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="viewHelpHistoryBtnActionPerformed"/>

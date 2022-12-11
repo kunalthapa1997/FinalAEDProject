@@ -27,7 +27,7 @@ public class HelpJPanel extends javax.swing.JPanel {
     /**
      * Creates new form HelpJPanel
      */
-    public HelpJPanel() {
+    public HelpJPanel(JPanel userProcessContainer, ConfSetup system) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.system = system;
@@ -92,15 +92,15 @@ public class HelpJPanel extends javax.swing.JPanel {
         jLabel1 = new javax.swing.JLabel();
 
         manageEnt2.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
-        manageEnt2.setText("Heart Help");
+        manageEnt2.setText("StepOne Application");
 
         jLayeredPane1.setBackground(new java.awt.Color(193, 250, 144));
         jLayeredPane1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         helpName.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        helpName.setText("Help Offered");
+        helpName.setText("Service Offered");
 
-        createHelpJButton.setText("Create Help");
+        createHelpJButton.setText("Create Service");
         createHelpJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 createHelpJButtonActionPerformed(evt);
@@ -108,10 +108,10 @@ public class HelpJPanel extends javax.swing.JPanel {
         });
 
         helpType.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        helpType.setText("Help Type");
+        helpType.setText("Service Type");
 
         manageEnt1.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
-        manageEnt1.setText("Create Help Offerred");
+        manageEnt1.setText("Create Services Given");
 
         cancelBtn.setText("Cancel");
         cancelBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -187,17 +187,17 @@ public class HelpJPanel extends javax.swing.JPanel {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(323, 323, 323)
-                        .addComponent(manageEnt2, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(27, 27, 27)
-                        .addComponent(backJButton)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(27, 27, 27)
+                .addComponent(backJButton)
+                .addContainerGap(866, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(80, 80, 80)
-                .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(manageEnt2, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+                        .addGap(80, 80, 80)
+                        .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 371, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addGap(34, 34, 34))
@@ -220,7 +220,7 @@ public class HelpJPanel extends javax.swing.JPanel {
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 945, Short.MAX_VALUE)
+            .addGap(0, 966, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)

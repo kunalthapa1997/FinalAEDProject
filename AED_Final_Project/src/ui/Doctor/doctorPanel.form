@@ -51,7 +51,7 @@
               </Group>
               <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
               <Component id="sendMedicationsPanel" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="24" max="32767" attributes="0"/>
+              <EmptySpace pref="18" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -100,26 +100,22 @@
               <Group type="102" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="1" attributes="0">
-                              <Component id="medications1" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="jScrollPane3" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="73" max="-2" attributes="0"/>
-                          </Group>
-                          <Component id="sendNewMedicationsBtn" alignment="1" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="medications" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="jScrollPane2" min="-2" max="-2" attributes="0"/>
-                      </Group>
+                      <Component id="medications1" min="-2" max="-2" attributes="0"/>
                       <Group type="103" alignment="0" groupAlignment="1" attributes="0">
                           <Component id="viewDetailsJButton" min="-2" pref="109" max="-2" attributes="0"/>
                           <Component id="jScrollPane1" min="-2" pref="440" max="-2" attributes="0"/>
+                          <Component id="sendNewMedicationsBtn" alignment="1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                          <Component id="jScrollPane3" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Component id="medications" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="jScrollPane2" min="-2" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                   </Group>
-                  <EmptySpace type="separate" pref="35" max="32767" attributes="0"/>
+                  <EmptySpace pref="35" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Group type="102" alignment="0" attributes="0">
@@ -189,13 +185,11 @@
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
-                          <Component id="jScrollPane3" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                          <Component id="sendNewMedicationsBtn" min="-2" max="-2" attributes="0"/>
-                      </Group>
+                      <Component id="jScrollPane3" min="-2" max="-2" attributes="0"/>
                       <Component id="medications1" min="-2" pref="38" max="-2" attributes="0"/>
                   </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="sendNewMedicationsBtn" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -270,12 +264,12 @@
         </Container>
         <Component class="javax.swing.JLabel" name="medications">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Current Medications/Message:"/>
+            <Property name="text" type="java.lang.String" value="Current Medications:"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="medications1">
           <Properties>
-            <Property name="text" type="java.lang.String" value="New Medications/Suggestions:"/>
+            <Property name="text" type="java.lang.String" value="New Medications:"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="sendNewMedicationsBtn">
@@ -323,7 +317,7 @@
         </Component>
         <Component class="javax.swing.JLabel" name="respiratoryRate">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Respiratory Rate:"/>
+            <Property name="text" type="java.lang.String" value="Oxygen Level:"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel3">

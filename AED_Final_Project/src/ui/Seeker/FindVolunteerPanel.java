@@ -35,11 +35,11 @@ import org.openstreetmap.gui.jmapviewer.Style;
 import org.openstreetmap.gui.jmapviewer.events.JMVCommandEvent;
 import org.openstreetmap.gui.jmapviewer.interfaces.ICoordinate;
 import org.openstreetmap.gui.jmapviewer.interfaces.JMapViewerEventListener;
-import userInterface.volunteer.ViewVolunteerProfile;
+import ui.Worker.DisplayWorkerProf;
 
 /**
  *
- * @author tejageetla
+ * @author kunal
  */
 public class FindVolunteerPanel extends javax.swing.JPanel implements JMapViewerEventListener{
     
@@ -239,12 +239,12 @@ public class FindVolunteerPanel extends javax.swing.JPanel implements JMapViewer
         });
 
         manageEnt1.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
-        manageEnt1.setText("Search For Volunteer");
+        manageEnt1.setText("Find Volunteer");
 
         manageEnt2.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
-        manageEnt2.setText("Heart Help");
+        manageEnt2.setText("StepOne App");
 
-        jLabel1.setText("Network:");
+        jLabel1.setText("Coverage:");
 
         volunteerListTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -278,7 +278,7 @@ public class FindVolunteerPanel extends javax.swing.JPanel implements JMapViewer
             }
         });
 
-        requestVolunteerHelpbtn.setText("Request Volunteer For Help");
+        requestVolunteerHelpbtn.setText("Request Volunteer Service");
         requestVolunteerHelpbtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 requestVolunteerHelpbtnActionPerformed(evt);
@@ -393,7 +393,7 @@ public class FindVolunteerPanel extends javax.swing.JPanel implements JMapViewer
         UserAcc volUserAccount = (UserAcc)volunteerListTable.getValueAt(selectedRow, 4);
         
         
-         ViewVolunteerProfile viewVolunteerProfile = new ViewVolunteerProfile(userProcessContainer, volUserAccount);
+         DisplayWorkerProf viewVolunteerProfile = new DisplayWorkerProf(userProcessContainer, volUserAccount);
          CardLayout layout = (CardLayout) userProcessContainer.getLayout();
          userProcessContainer.add("ViewVolunteerProfile", viewVolunteerProfile);
          layout.next(userProcessContainer);

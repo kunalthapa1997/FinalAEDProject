@@ -22,7 +22,7 @@ public class EnterprisesDir {
     public Enterprises addEnterprise(String name, Enterprises.EnterpriseType type)
     {
       Enterprises enterprise = null;
-      if(type ==Enterprises.EnterpriseType.HeartHelp)
+      if(type ==Enterprises.EnterpriseType.StepOneService)
       {
        enterprise = new HelpEnterprise(name);
        enterpriseList.add(enterprise);     

@@ -35,7 +35,7 @@ public class ConfSetup extends Organization{
     }
     return ecoSystem;
    }
-//array list 
+
     public ArrayList<Coverage> getNetworkList() {
         return networkList;
     }
@@ -54,7 +54,7 @@ public class ConfSetup extends Organization{
       }
       return true;
     }
-   //deletenetwork
+   
     public void deleteNetwork(Coverage network)
     {
         networkList.remove(network);

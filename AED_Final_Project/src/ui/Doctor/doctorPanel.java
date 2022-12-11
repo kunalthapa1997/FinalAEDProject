@@ -24,7 +24,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author tejageetla
+ * @author kunal
  */
 public class doctorPanel extends javax.swing.JPanel {
     
@@ -169,9 +169,9 @@ public class doctorPanel extends javax.swing.JPanel {
         newMedicationTxtArea.setRows(5);
         jScrollPane3.setViewportView(newMedicationTxtArea);
 
-        medications.setText("Current Medications/Message:");
+        medications.setText("Current Medications:");
 
-        medications1.setText("New Medications/Suggestions:");
+        medications1.setText("New Medications:");
 
         sendNewMedicationsBtn.setText("Send");
         sendNewMedicationsBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -194,7 +194,7 @@ public class doctorPanel extends javax.swing.JPanel {
 
         respiratoryRateTextField.setEditable(false);
 
-        respiratoryRate.setText("Respiratory Rate:");
+        respiratoryRate.setText("Oxygen Level:");
 
         jLabel3.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         jLabel3.setText("Vital Signs");
@@ -230,21 +230,18 @@ public class doctorPanel extends javax.swing.JPanel {
             .addGroup(sendMedicationsPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(sendMedicationsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(sendMedicationsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, sendMedicationsPanelLayout.createSequentialGroup()
-                            .addComponent(medications1)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                            .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(73, 73, 73))
-                        .addComponent(sendNewMedicationsBtn, javax.swing.GroupLayout.Alignment.TRAILING))
-                    .addGroup(sendMedicationsPanelLayout.createSequentialGroup()
-                        .addComponent(medications)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(medications1)
                     .addGroup(sendMedicationsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                         .addComponent(viewDetailsJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 440, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(18, 35, Short.MAX_VALUE)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 440, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(sendNewMedicationsBtn))
+                    .addGroup(sendMedicationsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(sendMedicationsPanelLayout.createSequentialGroup()
+                            .addComponent(medications)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
                 .addGroup(sendMedicationsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel3)
                     .addGroup(sendMedicationsPanelLayout.createSequentialGroup()
@@ -297,11 +294,10 @@ public class doctorPanel extends javax.swing.JPanel {
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addGap(18, 18, 18)
                 .addGroup(sendMedicationsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(sendMedicationsPanelLayout.createSequentialGroup()
-                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(sendNewMedicationsBtn))
+                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(medications1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(sendNewMedicationsBtn)
                 .addContainerGap())
         );
 
@@ -336,7 +332,7 @@ public class doctorPanel extends javax.swing.JPanel {
                     .addComponent(getDataForPatient))
                 .addGap(37, 37, 37)
                 .addComponent(sendMedicationsPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(24, Short.MAX_VALUE))
+                .addContainerGap(18, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -408,7 +404,7 @@ public class doctorPanel extends javax.swing.JPanel {
         if(selectedRow >= 0)
         {
             VitalSign vitalSign = (VitalSign)vitalSignTable.getValueAt(selectedRow, 0);
-            respiratoryRateTextField.setText(String.valueOf(vitalSign.getRespiratoryRate()));
+            respiratoryRateTextField.setText(String.valueOf(vitalSign.getOxygenRate()));
             heartRateTextField.setText(String.valueOf(vitalSign.getHeartRate()));
             systollicBPTextField.setText(String.valueOf(vitalSign.getSystolicBloodpressure()));
             weightTextField.setText(String.valueOf(vitalSign.getWeightInPounds()));

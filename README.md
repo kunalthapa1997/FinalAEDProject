@@ -1,2 +1,1 @@
 # FinalAEDProject
-Emergency management system

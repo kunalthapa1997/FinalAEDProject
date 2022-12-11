@@ -30,7 +30,7 @@ import org.jfree.data.category.DefaultCategoryDataset;
 
 /**
  *
- * @author tejageetla
+ * @author kunal
  */
 public class DisplayVitalSignPanel extends javax.swing.JPanel {
     
@@ -149,7 +149,7 @@ public class DisplayVitalSignPanel extends javax.swing.JPanel {
         jLabel3.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         jLabel3.setText("Vital Signs");
 
-        respiratoryRate.setText("Respiratory Rate:");
+        respiratoryRate.setText("Oxygen Levels");
 
         respiratoryRateTextField.setEditable(false);
 
@@ -157,7 +157,7 @@ public class DisplayVitalSignPanel extends javax.swing.JPanel {
 
         heartRateTextField.setEditable(false);
 
-        systollicBloodPressure.setText("Systollic Blood Pressure:");
+        systollicBloodPressure.setText("Systolic Blood Pressure:");
 
         systollicBPTextField.setEditable(false);
 
@@ -173,7 +173,7 @@ public class DisplayVitalSignPanel extends javax.swing.JPanel {
         });
 
         manageEnt2.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
-        manageEnt2.setText("Heart Help");
+        manageEnt2.setText("StepOne Application");
 
         manageEnt5.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
         manageEnt5.setText("View Vital Sign History ");
@@ -185,7 +185,7 @@ public class DisplayVitalSignPanel extends javax.swing.JPanel {
             }
         });
 
-        BarCharJButton.setText("View BarChart");
+        BarCharJButton.setText("Show Analytics");
         BarCharJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BarCharJButtonActionPerformed(evt);
@@ -213,7 +213,7 @@ public class DisplayVitalSignPanel extends javax.swing.JPanel {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(manageEnt5)
                         .addGap(105, 105, 105)
-                        .addComponent(manageEnt2, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(manageEnt2, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(17, 17, 17)
                         .addComponent(viewDetailsJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -289,7 +289,7 @@ public class DisplayVitalSignPanel extends javax.swing.JPanel {
         if(selectedRow >= 0)
         {
             VitalSign vitalSign = (VitalSign)vitalSignTable.getValueAt(selectedRow, 0);
-            respiratoryRateTextField.setText(String.valueOf(vitalSign.getRespiratoryRate()));
+            respiratoryRateTextField.setText(String.valueOf(vitalSign.getOxygenRate()));
             heartRateTextField.setText(String.valueOf(vitalSign.getHeartRate()));
             systollicBPTextField.setText(String.valueOf(vitalSign.getSystolicBloodpressure()));
             weightTextField.setText(String.valueOf(vitalSign.getWeightInPounds()));
@@ -316,7 +316,7 @@ public class DisplayVitalSignPanel extends javax.swing.JPanel {
         if(selectedRow >= 0)
         {
             VitalSign vitalSign = (VitalSign)vitalSignTable.getValueAt(selectedRow, 0);
-            float respiratoryRate = vitalSign.getRespiratoryRate();
+            float respiratoryRate = vitalSign.getOxygenRate();
             int heartRate = vitalSign.getHeartRate();
             int systollicBP = vitalSign.getSystolicBloodpressure();
             float weight = vitalSign.getWeightInPounds();

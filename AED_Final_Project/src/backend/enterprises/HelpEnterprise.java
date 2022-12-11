@@ -19,6 +19,6 @@ public class HelpEnterprise extends Enterprises{
     
     public HelpEnterprise(String name)
     {
-     super(name, Enterprises.EnterpriseType.HeartHelp);  
+     super(name, Enterprises.EnterpriseType.StepOneService);  
     }
 }

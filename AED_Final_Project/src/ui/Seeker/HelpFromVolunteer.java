@@ -18,7 +18,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author tejageetla
+ * @author kunal
  */
 public class HelpFromVolunteer extends javax.swing.JPanel {
     
@@ -75,14 +75,14 @@ public class HelpFromVolunteer extends javax.swing.JPanel {
         backJButton1 = new javax.swing.JButton();
         viewHelpHistoryBtn = new javax.swing.JButton();
 
-        getHelpFromVolunteerBtn.setText("Get Help from a Volunteer");
+        getHelpFromVolunteerBtn.setText("Service from a Volunteer");
         getHelpFromVolunteerBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 getHelpFromVolunteerBtnActionPerformed(evt);
             }
         });
 
-        SearchForVolunteer.setText("Find Volunteer to get Help");
+        SearchForVolunteer.setText("Find Volunteer to avail Service");
         SearchForVolunteer.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 SearchForVolunteerActionPerformed(evt);
@@ -94,7 +94,7 @@ public class HelpFromVolunteer extends javax.swing.JPanel {
         jLabel2.setText("If you would like to get help from an anonymous volunteer.");
 
         manageEnt.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
-        manageEnt.setText("Manage Volunteer Help");
+        manageEnt.setText("Manage Volunteer Services");
 
         backJButton1.setText("<< Back");
         backJButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -103,7 +103,7 @@ public class HelpFromVolunteer extends javax.swing.JPanel {
             }
         });
 
-        viewHelpHistoryBtn.setText("View Help Request History");
+        viewHelpHistoryBtn.setText("Service Request History");
         viewHelpHistoryBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 viewHelpHistoryBtnActionPerformed(evt);
@@ -115,29 +115,29 @@ public class HelpFromVolunteer extends javax.swing.JPanel {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(258, 258, 258)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel1)))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel1)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(78, 78, 78)
-                        .addComponent(backJButton1)))
+                        .addComponent(backJButton1)
+                        .addGap(422, 422, 422)))
                 .addGap(0, 440, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(328, 328, 328)
-                        .addComponent(getHelpFromVolunteerBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(331, 331, 331)
                         .addComponent(SearchForVolunteer, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(304, 304, 304)
-                        .addComponent(manageEnt, javax.swing.GroupLayout.PREFERRED_SIZE, 306, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(manageEnt, javax.swing.GroupLayout.PREFERRED_SIZE, 353, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(329, 329, 329)
+                        .addGap(330, 330, 330)
+                        .addComponent(getHelpFromVolunteerBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(274, 274, 274)
+                        .addComponent(jLabel2))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(334, 334, 334)
                         .addComponent(viewHelpHistoryBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -152,9 +152,9 @@ public class HelpFromVolunteer extends javax.swing.JPanel {
                 .addComponent(jLabel1)
                 .addGap(18, 18, 18)
                 .addComponent(getHelpFromVolunteerBtn)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel2)
-                .addGap(18, 18, 18)
+                .addGap(12, 12, 12)
                 .addComponent(viewHelpHistoryBtn)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 165, Short.MAX_VALUE)
                 .addComponent(backJButton1)
@@ -163,14 +163,14 @@ public class HelpFromVolunteer extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void getHelpFromVolunteerBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_getHelpFromVolunteerBtnActionPerformed
-        GetHelpFromVolunteerJPanel getHelpFromVolunteerJPanel = new GetHelpFromVolunteerJPanel(userProcessContainer, userAccount, ecoSystem);
+        HelpByVolunteerPanel getHelpFromVolunteerJPanel = new HelpByVolunteerPanel(userProcessContainer, userAccount, ecoSystem);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         userProcessContainer.add("GetHelpFromVolunteerJPanel", getHelpFromVolunteerJPanel);
         layout.next(userProcessContainer);
     }//GEN-LAST:event_getHelpFromVolunteerBtnActionPerformed
 
     private void SearchForVolunteerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SearchForVolunteerActionPerformed
-        SearchForVolunteerJPanel searchForVolunteerJPanel = new SearchForVolunteerJPanel(userProcessContainer, userAccount, ecoSystem);
+        FindVolunteerPanel searchForVolunteerJPanel = new FindVolunteerPanel(userProcessContainer, userAccount, ecoSystem);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         userProcessContainer.add("SearchForVolunteerJPanel", searchForVolunteerJPanel);
         layout.next(userProcessContainer);
@@ -184,7 +184,7 @@ public class HelpFromVolunteer extends javax.swing.JPanel {
     }//GEN-LAST:event_backJButton1ActionPerformed
 
     private void viewHelpHistoryBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewHelpHistoryBtnActionPerformed
-        ViewHelpRequestHistory viewHelpRequestHistory = new ViewHelpRequestHistory(userProcessContainer, userAccount);
+        HelpRequestHistory viewHelpRequestHistory = new HelpRequestHistory(userProcessContainer, userAccount);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         userProcessContainer.add("ViewHelpRequestHistory", viewHelpRequestHistory);
         layout.next(userProcessContainer);

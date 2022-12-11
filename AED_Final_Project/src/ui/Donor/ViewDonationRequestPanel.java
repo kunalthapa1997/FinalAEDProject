@@ -20,11 +20,11 @@ import java.awt.RenderingHints;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
-import userInterface.helpSeeker.ViewHelpSeekerProfile;
+import ui.Seeker.DisplayHelpSeekerPro;
 
 /**
  *
- * @author tejageetla
+ * @author kunal
  */
 public class ViewDonationRequestPanel extends javax.swing.JPanel {
      private JPanel userProcessContainer;
@@ -101,9 +101,9 @@ public class ViewDonationRequestPanel extends javax.swing.JPanel {
         backJButton = new javax.swing.JButton();
 
         donationREq.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
-        donationREq.setText("Process Donation Requests:");
+        donationREq.setText("Donation History:");
 
-        assignJButton.setText("Assign to me");
+        assignJButton.setText("Assign");
         assignJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 assignJButtonActionPerformed(evt);
@@ -152,7 +152,7 @@ public class ViewDonationRequestPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(workRequestJTable);
 
-        viewAndUpdateProfileBtn.setText("View Help Seeker Profile");
+        viewAndUpdateProfileBtn.setText("View Patient Profile");
         viewAndUpdateProfileBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 viewAndUpdateProfileBtnActionPerformed(evt);
@@ -186,8 +186,8 @@ public class ViewDonationRequestPanel extends javax.swing.JPanel {
                         .addGap(145, 145, 145)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 584, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(218, 218, 218)
-                        .addComponent(donationREq, javax.swing.GroupLayout.PREFERRED_SIZE, 355, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(298, 298, 298)
+                        .addComponent(donationREq, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(205, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
@@ -198,16 +198,16 @@ public class ViewDonationRequestPanel extends javax.swing.JPanel {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(27, 27, 27)
+                .addGap(24, 24, 24)
                 .addComponent(donationREq)
-                .addGap(60, 60, 60)
+                .addGap(63, 63, 63)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(28, 28, 28)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(viewAndUpdateProfileBtn)
                     .addComponent(assignJButton)
                     .addComponent(processJButton))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 124, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 133, Short.MAX_VALUE)
                 .addComponent(backJButton)
                 .addGap(41, 41, 41))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -289,7 +289,7 @@ public class ViewDonationRequestPanel extends javax.swing.JPanel {
 
         DeviceTask request = (DeviceTask)workRequestJTable.getValueAt(selectedRow, 0);
         UserAcc ua = (UserAcc)request.getSender();
-        ViewHelpSeekerProfile viewHelpSeekerProfile = new ViewHelpSeekerProfile(userProcessContainer, ua);
+        DisplayHelpSeekerPro viewHelpSeekerProfile = new DisplayHelpSeekerPro(userProcessContainer, ua);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         userProcessContainer.add("ViewHelpSeekerProfile", viewHelpSeekerProfile);
         layout.next(userProcessContainer);

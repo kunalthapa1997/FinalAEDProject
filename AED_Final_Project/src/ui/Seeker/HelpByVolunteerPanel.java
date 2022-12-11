@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package userInterface.helpSeeker;
+package ui.Seeker;
 
 import backend.ConfSetup;
 import backend.shared.HelpRequired;
@@ -31,7 +31,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author tejageetla
+ * @author kunal
  */
 public class HelpByVolunteerPanel extends javax.swing.JPanel {
     
@@ -164,7 +164,7 @@ public class HelpByVolunteerPanel extends javax.swing.JPanel {
 
             },
             new String [] {
-                "Help Id", "Help Needed", "Help Type", "Help Details"
+                "Service Id", "Service Needed", "Service Type", "Service Details"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -185,13 +185,13 @@ public class HelpByVolunteerPanel extends javax.swing.JPanel {
         });
 
         helpDetails.setFont(new java.awt.Font("Malayalam MN", 3, 14)); // NOI18N
-        helpDetails.setText(" Enter details about the help needed.");
+        helpDetails.setText(" Enter details about the service needed.");
 
         serviceType.setText("Service Type");
 
         serviceTypeCombo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Please Select Amount", "5$", "10$", "15$", "20$" }));
 
-        jLabel1.setText("Enter details of help needed: ");
+        jLabel1.setText("Enter details of service needed: ");
 
         javax.swing.GroupLayout otherHelpPanelFrameLayout = new javax.swing.GroupLayout(otherHelpPanelFrame);
         otherHelpPanelFrame.setLayout(otherHelpPanelFrameLayout);
@@ -229,26 +229,26 @@ public class HelpByVolunteerPanel extends javax.swing.JPanel {
         );
 
         manageEnt4.setFont(new java.awt.Font("Malayalam MN", 3, 14)); // NOI18N
-        manageEnt4.setText("Select the radio button  ");
+        manageEnt4.setText("Request New Service  ");
 
         manageEnt1.setFont(new java.awt.Font("Malayalam MN", 3, 14)); // NOI18N
-        manageEnt1.setText("Required Help not in the Table:");
+        manageEnt1.setText("Service not available in the Table:");
 
         manageEnt5.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
-        manageEnt5.setText("Request Help : Anonymous Volunteer");
+        manageEnt5.setText("Request Service : Random Volunteer");
 
         manageEnt2.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
-        manageEnt2.setText("Heart Help");
+        manageEnt2.setText("StepOne Application");
 
         manageEnt3.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
-        manageEnt3.setText("Help Requests History:");
+        manageEnt3.setText("Services Availed History:");
 
         workRequestJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
             new String [] {
-                "Request ID", "Help Recieved", "Requested Date", "Volunteer Name", "Status"
+                "Service ID", "Service Recieved", "Requested Date", "Volunteer Name", "Status"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -312,7 +312,7 @@ public class HelpByVolunteerPanel extends javax.swing.JPanel {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(manageEnt5, javax.swing.GroupLayout.PREFERRED_SIZE, 469, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(40, 40, 40)
-                        .addComponent(manageEnt2, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(manageEnt2, javax.swing.GroupLayout.PREFERRED_SIZE, 245, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
