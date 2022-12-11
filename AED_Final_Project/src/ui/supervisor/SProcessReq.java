@@ -180,13 +180,13 @@ private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {
             String emailId = request.getSender().getPerson().getEmailId();
             String userName = request.getSender().getUserName();
 
-            StringBuilder emailMsgTxt = new StringBuilder();
+            //StringBuilder emailMsgTxt = new StringBuilder();
             emailMsgTxt.append("Your account is enabled. Please find username and password");
             //emailMsgTxt.append(System.lineSeparator());
             emailMsgTxt.append("username : ".concat(userName));
             //emailMsgTxt.append(System.lineSeparator());
             emailMsgTxt.append("password : ".concat(password));
-            emailMsgTxt.append(System.lineSeparator());
+            //emailMsgTxt.append(System.lineSeparator());
             
             emailMsgTxt.append("Thank You");
             request.setComments(commentsJTextField.getText());
