@@ -39,8 +39,10 @@ public class SWorkArea extends javax.swing.JPanel {
         jLabel6 = new javax.swing.JLabel();
 
         jLabel7.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(51, 153, 255));
         jLabel7.setText("Work Requests:");
 
+        assignJButton.setForeground(new java.awt.Color(153, 0, 204));
         assignJButton.setText("Assign to me");
         assignJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -48,6 +50,7 @@ public class SWorkArea extends javax.swing.JPanel {
             }
         });
 
+        processJButton.setForeground(new java.awt.Color(255, 51, 204));
         processJButton.setText("Process");
         processJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -55,6 +58,7 @@ public class SWorkArea extends javax.swing.JPanel {
             }
         });
 
+        refreshJButton.setForeground(new java.awt.Color(255, 102, 102));
         refreshJButton.setText("Refresh");
         refreshJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -69,6 +73,7 @@ public class SWorkArea extends javax.swing.JPanel {
             }
         });
 
+        viewReqToBeProcessedBtn.setForeground(new java.awt.Color(0, 204, 153));
         viewReqToBeProcessedBtn.setText("View Request to be Processed");
         viewReqToBeProcessedBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -76,6 +81,7 @@ public class SWorkArea extends javax.swing.JPanel {
             }
         });
 
+        viewRequestorProfile.setForeground(new java.awt.Color(153, 255, 51));
         viewRequestorProfile.setText("View Requestor Profile");
         viewRequestorProfile.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -90,6 +96,7 @@ public class SWorkArea extends javax.swing.JPanel {
             }
         });
 
+        workRequestJTable.setForeground(new java.awt.Color(255, 51, 255));
         workRequestJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -116,6 +123,7 @@ public class SWorkArea extends javax.swing.JPanel {
         jScrollPane1.setViewportView(workRequestJTable);
 
         jLabel6.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(153, 0, 204));
         jLabel6.setText("Supervisor Work Area");
 
         org.jdesktop.layout.GroupLayout layout = new org.jdesktop.layout.GroupLayout(this);
@@ -178,7 +186,7 @@ public class SWorkArea extends javax.swing.JPanel {
                     .add(processJButton)
                     .add(viewReqToBeProcessedBtn)
                     .add(viewRequestorProfile))
-                .addContainerGap(79, Short.MAX_VALUE))
+                .addContainerGap(78, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -203,14 +211,15 @@ public class SWorkArea extends javax.swing.JPanel {
     }//GEN-LAST:event_assignJButtonActionPerformed
 
     private void processJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_processJButtonActionPerformed
-
+//buttonactionperformed
         int selectedRow = workRequestJTable.getSelectedRow();
-
+              if (selectedRow < 0){
         if (selectedRow < 0){
             JOptionPane.showMessageDialog(null, "Please select a row", "warning", JOptionPane.WARNING_MESSAGE);
             return;
         }
-
+                return;
+                 populateWorkRequestTable();
         SupervisorWorkRequest request = (SupervisorWorkRequest)workRequestJTable.getValueAt(selectedRow, 0);
         if(request.getReceiver() == null)
         {
@@ -223,7 +232,7 @@ public class SWorkArea extends javax.swing.JPanel {
             return;
         }
         if(request.getStatus().equalsIgnoreCase("Processing") ||  request.getStatus().equalsIgnoreCase("Pending"))
-        {
+        {return;
             if(request.getReceiver()!=userAccount)
             {
                 JOptionPane.showMessageDialog(null, "Request has been processed earlier!", "warning", JOptionPane.WARNING_MESSAGE);
@@ -231,7 +240,7 @@ public class SWorkArea extends javax.swing.JPanel {
             }
         }
 
-        request.setStatus("Processing");
+        //next phase is to change request 
 
         SupervisorProcessRequestAreaJPanel swrajp = new SupervisorProcessRequestAreaJPanel(userProcessContainer, request, ecoSystem);
         userProcessContainer.add("processWorkRequestJPanel", swrajp);
