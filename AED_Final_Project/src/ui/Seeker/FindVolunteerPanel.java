@@ -229,7 +229,6 @@ public class FindVolunteerPanel extends javax.swing.JPanel implements JMapViewer
         ViewVolunteerProfileBtn = new javax.swing.JButton();
         requestVolunteerHelpbtn = new javax.swing.JButton();
         jInternalFrame1 = new javax.swing.JInternalFrame();
-        jMapViewerVolunteer = new org.openstreetmap.gui.jmapviewer.JMapViewer();
         backJButton1 = new javax.swing.JButton();
 
         networkListComboBox.addActionListener(new java.awt.event.ActionListener() {
@@ -291,17 +290,11 @@ public class FindVolunteerPanel extends javax.swing.JPanel implements JMapViewer
         jInternalFrame1.getContentPane().setLayout(jInternalFrame1Layout);
         jInternalFrame1Layout.setHorizontalGroup(
             jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jInternalFrame1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jMapViewerVolunteer, javax.swing.GroupLayout.DEFAULT_SIZE, 672, Short.MAX_VALUE)
-                .addContainerGap())
+            .addGap(0, 684, Short.MAX_VALUE)
         );
         jInternalFrame1Layout.setVerticalGroup(
             jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jInternalFrame1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jMapViewerVolunteer, javax.swing.GroupLayout.DEFAULT_SIZE, 523, Short.MAX_VALUE)
-                .addContainerGap())
+            .addGap(0, 535, Short.MAX_VALUE)
         );
 
         backJButton1.setText("<< Back");
@@ -429,7 +422,6 @@ public class FindVolunteerPanel extends javax.swing.JPanel implements JMapViewer
     private javax.swing.JButton backJButton1;
     private javax.swing.JInternalFrame jInternalFrame1;
     private javax.swing.JLabel jLabel1;
-    private org.openstreetmap.gui.jmapviewer.JMapViewer jMapViewerVolunteer;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel manageEnt1;
     private javax.swing.JLabel manageEnt2;

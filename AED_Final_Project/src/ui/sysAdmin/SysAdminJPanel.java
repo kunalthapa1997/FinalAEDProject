@@ -144,7 +144,7 @@ public class SysAdminJPanel extends javax.swing.JPanel {
 
         jSplitPane1.setLeftComponent(jPanel2);
 
-        jPanel1.setBackground(new java.awt.Color(153, 197, 85));
+        jPanel1.setBackground(new java.awt.Color(0, 153, 102));
 
         manageNetworkJButton.setText("Manage Network");
         manageNetworkJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -171,7 +171,7 @@ public class SysAdminJPanel extends javax.swing.JPanel {
 
         selectedNodeJLabel.setText("<view_selected_node>");
 
-        jLabel7.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Calibri", 3, 24)); // NOI18N
         jLabel7.setText("System Admin Work Area");
 
         helpOfferedButton.setText("Create Help Offered ");
@@ -230,7 +230,7 @@ public class SysAdminJPanel extends javax.swing.JPanel {
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jSplitPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 400, Short.MAX_VALUE)
+            .addComponent(jSplitPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 759, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
