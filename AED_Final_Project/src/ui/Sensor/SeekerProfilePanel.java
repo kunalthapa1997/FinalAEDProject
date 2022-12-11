@@ -82,6 +82,7 @@ public class SeekerProfilePanel extends javax.swing.JPanel {
         viewVitalSignInfo = new javax.swing.JButton();
 
         getAlertFromHH.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
+        getAlertFromHH.setForeground(new java.awt.Color(0, 0, 255));
         getAlertFromHH.setText("Manage Patient");
 
         manageVitalSignJBtn.setText("Edit Vital Signs");
