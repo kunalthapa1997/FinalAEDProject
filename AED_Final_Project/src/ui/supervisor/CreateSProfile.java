@@ -185,6 +185,7 @@ public class CreateSProfile extends javax.swing.JPanel {
     }//GEN-LAST:event_backJButtonActionPerformed
 
     private void createProfileButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createProfileButtonActionPerformed
+       //gets the function from the userAccount
         Person person = userAccount.getPerson();
         if( supaddressField.getText()==null || supaddressField.getText().trim().isEmpty() ||
             townField.getText()==null || townField.getText().trim().isEmpty() ||
