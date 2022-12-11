@@ -72,7 +72,8 @@ public class DB4OUtil {
       }
       catch(ConcurrentModificationException cme)
       {
-         
+               catch(ConcurrentModificationException cme)
+
       }
   }
   
@@ -83,6 +84,8 @@ public class DB4OUtil {
     
     ConfSetup system;
     if (systems.size() == 0) {
+            ObjectSet<ConfSetup> systems = conn.query(ConfSetup.class);
+
       system = BasicConf.configure();
     } else {
       system = (ConfSetup)systems.get(systems.size() - 1);
@@ -90,4 +93,6 @@ public class DB4OUtil {
     conn.close();
     return system;
   }  
+        system = (ConfSetup)systems.get(systems.size() - 1);
+
 }
