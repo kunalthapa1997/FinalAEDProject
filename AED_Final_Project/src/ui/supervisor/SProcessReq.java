@@ -185,6 +185,7 @@ public class SProcessReq extends javax.swing.JPanel {
                 return;
             }
         }
+        //messaage display
         JOptionPane.showMessageDialog(null, "Request has been processed successfully", "success", JOptionPane.PLAIN_MESSAGE);
         commentsJTextField.setText("");
     }//GEN-LAST:event_submitJButtonActionPerformed
