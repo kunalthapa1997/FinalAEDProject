@@ -37,7 +37,7 @@ public class SProcessReq extends javax.swing.JPanel {
         assignNetworkCombo = new javax.swing.JComboBox();
         jLabel3 = new javax.swing.JLabel();
 
-        backJButton.setForeground(new java.awt.Color(0, 51, 255));
+        backJButton.setForeground(new java.awt.Color(255, 153, 153));
         backJButton.setText("Back");
         backJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -56,7 +56,7 @@ public class SProcessReq extends javax.swing.JPanel {
         jLabel1.setText("Request Result");
 
         jLabel7.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(102, 204, 0));
+        jLabel7.setForeground(new java.awt.Color(255, 51, 51));
         jLabel7.setText("Process Work Request:");
 
         resultComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
@@ -74,6 +74,7 @@ public class SProcessReq extends javax.swing.JPanel {
             }
         });
 
+        jLabel3.setForeground(new java.awt.Color(255, 102, 0));
         jLabel3.setText("Assign Location");
 
         org.jdesktop.layout.GroupLayout layout = new org.jdesktop.layout.GroupLayout(this);
@@ -185,7 +186,7 @@ private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {
             emailMsgTxt.append(System.lineSeparator());
             emailMsgTxt.append("password : ".concat(password));
             emailMsgTxt.append(System.lineSeparator());
-            emailMsgTxt.append(System.lineSeparator());
+            
             emailMsgTxt.append("Thank You");
             request.setComments(commentsJTextField.getText());
         request.getSender().setNetwork(net);
