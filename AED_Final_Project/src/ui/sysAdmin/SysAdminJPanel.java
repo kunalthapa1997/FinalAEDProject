@@ -246,7 +246,7 @@ public class SysAdminJPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_networkJTreevalueChangedAction
 
     private void manageNetworkJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_manageNetworkJButtonActionPerformed
-        ManageNetworkJPanel manageNetworkJPanel = new ManageNetworkJPanel(userProcessContainer, system);
+        NetworkJPanel manageNetworkJPanel = new NetworkJPanel(userProcessContainer, system);
         userProcessContainer.add("manageNetworkJPanel", manageNetworkJPanel);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.next(userProcessContainer);
@@ -254,7 +254,7 @@ public class SysAdminJPanel extends javax.swing.JPanel {
 
     private void manageAdminJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_manageAdminJButtonActionPerformed
         // TODO add your handling code here:
-        ManageEnterpriseAdminJPanel manageEnterpriseAdminJPanel = new ManageEnterpriseAdminJPanel(userProcessContainer, system);
+        EnterpriseAdminJPanel manageEnterpriseAdminJPanel = new EnterpriseAdminJPanel(userProcessContainer, system);
         userProcessContainer.add("manageEnterpriseAdminJPanel", manageEnterpriseAdminJPanel);
 
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
@@ -263,7 +263,7 @@ public class SysAdminJPanel extends javax.swing.JPanel {
 
     private void manageEnterpriseJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_manageEnterpriseJButtonActionPerformed
 
-        ManageEnterpriseJPanel manageEnterpriseJPanel = new ManageEnterpriseJPanel(userProcessContainer, system);
+        EnterpriseJPanel manageEnterpriseJPanel = new EnterpriseJPanel(userProcessContainer, system);
         userProcessContainer.add("manageEnterpriseJPanel", manageEnterpriseJPanel);
 
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
@@ -271,7 +271,7 @@ public class SysAdminJPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_manageEnterpriseJButtonActionPerformed
 
     private void helpOfferedButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_helpOfferedButtonActionPerformed
-        CreateHelpJPanel createHelpJPanel = new CreateHelpJPanel(userProcessContainer, system);
+        HelpJPanel createHelpJPanel = new HelpJPanel(userProcessContainer, system);
         userProcessContainer.add("CreateHelpJPanel", createHelpJPanel);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.next(userProcessContainer);

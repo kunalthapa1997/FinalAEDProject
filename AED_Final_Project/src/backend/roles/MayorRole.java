@@ -9,7 +9,7 @@ import backend.enterprises.Enterprises;
 import backend.organizations.Organization;
 import backend.account.UserAcc;
 import javax.swing.JPanel;
-import userInterface.mayor.MayorWorkAreaJPanel;
+import ui.Executive.ExecutiveWorkPanel;
 /**
  *
  * @author kunal
@@ -18,7 +18,7 @@ public class MayorRole extends Role{
       @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAcc account, 
             Organization organization, Enterprises enterprise, ConfSetup business) {
-        return new MayorWorkAreaJPanel(userProcessContainer, account, organization, business);
+        return new ExecutiveWorkPanel(userProcessContainer, account, organization, business);
     }
     @Override
     public String toString() {

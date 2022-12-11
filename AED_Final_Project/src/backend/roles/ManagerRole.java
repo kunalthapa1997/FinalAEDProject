@@ -9,7 +9,7 @@ import backend.enterprises.Enterprises;
 import backend.organizations.Organization;
 import backend.account.UserAcc;
 import javax.swing.JPanel;
-import userInterface.manager.HeartHelpEnterpriseManagerWorkArea;
+import ui.Manager.EnterpriseManagerWorkPanel;
 /**
  *
  * @author kunal
@@ -18,7 +18,7 @@ public class ManagerRole extends Role{
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAcc account, 
             Organization organization, Enterprises enterprise, ConfSetup business) {
-        return new HeartHelpEnterpriseManagerWorkArea(userProcessContainer, enterprise,business, account);
+        return new EnterpriseManagerWorkPanel(userProcessContainer, enterprise,business, account);
     }
     @Override
     public String toString() {

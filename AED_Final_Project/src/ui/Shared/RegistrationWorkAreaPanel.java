@@ -266,7 +266,7 @@ public class RegistrationWorkAreaPanel extends javax.swing.JPanel {
         address1.setText("Address Line1 : ");
 
         buttonGroup1.add(isHelpSeeker);
-        isHelpSeeker.setText("I Need Help");
+        isHelpSeeker.setText("Patient");
         isHelpSeeker.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 isHelpSeekerActionPerformed(evt);
@@ -274,7 +274,7 @@ public class RegistrationWorkAreaPanel extends javax.swing.JPanel {
         });
 
         buttonGroup1.add(isVolunteer);
-        isVolunteer.setText("I am a Volunteer");
+        isVolunteer.setText("Volunteer");
         isVolunteer.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 isVolunteerActionPerformed(evt);
@@ -284,7 +284,7 @@ public class RegistrationWorkAreaPanel extends javax.swing.JPanel {
         helpSeekerPane.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         jLabel7.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
-        jLabel7.setText("Create User Account:");
+        jLabel7.setText("User Credentials:");
 
         passwordField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -371,7 +371,7 @@ public class RegistrationWorkAreaPanel extends javax.swing.JPanel {
         );
 
         manageEnt.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
-        manageEnt.setText("Welcome to Heart Help");
+        manageEnt.setText("StepOne Registration");
 
         jLabel1.setText("Gender:");
 
@@ -399,7 +399,7 @@ public class RegistrationWorkAreaPanel extends javax.swing.JPanel {
         });
 
         buttonGroup1.add(isDoctorRadioBtn);
-        isDoctorRadioBtn.setText("I am a Doctor");
+        isDoctorRadioBtn.setText("Doctor");
         isDoctorRadioBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 isDoctorRadioBtnActionPerformed(evt);
@@ -428,7 +428,7 @@ public class RegistrationWorkAreaPanel extends javax.swing.JPanel {
                             .addComponent(isVolunteer)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                             .addComponent(isDoctorRadioBtn)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 6, Short.MAX_VALUE))
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 169, Short.MAX_VALUE))
                         .addGroup(layout.createSequentialGroup()
                             .addGap(0, 353, Short.MAX_VALUE)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -507,8 +507,8 @@ public class RegistrationWorkAreaPanel extends javax.swing.JPanel {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(manageEnt, javax.swing.GroupLayout.PREFERRED_SIZE, 296, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(431, 431, 431))
+                .addComponent(manageEnt, javax.swing.GroupLayout.PREFERRED_SIZE, 254, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(473, 473, 473))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

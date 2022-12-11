@@ -101,7 +101,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Malayalam MN" size="24" style="3"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Search For Volunteer"/>
+        <Property name="text" type="java.lang.String" value="Find Volunteer"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="manageEnt2">
@@ -109,12 +109,12 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Malayalam MN" size="24" style="3"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Heart Help"/>
+        <Property name="text" type="java.lang.String" value="StepOne App"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Network:"/>
+        <Property name="text" type="java.lang.String" value="Coverage:"/>
       </Properties>
     </Component>
     <Container class="javax.swing.JScrollPane" name="jScrollPane1">
@@ -181,7 +181,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="requestVolunteerHelpbtn">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Request Volunteer For Help"/>
+        <Property name="text" type="java.lang.String" value="Request Volunteer Service"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="requestVolunteerHelpbtnActionPerformed"/>

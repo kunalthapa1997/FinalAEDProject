@@ -9,7 +9,7 @@ import backend.enterprises.Enterprises;
 import backend.organizations.Organization;
 import backend.account.UserAcc;
 import javax.swing.JPanel;
-import userInterface.adminRole.AdminWorkAreaJPanel;
+import ui.RoleAdmin.AdminAreaPanel;
 /**
  *
  * @author kunal
@@ -18,7 +18,7 @@ public class AdminRole extends Role{
         @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAcc account, 
             Organization organization, Enterprises enterprise, ConfSetup business) {
-        return new AdminRole(userProcessContainer, enterprise, account);
+        return new AdminAreaPanel(userProcessContainer, enterprise, account);
     }
     @Override
     public String toString() {

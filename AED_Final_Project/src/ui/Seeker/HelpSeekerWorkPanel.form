@@ -64,7 +64,7 @@
   <SubComponents>
     <Component class="javax.swing.JButton" name="manageHelpSeekerProfile">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Manage Profile and Vital Signs"/>
+        <Property name="text" type="java.lang.String" value="Profile and Vital Signs Information"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="manageHelpSeekerProfileActionPerformed"/>
@@ -72,7 +72,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="writeTestimonialForVolBtn">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Write Testimonial for Volunteer"/>
+        <Property name="text" type="java.lang.String" value="Give Volunteer Feedback"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="writeTestimonialForVolBtnActionPerformed"/>
@@ -83,7 +83,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Malayalam MN" size="24" style="3"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Help Seeker Work Area"/>
+        <Property name="text" type="java.lang.String" value="Patient Operations"/>
       </Properties>
     </Component>
     <Container class="javax.swing.JPanel" name="alertsPanel">
@@ -108,7 +108,7 @@
     </Container>
     <Component class="javax.swing.JButton" name="manageHelpFromVolunteer">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Manage Help From Volunteer"/>
+        <Property name="text" type="java.lang.String" value="Request Volunteer Service"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="manageHelpFromVolunteerActionPerformed"/>

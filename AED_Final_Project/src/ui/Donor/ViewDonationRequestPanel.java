@@ -20,7 +20,7 @@ import java.awt.RenderingHints;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
-import userInterface.helpSeeker.ViewHelpSeekerProfile;
+import ui.Seeker.DisplayHelpSeekerPro;
 
 /**
  *
@@ -289,7 +289,7 @@ public class ViewDonationRequestPanel extends javax.swing.JPanel {
 
         DeviceTask request = (DeviceTask)workRequestJTable.getValueAt(selectedRow, 0);
         UserAcc ua = (UserAcc)request.getSender();
-        ViewHelpSeekerProfile viewHelpSeekerProfile = new ViewHelpSeekerProfile(userProcessContainer, ua);
+        DisplayHelpSeekerPro viewHelpSeekerProfile = new DisplayHelpSeekerPro(userProcessContainer, ua);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         userProcessContainer.add("ViewHelpSeekerProfile", viewHelpSeekerProfile);
         layout.next(userProcessContainer);

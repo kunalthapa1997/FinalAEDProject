@@ -29,9 +29,9 @@
           <Group type="102" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="365" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="355" max="-2" attributes="0"/>
                       <Component id="manageEnt1" min="-2" pref="155" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
                       <Component id="emailID" min="-2" pref="101" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                       <Component id="emailIDField" min="-2" pref="174" max="-2" attributes="0"/>
@@ -64,20 +64,20 @@
                                   <Group type="102" alignment="1" attributes="0">
                                       <Group type="103" groupAlignment="1" attributes="0">
                                           <Group type="102" alignment="1" attributes="0">
-                                              <Group type="103" groupAlignment="1" attributes="0">
-                                                  <Component id="LastName" alignment="1" min="-2" pref="194" max="-2" attributes="0"/>
-                                                  <Component id="firstName" alignment="1" min="-2" pref="194" max="-2" attributes="0"/>
-                                                  <Component id="viewYourProfile1" alignment="1" min="-2" max="-2" attributes="0"/>
-                                              </Group>
-                                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          </Group>
-                                          <Group type="102" alignment="1" attributes="0">
                                               <Group type="103" groupAlignment="0" attributes="0">
                                                   <Component id="occupation" alignment="0" min="-2" max="-2" attributes="0"/>
                                                   <Component id="areaCode" alignment="0" min="-2" max="-2" attributes="0"/>
                                                   <Component id="phoneNumber" alignment="0" min="-2" max="-2" attributes="0"/>
                                               </Group>
                                               <EmptySpace min="-2" pref="114" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <Group type="103" groupAlignment="1" attributes="0">
+                                                  <Component id="LastName" alignment="1" min="-2" pref="194" max="-2" attributes="0"/>
+                                                  <Component id="firstName" alignment="1" min="-2" pref="194" max="-2" attributes="0"/>
+                                                  <Component id="viewYourProfile1" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
                                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -355,7 +355,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Malayalam MN" size="24" style="3"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Heart Help"/>
+        <Property name="text" type="java.lang.String" value="StepOne App"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="gender">

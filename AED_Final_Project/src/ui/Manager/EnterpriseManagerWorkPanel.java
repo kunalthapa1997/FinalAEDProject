@@ -286,7 +286,7 @@ public class EnterpriseManagerWorkPanel extends javax.swing.JPanel {
         JOptionPane.showMessageDialog(null, " No Data to display as of now!","warning", JOptionPane.WARNING_MESSAGE);
         return;     
        }
-        ViewDetailedReportJPanel vdrjp = new ViewDetailedReportJPanel(userProcessContainer, topVolunteeerList, topDonorList);
+        DisplayReportPanel vdrjp = new DisplayReportPanel(userProcessContainer, topVolunteeerList, topDonorList);
         userProcessContainer.add("ViewDetailedReportJPanel", vdrjp);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.next(userProcessContainer);

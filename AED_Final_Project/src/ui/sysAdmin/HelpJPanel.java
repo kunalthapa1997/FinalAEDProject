@@ -27,7 +27,7 @@ public class HelpJPanel extends javax.swing.JPanel {
     /**
      * Creates new form HelpJPanel
      */
-    public HelpJPanel() {
+    public HelpJPanel(JPanel userProcessContainer, ConfSetup system) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.system = system;

@@ -103,14 +103,14 @@ public class DisplayVitalSignInformationPanel extends javax.swing.JPanel {
         manageEnt1 = new javax.swing.JLabel();
         backJButton = new javax.swing.JButton();
 
-        getAlert2.setText("Get alert from Heart Help:");
+        getAlert2.setText("Accept alert from Stepone");
 
-        getAlert3.setText("Sensor device to track Vital Signs");
+        getAlert3.setText("Device to track Vital Signs");
 
         getAlertJRadioNo1.setText("No");
         getAlertJRadioNo1.setEnabled(false);
 
-        jLabel2.setText("Vital Signs you would like to track:");
+        jLabel2.setText("Critical Vital Signs:");
 
         hasSensorRadioNo1.setText("No");
         hasSensorRadioNo1.setEnabled(false);
@@ -131,7 +131,7 @@ public class DisplayVitalSignInformationPanel extends javax.swing.JPanel {
         getAlertJRadioYes1.setEnabled(false);
 
         manageEnt1.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
-        manageEnt1.setText("Heart Help");
+        manageEnt1.setText("Stepone Application");
 
         backJButton.setText("<< Back");
         backJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -168,11 +168,11 @@ public class DisplayVitalSignInformationPanel extends javax.swing.JPanel {
                             .addComponent(getAlert2)
                             .addComponent(getAlert3, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(349, 349, 349)
-                        .addComponent(manageEnt1, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
                         .addGap(32, 32, 32)
-                        .addComponent(backJButton)))
+                        .addComponent(backJButton))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(349, 349, 349)
+                        .addComponent(manageEnt1)))
                 .addContainerGap(263, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(

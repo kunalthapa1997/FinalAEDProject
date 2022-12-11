@@ -25,7 +25,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
-import userInterface.sensorPckg.ManageHelpSeekerProfileJPanel;
+import ui.Sensor.SeekerProfilePanel;
 
 /**
  *
@@ -217,14 +217,14 @@ public class HelpSeekerWorkPanel extends javax.swing.JPanel {
         alertsPanel = new javax.swing.JPanel();
         manageHelpFromVolunteer = new javax.swing.JButton();
 
-        manageHelpSeekerProfile.setText("Manage Profile and Vital Signs");
+        manageHelpSeekerProfile.setText("Profile and Vital Signs Information");
         manageHelpSeekerProfile.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 manageHelpSeekerProfileActionPerformed(evt);
             }
         });
 
-        writeTestimonialForVolBtn.setText("Write Testimonial for Volunteer");
+        writeTestimonialForVolBtn.setText("Give Volunteer Feedback");
         writeTestimonialForVolBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 writeTestimonialForVolBtnActionPerformed(evt);
@@ -232,7 +232,7 @@ public class HelpSeekerWorkPanel extends javax.swing.JPanel {
         });
 
         manageEnt.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
-        manageEnt.setText("Help Seeker Work Area");
+        manageEnt.setText("Patient Operations");
 
         alertsPanel.setBackground(new java.awt.Color(153, 204, 0));
 
@@ -247,7 +247,7 @@ public class HelpSeekerWorkPanel extends javax.swing.JPanel {
             .addGap(0, 497, Short.MAX_VALUE)
         );
 
-        manageHelpFromVolunteer.setText("Manage Help From Volunteer");
+        manageHelpFromVolunteer.setText("Request Volunteer Service");
         manageHelpFromVolunteer.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 manageHelpFromVolunteerActionPerformed(evt);
@@ -294,7 +294,7 @@ public class HelpSeekerWorkPanel extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void manageHelpSeekerProfileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_manageHelpSeekerProfileActionPerformed
-        ManageHelpSeekerProfileJPanel manageHelpSeekerProfileJPanel = new ManageHelpSeekerProfileJPanel(userProcessContainer, userAccount, enterprise, ecoSystem);
+        SeekerProfilePanel manageHelpSeekerProfileJPanel = new SeekerProfilePanel(userProcessContainer, userAccount, enterprise, ecoSystem);
          CardLayout layout = (CardLayout) userProcessContainer.getLayout();
          userProcessContainer.add("ManageHelpSeekerProfileJPanel", manageHelpSeekerProfileJPanel);
          layout.next(userProcessContainer);
@@ -302,7 +302,7 @@ public class HelpSeekerWorkPanel extends javax.swing.JPanel {
 
     private void writeTestimonialForVolBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_writeTestimonialForVolBtnActionPerformed
 
-        WriteTestimonialForVolJPanel writeTestimonialForVolJPanel = new WriteTestimonialForVolJPanel(userProcessContainer, userAccount);
+        TestimonialForVolunteerPanel writeTestimonialForVolJPanel = new TestimonialForVolunteerPanel(userProcessContainer, userAccount);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         userProcessContainer.add("WriteTestimonialForVolJPanel", writeTestimonialForVolJPanel);
         layout.next(userProcessContainer);

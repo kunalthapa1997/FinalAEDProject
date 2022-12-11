@@ -22,7 +22,7 @@ import java.util.Calendar;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
-import userInterface.volunteer.ViewVolunteerProfile;
+import ui.Worker.DisplayWorkerProf;
 
 /**
  *
@@ -125,17 +125,17 @@ public class TestimonialForVolunteerPanel extends javax.swing.JPanel {
         backJButton = new javax.swing.JButton();
 
         manageEnt.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
-        manageEnt.setText("Write Testimonial");
+        manageEnt.setText("Give Feedback");
 
         manageEnt1.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
-        manageEnt1.setText("Heart Help ");
+        manageEnt1.setText("StepOne App ");
 
         helpRequestsJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
             new String [] {
-                "Request ID", "Help Recieved", "Requested Date", "Volunteer Name", "Resolved Date"
+                "Service ID", "Service Recieved", "Requested Date", "Volunteer Name", "Resolved Date"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -148,7 +148,7 @@ public class TestimonialForVolunteerPanel extends javax.swing.JPanel {
         });
         jScrollPane2.setViewportView(helpRequestsJTable);
 
-        writeTestimonialBtn.setText("Write Testimonial");
+        writeTestimonialBtn.setText("Write Feedback");
         writeTestimonialBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 writeTestimonialBtnActionPerformed(evt);
@@ -168,7 +168,7 @@ public class TestimonialForVolunteerPanel extends javax.swing.JPanel {
 
         cancelBtn.setText("Cancel");
 
-        jLabel1.setText("Please enter characters below 500");
+        jLabel1.setText("Please enter characters below 1000");
 
         lastNameField.setEditable(false);
         lastNameField.setEnabled(false);
@@ -189,7 +189,7 @@ public class TestimonialForVolunteerPanel extends javax.swing.JPanel {
 
         firstName.setText("First Name:");
 
-        firstName1.setText("Help Recieved");
+        firstName1.setText("Service Recieved");
 
         serviceTypeTxtField.setEditable(false);
         serviceTypeTxtField.setEnabled(false);
@@ -198,12 +198,12 @@ public class TestimonialForVolunteerPanel extends javax.swing.JPanel {
         testiTxtAreaField.setRows(5);
         jScrollPane1.setViewportView(testiTxtAreaField);
 
-        LastName1.setText("Help Type:");
+        LastName1.setText("Service Type:");
 
         viewYourProfile1.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        viewYourProfile1.setText("Help Recieved:");
+        viewYourProfile1.setText("Service:");
 
-        LastName2.setText("Testimonial");
+        LastName2.setText("Feedback");
 
         writeTestPanel.setLayer(submitTestimnialBtn, javax.swing.JLayeredPane.DEFAULT_LAYER);
         writeTestPanel.setLayer(LastName, javax.swing.JLayeredPane.DEFAULT_LAYER);
@@ -342,7 +342,7 @@ public class TestimonialForVolunteerPanel extends javax.swing.JPanel {
                 .addGroup(layout.createSequentialGroup()
                     .addGap(377, 377, 377)
                     .addComponent(manageEnt1)
-                    .addContainerGap(609, Short.MAX_VALUE)))
+                    .addContainerGap(588, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -451,7 +451,7 @@ public class TestimonialForVolunteerPanel extends javax.swing.JPanel {
         }
         UserAcc volAccnt = (UserAcc)nhwr.getReceiver();
         
-        ViewVolunteerProfile viewVolunteerProfile = new ViewVolunteerProfile(userProcessContainer, volAccnt);
+        DisplayWorkerProf viewVolunteerProfile = new DisplayWorkerProf(userProcessContainer, volAccnt);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         userProcessContainer.add("ViewVolunteerProfile", viewVolunteerProfile);
         layout.next(userProcessContainer);
