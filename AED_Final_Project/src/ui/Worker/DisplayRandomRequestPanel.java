@@ -23,7 +23,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author tejageetla
+ * @author kunal
  */
 public class DisplayRandomRequestPanel extends javax.swing.JPanel {
     
@@ -165,28 +165,22 @@ public class DisplayRandomRequestPanel extends javax.swing.JPanel {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(48, 48, 48)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(layout.createSequentialGroup()
-                            .addGap(48, 48, 48)
-                            .addComponent(manageEnt, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(209, 209, 209)
+                            .addComponent(manageEnt, javax.swing.GroupLayout.PREFERRED_SIZE, 307, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(98, 98, 98)
                             .addComponent(refreshJButton))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(48, 48, 48)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(backJButton)
-                                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 496, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addComponent(backJButton)
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 496, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(manageEnt1, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(manageEnt1, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(viewHelpSeekerBtn)
-                                .addGap(47, 47, 47)
-                                .addComponent(assignJButton)
-                                .addGap(37, 37, 37)
-                                .addComponent(processHelpRquestJButton)))))
+                        .addComponent(viewHelpSeekerBtn)
+                        .addGap(47, 47, 47)
+                        .addComponent(assignJButton)
+                        .addGap(37, 37, 37)
+                        .addComponent(processHelpRquestJButton)))
                 .addContainerGap(394, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(

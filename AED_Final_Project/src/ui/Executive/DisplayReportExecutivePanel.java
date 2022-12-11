@@ -27,7 +27,7 @@ import org.jfree.data.general.DefaultPieDataset;
 
 /**
  *
- * @author tejageetla
+ * @author kunal
  */
 public class DisplayReportExecutivePanel extends javax.swing.JPanel {
     private HashMap<String,Integer> communitydetailsmap;

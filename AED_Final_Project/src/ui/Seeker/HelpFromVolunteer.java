@@ -18,7 +18,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author tejageetla
+ * @author kunal
  */
 public class HelpFromVolunteer extends javax.swing.JPanel {
     

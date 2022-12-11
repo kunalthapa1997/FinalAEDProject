@@ -25,7 +25,7 @@ import ui.Worker.DisplayWorkerProf;
 
 /**
  *
- * @author tejageetla
+ * @author kunal
  */
 public class SuperActionAreaPanel extends javax.swing.JPanel {
     private JPanel userProcessContainer;

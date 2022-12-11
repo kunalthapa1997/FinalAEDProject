@@ -24,7 +24,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author tejageetla
+ * @author kunal
  */
 public class doctorPanel extends javax.swing.JPanel {
     
@@ -404,7 +404,7 @@ public class doctorPanel extends javax.swing.JPanel {
         if(selectedRow >= 0)
         {
             VitalSign vitalSign = (VitalSign)vitalSignTable.getValueAt(selectedRow, 0);
-            respiratoryRateTextField.setText(String.valueOf(vitalSign.getRespiratoryRate()));
+            respiratoryRateTextField.setText(String.valueOf(vitalSign.getOxygenRate()));
             heartRateTextField.setText(String.valueOf(vitalSign.getHeartRate()));
             systollicBPTextField.setText(String.valueOf(vitalSign.getSystolicBloodpressure()));
             weightTextField.setText(String.valueOf(vitalSign.getWeightInPounds()));

@@ -24,7 +24,7 @@ import ui.Seeker.DisplayHelpSeekerPro;
 
 /**
  *
- * @author tejageetla
+ * @author kunal
  */
 public class ViewDonationRequestPanel extends javax.swing.JPanel {
      private JPanel userProcessContainer;

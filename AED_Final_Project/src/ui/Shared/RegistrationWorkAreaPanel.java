@@ -48,7 +48,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author tejageetla
+ * @author kunal
  */
 public class RegistrationWorkAreaPanel extends javax.swing.JPanel {
     

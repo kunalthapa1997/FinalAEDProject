@@ -25,7 +25,7 @@ public class SendMail {
      private static StringBuilder emailMsgTxt ;
         
         private static String emailSubjectTxt = "Thank you!";
-        private static String emailFromAddress = "hearthelpbyvolunteer@gmail.com";
+        private static String emailFromAddress = "steponefromvolunteer@gmail.com";
     
 
     public static String generatePassword(String name)

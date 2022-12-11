@@ -45,11 +45,11 @@ public class Measure extends Thread {
        
      }
      
-     if(vs.equals("Respiratory Rate"))
+     if(vs.equals("Oxygen Level"))
      {
       float respiratoryRate = (random.nextInt(20))+12;
   //    System.out.println("respiratoryRate >> "+ (float)(Math.random()*20)+12);
-       vitalSign.setRespiratoryRate(respiratoryRate);
+       vitalSign.setOxygenRate(respiratoryRate);
      }
     
       if(vs.equals("Weight"))

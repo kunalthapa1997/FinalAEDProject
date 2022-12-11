@@ -21,7 +21,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author tejageetla
+ * @author kunal
  */
 public class DonationHistory extends javax.swing.JPanel {
  private JPanel userProcessContainer;

@@ -39,7 +39,7 @@ import ui.Worker.DisplayWorkerProf;
 
 /**
  *
- * @author tejageetla
+ * @author kunal
  */
 public class FindVolunteerPanel extends javax.swing.JPanel implements JMapViewerEventListener{
     

@@ -30,7 +30,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author tejageetla
+ * @author kunal
  */
 public class ModifyHelpSeekerPro extends javax.swing.JPanel {
     

@@ -25,7 +25,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author tejageetla
+ * @author kunal
  */
 public class HandleHelpRequestPanel extends javax.swing.JPanel {
     

@@ -26,7 +26,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author tejageetla
+ * @author kunal
  */
 public class VitalSignPanel extends javax.swing.JPanel {
      
@@ -347,7 +347,7 @@ public class VitalSignPanel extends javax.swing.JPanel {
        if(shareVitalInfoJRadioYes.isSelected() && hasCardiacYes.isSelected())
        {
         person.setShareVitalInfo(true);
-        person.setHasCardiacProb(true);
+        person.setHasLungProb(true);
            
          boolean hR =  false;
          boolean bp = false;
@@ -526,7 +526,7 @@ public class VitalSignPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_backJButtonActionPerformed
 
     private void hasCardiacYesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hasCardiacYesActionPerformed
-        person.setHasCardiacProb(true);
+        person.setHasLungProb(true);
         if(shareVitalInfoJRadioYes.isSelected())
         {
         vitalSignPanel.setVisible(true);
@@ -534,7 +534,7 @@ public class VitalSignPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_hasCardiacYesActionPerformed
 
     private void hasCardiacRadioNoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hasCardiacRadioNoActionPerformed
-       person.setHasCardiacProb(false);
+       person.setHasLungProb(false);
         vitalSignPanel.setVisible(false);
     }//GEN-LAST:event_hasCardiacRadioNoActionPerformed
 

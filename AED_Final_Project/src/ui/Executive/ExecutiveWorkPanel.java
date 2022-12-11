@@ -26,7 +26,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author tejageetla
+ * @author kunal
  */
 public class ExecutiveWorkPanel extends javax.swing.JPanel {
     private JPanel userProcessContainer;
@@ -109,7 +109,7 @@ public class ExecutiveWorkPanel extends javax.swing.JPanel {
          {
           for(Enterprises enterprise : network.getEnterpriseDirectory().getEnterpriseList())
           {
-            if(enterprise.getEnterpriseType().equals(Enterprises.EnterpriseType.HeartHelp))
+            if(enterprise.getEnterpriseType().equals(Enterprises.EnterpriseType.StepOneService))
             {
             for(Organization organization : enterprise.getOrganizationDirectory().getOrganizationList())
             {
@@ -150,11 +150,11 @@ public class ExecutiveWorkPanel extends javax.swing.JPanel {
       HashMap<String,Integer> seniorHeartPatientMap = new HashMap<>();
        for(Seeker helpSeeker : helpSeekerOrganization.getPersonDirectory().getCustomerLsit())
           {
-           if(helpSeeker.isHasCardiacProb())     
+           if(helpSeeker.isHasLungProb())     
            {
             seniorCardiacProb ++;  
            } 
-           if(!helpSeeker.isHasCardiacProb())
+           if(!helpSeeker.isHasLungProb())
            {
             seniorNoCardiacProb ++;   
            }

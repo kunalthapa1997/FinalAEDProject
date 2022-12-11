@@ -30,7 +30,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author tejageetla
+ * @author kunal
  */
 public class DonationWorkPanel extends javax.swing.JPanel {
 

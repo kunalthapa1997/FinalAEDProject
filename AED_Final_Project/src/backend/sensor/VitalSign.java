@@ -17,11 +17,11 @@ public class VitalSign {
     private String timeStamp;
  
 
-    public float getRespiratoryRate() {
+    public float getOxygenRate() {
         return respiratoryRate;
     }
 
-    public void setRespiratoryRate(float respiratoryRate) {
+    public void setOxygenRate(float respiratoryRate) {
         this.respiratoryRate = respiratoryRate;
     }
 
