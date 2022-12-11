@@ -174,6 +174,7 @@ private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {
         if(request.getTestResult().equals(SupervisorWorkRequest.REQUEST_APPROVED))
         {
             
+        if(request.getTestResult().equals(SupervisorWorkRequest.REQUEST_APPROVED))
 
             String emailId = request.getSender().getPerson().getEmailId();
             String userName = request.getSender().getUserName();
@@ -181,9 +182,9 @@ private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {
 
             StringBuilder emailMsgTxt = new StringBuilder();
             emailMsgTxt.append("Your account is enabled. Please find username and password");
-            emailMsgTxt.append(System.lineSeparator());
+            //emailMsgTxt.append(System.lineSeparator());
             emailMsgTxt.append("username : ".concat(userName));
-            emailMsgTxt.append(System.lineSeparator());
+            //emailMsgTxt.append(System.lineSeparator());
             emailMsgTxt.append("password : ".concat(password));
             emailMsgTxt.append(System.lineSeparator());
             
