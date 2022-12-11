@@ -59,6 +59,7 @@ public class DonationHistory extends javax.swing.JPanel {
     
     public void populateDonationHistoryTable()
     {
+        //table model
         DefaultTableModel model = (DefaultTableModel)donorHistoryTable.getModel();
         model.setRowCount(0);
         DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy");

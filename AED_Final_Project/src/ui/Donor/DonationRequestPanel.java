@@ -161,6 +161,8 @@ public class DonationRequestPanel extends javax.swing.JPanel {
     private void submitJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitJButtonActionPerformed
         if(resultComboBox.getSelectedIndex()<0 || commentsJTextField.getText().trim().isEmpty())
         {
+            
+            //message display
             JOptionPane.showMessageDialog(null, "Please enter data in all fields", "warning", JOptionPane.WARNING_MESSAGE);
             return;
         }
