@@ -18,7 +18,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author tejageetla
+ * @author kunal
  */
 public class DisplayVitalSignInformationPanel extends javax.swing.JPanel {
     private JPanel userProcessContainer;
@@ -36,7 +36,7 @@ public class DisplayVitalSignInformationPanel extends javax.swing.JPanel {
         person = userAccount.getPerson();
         
          Seeker customer = (Seeker)person;
-        if(customer.isShareVitalInfo() && customer.isHasCardiacProb())
+        if(customer.isShareVitalInfo() && customer.isHasLungProb())
         {
          for(String vs : customer.getVitalSignTrackList())
          {

@@ -30,7 +30,7 @@ import org.jfree.data.category.DefaultCategoryDataset;
 
 /**
  *
- * @author tejageetla
+ * @author kunal
  */
 public class DisplayVitalSignPanel extends javax.swing.JPanel {
     
@@ -289,7 +289,7 @@ public class DisplayVitalSignPanel extends javax.swing.JPanel {
         if(selectedRow >= 0)
         {
             VitalSign vitalSign = (VitalSign)vitalSignTable.getValueAt(selectedRow, 0);
-            respiratoryRateTextField.setText(String.valueOf(vitalSign.getRespiratoryRate()));
+            respiratoryRateTextField.setText(String.valueOf(vitalSign.getOxygenRate()));
             heartRateTextField.setText(String.valueOf(vitalSign.getHeartRate()));
             systollicBPTextField.setText(String.valueOf(vitalSign.getSystolicBloodpressure()));
             weightTextField.setText(String.valueOf(vitalSign.getWeightInPounds()));
@@ -316,7 +316,7 @@ public class DisplayVitalSignPanel extends javax.swing.JPanel {
         if(selectedRow >= 0)
         {
             VitalSign vitalSign = (VitalSign)vitalSignTable.getValueAt(selectedRow, 0);
-            float respiratoryRate = vitalSign.getRespiratoryRate();
+            float respiratoryRate = vitalSign.getOxygenRate();
             int heartRate = vitalSign.getHeartRate();
             int systollicBP = vitalSign.getSystolicBloodpressure();
             float weight = vitalSign.getWeightInPounds();

@@ -208,7 +208,7 @@ public class Validations {
          {
           for(Enterprises enterprise : network.getEnterpriseDirectory().getEnterpriseList())
           {
-            if(enterprise.getEnterpriseType().equals(Enterprises.EnterpriseType.HeartHelp))
+            if(enterprise.getEnterpriseType().equals(Enterprises.EnterpriseType.StepOneService))
             {
             for(Organization organization : enterprise.getOrganizationDirectory().getOrganizationList())
             {

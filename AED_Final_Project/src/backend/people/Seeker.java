@@ -21,7 +21,7 @@ public class Seeker extends Person{
     private static int count = 001;
     private boolean shareVitalInfo = false;
     private boolean hasSensorDevice = false;
-    private boolean hasCardiacProb = false;
+    private boolean hasLungProb = false;
     private boolean getAlerts = false;
     private ArrayList<VitalSign> vitalSignList;
     private ArrayList<String> vitalSignTrackList;
@@ -118,7 +118,7 @@ public class Seeker extends Person{
        float weightInPoundsValue; 
        String patientCondition = null;
       
-           respiratoryRateValue = patientVitalSign.getRespiratoryRate();
+           respiratoryRateValue = patientVitalSign.getOxygenRate();
            heartRateValue = patientVitalSign.getHeartRate();
            systolicBloodpressureValue = patientVitalSign.getSystolicBloodpressure();
            weightInPoundsValue = patientVitalSign.getWeightInPounds();
@@ -222,12 +222,12 @@ public class Seeker extends Person{
         this.getAlerts = getAlerts;
     }
 
-    public boolean isHasCardiacProb() {
-        return hasCardiacProb;
+    public boolean isHasLungProb() {
+        return hasLungProb;
     }
 
-    public void setHasCardiacProb(boolean hasCardiacProb) {
-        this.hasCardiacProb = hasCardiacProb;
+    public void setHasLungProb(boolean hasLungProb) {
+        this.hasLungProb = hasLungProb;
     }
 
     public boolean isSendDataToDoctor() {

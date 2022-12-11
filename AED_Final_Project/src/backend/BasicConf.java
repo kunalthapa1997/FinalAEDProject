@@ -37,10 +37,10 @@ public class BasicConf {
         ua.setEnabled(true);
         
         HelpRequired needHelp = system.addNeedHelp();
-        needHelp.setHelp("Snow Shovel");
-        needHelp.setHelp("Grass Cutting");
-        needHelp.setHelp("Gardening");
-        needHelp.setHelp("Grocery Shopping");
+        needHelp.setHelp("Medicines");
+        needHelp.setHelp("Isolation setup");
+        needHelp.setHelp("Oxygen Cylinder");
+        needHelp.setHelp("Food Supplies");
        
         
         Coverage network = system.addNetwork();
@@ -69,9 +69,9 @@ public class BasicConf {
         account.setEnabled(true);
         
       // Heart Help
-         enterprise = network.getEnterpriseDirectory().addEnterprise("BostonHeartHelp", Enterprises.EnterpriseType.HeartHelp);
+         enterprise = network.getEnterpriseDirectory().addEnterprise("BostonStepOne", Enterprises.EnterpriseType.StepOneService);
          person = enterprise.getPersonDirectory().addPerson();
-        person.setLastName("Heart Help Admin");
+        person.setLastName("StepOne Admin");
         person.setName();
          account = enterprise.getUserAccountDirectory().addUserAccount("bhh", "bhh", person, new AdminRole());
         account.setEnabled(true);

@@ -24,7 +24,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author tejageetla
+ * @author kunal
  */
 public class DisplayReportPanel extends javax.swing.JPanel {
      private List<Entry<String, Integer>> topVolunteeerList;

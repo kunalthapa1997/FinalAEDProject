@@ -30,7 +30,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author tejageetla
+ * @author kunal
  */
 public class EditWorkerProf extends javax.swing.JPanel {
     private JPanel userProcessContainer;

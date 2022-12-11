@@ -26,7 +26,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author tejageetla
+ * @author kunal
  */
 public class SuperProcessRequestPanel extends javax.swing.JPanel {
     

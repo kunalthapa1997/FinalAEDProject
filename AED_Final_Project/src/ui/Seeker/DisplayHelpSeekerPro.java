@@ -21,7 +21,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author tejageetla
+ * @author kunal
  */
 public class DisplayHelpSeekerPro extends javax.swing.JPanel {
       private JPanel userProcessContainer;

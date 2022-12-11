@@ -29,7 +29,7 @@ import ui.Sensor.SeekerProfilePanel;
 
 /**
  *
- * @author tejageetla
+ * @author kunal
  */
 public class HelpSeekerWorkPanel extends javax.swing.JPanel {
 

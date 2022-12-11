@@ -69,7 +69,7 @@ public class OrganizationPanel extends javax.swing.JPanel {
             {
               organizationJComboBox.addItem(Type.Donor);
             }
-            else if(enterprise.getEnterpriseType().getValue().equals(EnterpriseType.HeartHelp.getValue()))
+            else if(enterprise.getEnterpriseType().getValue().equals(EnterpriseType.StepOneService.getValue()))
             {
              organizationJComboBox.addItem(Type.HelpSeeker);  
              organizationJComboBox.addItem(Type.Supervisor); 

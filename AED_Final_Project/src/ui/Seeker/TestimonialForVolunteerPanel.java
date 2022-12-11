@@ -26,7 +26,7 @@ import ui.Worker.DisplayWorkerProf;
 
 /**
  *
- * @author tejageetla
+ * @author kunal
  */
 public class TestimonialForVolunteerPanel extends javax.swing.JPanel {
        

@@ -26,7 +26,7 @@ import ui.Worker.DisplayWorkerProf;
 
 /**
  *
- * @author tejageetla
+ * @author kunal
  */
 public class TransporterPanel extends javax.swing.JPanel {
    private JPanel userProcessContainer;

@@ -22,7 +22,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author tejageetla
+ * @author kunal
  */
 public class WorkerWorkPanel extends javax.swing.JPanel {
     

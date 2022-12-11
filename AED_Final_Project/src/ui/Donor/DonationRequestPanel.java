@@ -24,7 +24,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author tejageetla
+ * @author kunal
  */
 public class DonationRequestPanel extends javax.swing.JPanel {
     

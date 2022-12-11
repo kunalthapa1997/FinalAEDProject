@@ -28,7 +28,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author tejageetla
+ * @author kunal
  */
 public class MakeSupervisorProPanel extends javax.swing.JPanel {
      private JPanel userProcessContainer;

@@ -23,7 +23,7 @@ import ui.Seeker.DisplayVitalSignInformationPanel;
 
 /**
  *
- * @author tejageetla
+ * @author kunal
  */
 public class SeekerProfilePanel extends javax.swing.JPanel {
        private JPanel userProcessContainer;

@@ -24,7 +24,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author tejageetla
+ * @author kunal
  */
 public class VitalDataToDoctorPanel extends javax.swing.JPanel {
       private JPanel userProcessContainer;

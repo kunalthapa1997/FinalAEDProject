@@ -19,7 +19,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author tejageetla
+ * @author kunal
  */
 public class DisplayWorkerProf extends javax.swing.JPanel {
     
