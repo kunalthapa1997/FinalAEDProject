@@ -99,7 +99,7 @@ public class AdminAreaPanel extends javax.swing.JPanel {
         enterpriseLabel.setText("Enterprise");
 
         manageEnt2.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
-        manageEnt2.setText("Heart Help Admin Work Area");
+        manageEnt2.setText("StepOne Admin Operations");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -122,8 +122,8 @@ public class AdminAreaPanel extends javax.swing.JPanel {
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel1Layout.createSequentialGroup()
                     .addGap(196, 196, 196)
-                    .addComponent(manageEnt2, javax.swing.GroupLayout.PREFERRED_SIZE, 394, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(592, Short.MAX_VALUE)))
+                    .addComponent(manageEnt2, javax.swing.GroupLayout.PREFERRED_SIZE, 324, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(662, Short.MAX_VALUE)))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

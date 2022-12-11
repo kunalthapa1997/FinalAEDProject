@@ -59,7 +59,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Malayalam MN" size="24" style="3"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Mayor Work Area"/>
+        <Property name="text" type="java.lang.String" value="Executive Operations"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="viewDetailedRprtMayorBtn">
@@ -89,10 +89,10 @@
           <Properties>
             <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
               <Table columnCount="4" rowCount="0">
-                <Column editable="false" title="Total Senior People" type="java.lang.Object"/>
+                <Column editable="false" title="Total People" type="java.lang.Object"/>
                 <Column editable="false" title="Average age " type="java.lang.Object"/>
-                <Column editable="false" title="Seniors with Heart problem" type="java.lang.Object"/>
-                <Column editable="false" title="Seniors with no health problems" type="java.lang.Object"/>
+                <Column editable="false" title="Pateints" type="java.lang.Object"/>
+                <Column editable="false" title="Not a Patient" type="java.lang.Object"/>
               </Table>
             </Property>
             <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">

@@ -21,14 +21,12 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author kunal
  */
-public class NetworkJPanel extends javax.swing.JPanel {
+public class CoveragePanel extends javax.swing.JPanel {
 
     private JPanel userProcessContainer;
     private ConfSetup system;
-    /**
-     * Creates new form NetworkJPanel
-     */
-    public NetworkJPanel(JPanel userProcessContainer, ConfSetup system) {
+
+    public CoveragePanel(JPanel userProcessContainer, ConfSetup system) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.system = system;
@@ -131,7 +129,7 @@ public class NetworkJPanel extends javax.swing.JPanel {
         jScrollPane1.setViewportView(networkJTable);
 
         jLabel4.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
-        jLabel4.setText("View Network List:");
+        jLabel4.setText("Coverage List:");
 
         backJButton.setText("<< Back");
         backJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -163,7 +161,7 @@ public class NetworkJPanel extends javax.swing.JPanel {
         });
 
         jLabel2.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
-        jLabel2.setText("Add New Network");
+        jLabel2.setText("Add New Coverage Zone");
 
         cityComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { " " }));
         cityComboBox.addActionListener(new java.awt.event.ActionListener() {
@@ -194,27 +192,24 @@ public class NetworkJPanel extends javax.swing.JPanel {
         jLayeredPane1Layout.setHorizontalGroup(
             jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jLayeredPane1Layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(24, 24, 24)
                 .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jLayeredPane1Layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(state)
-                            .addComponent(country)
-                            .addComponent(city))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(countryComboBox, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(cityComboBox, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(statesComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jLayeredPane1Layout.createSequentialGroup()
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 31, Short.MAX_VALUE)))
+                    .addComponent(state)
+                    .addComponent(country)
+                    .addComponent(city))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
+                .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(countryComboBox, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cityComboBox, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(statesComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(53, Short.MAX_VALUE))
             .addGroup(jLayeredPane1Layout.createSequentialGroup()
                 .addGap(103, 103, 103)
                 .addComponent(submitJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(jLayeredPane1Layout.createSequentialGroup()
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 293, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jLayeredPane1Layout.setVerticalGroup(
             jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -246,7 +241,7 @@ public class NetworkJPanel extends javax.swing.JPanel {
         });
 
         jLabel5.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
-        jLabel5.setText("Manage Networks:");
+        jLabel5.setText("Manage Coverage:");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);

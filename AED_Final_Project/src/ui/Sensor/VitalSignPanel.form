@@ -48,8 +48,8 @@
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="228" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Group type="102" alignment="1" attributes="0">
+                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                          <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="365" pref="365" max="-2" attributes="0"/>
@@ -60,9 +60,9 @@
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Component id="hasCardiacRadioNo" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="102" alignment="1" attributes="0">
+                          <Group type="102" attributes="0">
                               <Component id="shareInfo" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
                               <Component id="shareVitalInfoJRadioYes" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Component id="shareVitalInfoJRadioNo" min="-2" max="-2" attributes="0"/>
@@ -171,13 +171,20 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="vitalSignsTrck" min="-2" pref="307" max="-2" attributes="0"/>
-                      <Component id="sensorDevice" alignment="0" min="-2" pref="302" max="-2" attributes="0"/>
-                      <Component id="getAlert" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="vitalSignsTrck" min="-2" pref="307" max="-2" attributes="0"/>
+                              <Component id="sensorDevice" min="-2" pref="302" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                          <Component id="getAlert" min="-2" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
-                  <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
+                  <EmptySpace pref="44" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="weightCheckBox" min="-2" max="-2" attributes="0"/>
                       <Component id="sysBPCheckBox" min="-2" max="-2" attributes="0"/>
@@ -201,12 +208,10 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
                   <EmptySpace pref="22" max="32767" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="sensorDevice" min="-2" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="hasSensorRadioYes" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="hasSensorRadioNo" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="hasSensorRadioYes" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="hasSensorRadioNo" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="sensorDevice" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
@@ -244,8 +249,11 @@
         </Component>
         <Component class="javax.swing.JCheckBox" name="respRateCheckBox">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Respiratory Rate"/>
+            <Property name="text" type="java.lang.String" value="Oxygen Level"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="respRateCheckBoxActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="getAlertJRadioYes">
           <Properties>
@@ -270,7 +278,7 @@
         </Component>
         <Component class="javax.swing.JLabel" name="getAlert">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Would you like to get alert from Heart Help:"/>
+            <Property name="text" type="java.lang.String" value="Would you like to get alert from StepOne:"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="sensorDevice">
@@ -322,7 +330,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="cardiacProblems">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Do you have Cardiac problems "/>
+        <Property name="text" type="java.lang.String" value="Do you have lung problems "/>
       </Properties>
     </Component>
     <Component class="javax.swing.JRadioButton" name="hasCardiacYes">

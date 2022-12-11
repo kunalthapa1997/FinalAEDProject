@@ -206,7 +206,7 @@ public class ExecutiveWorkPanel extends javax.swing.JPanel {
         communityHealthTable = new javax.swing.JTable();
 
         jLabel6.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
-        jLabel6.setText("Mayor Work Area");
+        jLabel6.setText("Executive Operations");
 
         viewDetailedRprtMayorBtn.setText("View Detailed Report");
         viewDetailedRprtMayorBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -223,7 +223,7 @@ public class ExecutiveWorkPanel extends javax.swing.JPanel {
 
             },
             new String [] {
-                "Total Senior People", "Average age ", "Seniors with Heart problem", "Seniors with no health problems"
+                "Total People", "Average age ", "Pateints", "Not a Patient"
             }
         ) {
             boolean[] canEdit = new boolean [] {

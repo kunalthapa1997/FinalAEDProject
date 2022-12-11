@@ -127,7 +127,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Malayalam MN" size="24" style="3"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Heart Help Manager Work Area"/>
+        <Property name="text" type="java.lang.String" value="StepOne Manager Operations"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="manageEnt2">
@@ -155,7 +155,7 @@
     </Container>
     <Component class="javax.swing.JButton" name="top3VolunteersBtn">
       <Properties>
-        <Property name="text" type="java.lang.String" value="View Top 3 Volunteers"/>
+        <Property name="text" type="java.lang.String" value="Display Top 3 Volunteers"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="top3VolunteersBtnActionPerformed"/>
@@ -166,7 +166,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Malayalam MN" size="18" style="3"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Total No of Help Requests"/>
+        <Property name="text" type="java.lang.String" value="Total No of Service Requests"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="totSenDevReq">
@@ -211,7 +211,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="findTop3Donors">
       <Properties>
-        <Property name="text" type="java.lang.String" value="View Top 3 Donors"/>
+        <Property name="text" type="java.lang.String" value="Display Top 3 Donors"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="findTop3DonorsActionPerformed"/>

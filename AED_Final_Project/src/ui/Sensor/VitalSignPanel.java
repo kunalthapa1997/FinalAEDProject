@@ -144,7 +144,12 @@ public class VitalSignPanel extends javax.swing.JPanel {
             }
         });
 
-        respRateCheckBox.setText("Respiratory Rate");
+        respRateCheckBox.setText("Oxygen Level");
+        respRateCheckBox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                respRateCheckBoxActionPerformed(evt);
+            }
+        });
 
         getAlertsGroup.add(getAlertJRadioYes);
         getAlertJRadioYes.setText("Yes");
@@ -158,7 +163,7 @@ public class VitalSignPanel extends javax.swing.JPanel {
 
         weightCheckBox.setText("Weight");
 
-        getAlert.setText("Would you like to get alert from Heart Help:");
+        getAlert.setText("Would you like to get alert from StepOne:");
 
         sensorDevice.setText("Do you have a sensor device to track Vital Signs");
 
@@ -187,12 +192,16 @@ public class VitalSignPanel extends javax.swing.JPanel {
         vitalSignPanelLayout.setHorizontalGroup(
             vitalSignPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(vitalSignPanelLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(vitalSignPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(vitalSignsTrck, javax.swing.GroupLayout.PREFERRED_SIZE, 307, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(sensorDevice, javax.swing.GroupLayout.PREFERRED_SIZE, 302, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(getAlert))
-                .addGap(58, 58, 58)
+                    .addGroup(vitalSignPanelLayout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addGroup(vitalSignPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(vitalSignsTrck, javax.swing.GroupLayout.PREFERRED_SIZE, 307, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(sensorDevice, javax.swing.GroupLayout.PREFERRED_SIZE, 302, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(vitalSignPanelLayout.createSequentialGroup()
+                        .addGap(28, 28, 28)
+                        .addComponent(getAlert)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
                 .addGroup(vitalSignPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(weightCheckBox)
                     .addComponent(sysBPCheckBox)
@@ -211,11 +220,10 @@ public class VitalSignPanel extends javax.swing.JPanel {
             vitalSignPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(vitalSignPanelLayout.createSequentialGroup()
                 .addContainerGap(22, Short.MAX_VALUE)
-                .addGroup(vitalSignPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(sensorDevice)
-                    .addGroup(vitalSignPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(hasSensorRadioYes)
-                        .addComponent(hasSensorRadioNo)))
+                .addGroup(vitalSignPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(hasSensorRadioYes)
+                    .addComponent(hasSensorRadioNo)
+                    .addComponent(sensorDevice))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(vitalSignPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(vitalSignsTrck)
@@ -241,7 +249,7 @@ public class VitalSignPanel extends javax.swing.JPanel {
             }
         });
 
-        cardiacProblems.setText("Do you have Cardiac problems ");
+        cardiacProblems.setText("Do you have lung problems ");
 
         hasCardiacProbGroup.add(hasCardiacYes);
         hasCardiacYes.setText("Yes");
@@ -280,7 +288,7 @@ public class VitalSignPanel extends javax.swing.JPanel {
                         .addComponent(cancelJBtn))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(228, 228, 228)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
@@ -291,7 +299,7 @@ public class VitalSignPanel extends javax.swing.JPanel {
                                 .addComponent(hasCardiacRadioNo))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(shareInfo)
-                                .addGap(18, 18, 18)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(shareVitalInfoJRadioYes)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(shareVitalInfoJRadioNo)))))
@@ -529,6 +537,10 @@ public class VitalSignPanel extends javax.swing.JPanel {
        person.setHasCardiacProb(false);
         vitalSignPanel.setVisible(false);
     }//GEN-LAST:event_hasCardiacRadioNoActionPerformed
+
+    private void respRateCheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_respRateCheckBoxActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_respRateCheckBoxActionPerformed
   
     
   

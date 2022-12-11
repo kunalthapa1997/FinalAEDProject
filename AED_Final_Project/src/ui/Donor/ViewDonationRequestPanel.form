@@ -35,8 +35,8 @@
                       <Component id="jScrollPane1" min="-2" pref="584" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="218" max="-2" attributes="0"/>
-                      <Component id="donationREq" min="-2" pref="355" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="298" max="-2" attributes="0"/>
+                      <Component id="donationREq" min="-2" pref="216" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace pref="205" max="32767" attributes="0"/>
@@ -53,9 +53,9 @@
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
               <Component id="donationREq" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
               <Component id="jScrollPane1" min="-2" pref="169" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -63,7 +63,7 @@
                   <Component id="assignJButton" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="processJButton" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="124" max="32767" attributes="0"/>
+              <EmptySpace pref="133" max="32767" attributes="0"/>
               <Component id="backJButton" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
           </Group>
@@ -83,12 +83,12 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Malayalam MN" size="24" style="3"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Process Donation Requests:"/>
+        <Property name="text" type="java.lang.String" value="Donation History:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="assignJButton">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Assign to me"/>
+        <Property name="text" type="java.lang.String" value="Assign"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="assignJButtonActionPerformed"/>
@@ -136,7 +136,7 @@
     </Container>
     <Component class="javax.swing.JButton" name="viewAndUpdateProfileBtn">
       <Properties>
-        <Property name="text" type="java.lang.String" value="View Help Seeker Profile"/>
+        <Property name="text" type="java.lang.String" value="View Patient Profile"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="viewAndUpdateProfileBtnActionPerformed"/>

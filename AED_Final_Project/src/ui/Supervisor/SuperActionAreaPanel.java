@@ -148,19 +148,19 @@ public class SuperActionAreaPanel extends javax.swing.JPanel {
         jScrollPane1.setViewportView(workRequestJTable);
 
         jLabel6.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
-        jLabel6.setText("Supervisor Work Area");
+        jLabel6.setText("Supervisor Operations");
 
         jLabel7.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
-        jLabel7.setText("Work Requests:");
+        jLabel7.setText("Service Requests:");
 
-        assignJButton.setText("Assign to me");
+        assignJButton.setText("Assign ");
         assignJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 assignJButtonActionPerformed(evt);
             }
         });
 
-        processJButton.setText("Process");
+        processJButton.setText("Execute");
         processJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 processJButtonActionPerformed(evt);
@@ -215,12 +215,12 @@ public class SuperActionAreaPanel extends javax.swing.JPanel {
                         .addGap(48, 48, 48)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(viewReqToBeProcessedBtn))
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addGap(265, 265, 265)
+                                        .addGap(259, 259, 259)
                                         .addComponent(refreshJButton))
                                     .addGroup(layout.createSequentialGroup()
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)

@@ -137,7 +137,7 @@ public class DonationWorkPanel extends javax.swing.JPanel {
         name.setText("Enter Name");
 
         toAccntNumber.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        toAccntNumber.setText("To Account Number");
+        toAccntNumber.setText("To Acc No.");
 
         toAccntNumberField.setEditable(false);
         toAccntNumberField.setBackground(new java.awt.Color(204, 255, 204));

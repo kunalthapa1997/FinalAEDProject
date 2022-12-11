@@ -126,7 +126,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Malayalam MN" size="24" style="3"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="View Network List:"/>
+            <Property name="text" type="java.lang.String" value="Coverage List:"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="backJButton">
@@ -150,26 +150,17 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="state" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="country" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="city" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace max="32767" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="countryComboBox" alignment="1" min="-2" pref="146" max="-2" attributes="0"/>
-                                  <Component id="cityComboBox" alignment="1" min="-2" pref="146" max="-2" attributes="0"/>
-                                  <Component id="statesComboBox" alignment="0" min="-2" pref="146" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jLabel2" min="-2" pref="240" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="31" max="32767" attributes="0"/>
-                          </Group>
+                          <Component id="state" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="country" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="city" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="59" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="countryComboBox" alignment="1" min="-2" pref="146" max="-2" attributes="0"/>
+                          <Component id="cityComboBox" alignment="1" min="-2" pref="146" max="-2" attributes="0"/>
+                          <Component id="statesComboBox" alignment="0" min="-2" pref="146" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace pref="53" max="32767" attributes="0"/>
                   </Group>
@@ -177,6 +168,10 @@
                       <EmptySpace min="-2" pref="103" max="-2" attributes="0"/>
                       <Component id="submitJButton" min="-2" pref="101" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="jLabel2" min="-2" pref="293" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -243,7 +238,7 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Malayalam MN" size="24" style="3"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Add New Network"/>
+                <Property name="text" type="java.lang.String" value="Add New Coverage Zone"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JComboBox" name="cityComboBox">
@@ -294,7 +289,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Malayalam MN" size="24" style="3"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Manage Networks:"/>
+            <Property name="text" type="java.lang.String" value="Manage Coverage:"/>
           </Properties>
         </Component>
       </SubComponents>

@@ -212,25 +212,25 @@ public class DisplayReportExecutivePanel extends javax.swing.JPanel {
         senSendDataToDocField.setBackground(new java.awt.Color(153, 204, 0));
 
         sendToDoc.setFont(new java.awt.Font("Malayalam MN", 3, 18)); // NOI18N
-        sendToDoc.setText("Total No of Seniors who send data to doctor");
+        sendToDoc.setText("Total no of patients who required doctor interaction");
 
         seniorsWithHeartPrbField.setEditable(false);
         seniorsWithHeartPrbField.setBackground(new java.awt.Color(153, 204, 0));
 
         totTransReq1.setFont(new java.awt.Font("Malayalam MN", 3, 18)); // NOI18N
-        totTransReq1.setText("Total No of Seniors who share Vital Info");
+        totTransReq1.setText("Patient with Common Vital Information");
 
         totalSeniorPpl.setFont(new java.awt.Font("Malayalam MN", 3, 18)); // NOI18N
-        totalSeniorPpl.setText("Total No of Senior People who are in need of Help");
+        totalSeniorPpl.setText("Total No of People who require services");
 
         senShareInfoField.setEditable(false);
         senShareInfoField.setBackground(new java.awt.Color(153, 204, 0));
 
         noheartPrblm.setFont(new java.awt.Font("Malayalam MN", 3, 18)); // NOI18N
-        noheartPrblm.setText("No of Senior people with no heart problem ");
+        noheartPrblm.setText("Not a Pateint ");
 
         hasHeartPblm.setFont(new java.awt.Font("Malayalam MN", 3, 18)); // NOI18N
-        hasHeartPblm.setText("No of Senior people with heart problem");
+        hasHeartPblm.setText("Patients");
 
         senWithNoHeartProbField.setEditable(false);
         senWithNoHeartProbField.setBackground(new java.awt.Color(153, 204, 0));
@@ -239,13 +239,13 @@ public class DisplayReportExecutivePanel extends javax.swing.JPanel {
         totSeniorPPLField.setBackground(new java.awt.Color(153, 204, 0));
 
         hasNoSensor.setFont(new java.awt.Font("Malayalam MN", 3, 18)); // NOI18N
-        hasNoSensor.setText("Total No of Seniors who dont have sensor device");
+        hasNoSensor.setText("Patient with no Vital Sign device");
 
         senWithSensorField.setEditable(false);
         senWithSensorField.setBackground(new java.awt.Color(153, 204, 0));
 
         hasSensor.setFont(new java.awt.Font("Malayalam MN", 3, 18)); // NOI18N
-        hasSensor.setText("Total No of seniors who has sensor device");
+        hasSensor.setText("Patients with Vital Sign device");
 
         senNoSensorDevField.setEditable(false);
         senNoSensorDevField.setBackground(new java.awt.Color(153, 204, 0));
@@ -271,15 +271,15 @@ public class DisplayReportExecutivePanel extends javax.swing.JPanel {
             jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jLayeredPane1Layout.createSequentialGroup()
                 .addGap(10, 10, 10)
-                .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(hasNoSensor)
-                    .addComponent(totalSeniorPpl, javax.swing.GroupLayout.PREFERRED_SIZE, 458, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(totalSeniorPpl, javax.swing.GroupLayout.DEFAULT_SIZE, 458, Short.MAX_VALUE)
                     .addComponent(hasHeartPblm, javax.swing.GroupLayout.PREFERRED_SIZE, 378, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addComponent(hasSensor, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(noheartPrblm, javax.swing.GroupLayout.Alignment.LEADING))
                     .addComponent(totTransReq1, javax.swing.GroupLayout.PREFERRED_SIZE, 399, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(sendToDoc, javax.swing.GroupLayout.PREFERRED_SIZE, 431, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(sendToDoc, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(18, 18, 18)
                 .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(senNoSensorDevField, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -343,7 +343,7 @@ public class DisplayReportExecutivePanel extends javax.swing.JPanel {
             }
         });
 
-        barchartBtn.setText("View Bar Chart");
+        barchartBtn.setText("View Analytics");
         barchartBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 barchartBtnActionPerformed(evt);

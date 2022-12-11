@@ -179,7 +179,7 @@ public class VitalDataToDoctorPanel extends javax.swing.JPanel {
         );
 
         getAlertFromHH.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
-        getAlertFromHH.setText("Send Vital Sign Data to Doctor");
+        getAlertFromHH.setText("Vital Sign Data to Doctor");
 
         backBtn.setText("<< Back");
         backBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -195,14 +195,14 @@ public class VitalDataToDoctorPanel extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(262, 262, 262)
-                        .addComponent(getAlertFromHH, javax.swing.GroupLayout.PREFERRED_SIZE, 384, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
                         .addGap(153, 153, 153)
                         .addComponent(sendToDoctorPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(67, 67, 67)
-                        .addComponent(backBtn)))
+                        .addComponent(backBtn))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(262, 262, 262)
+                        .addComponent(getAlertFromHH, javax.swing.GroupLayout.PREFERRED_SIZE, 294, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(209, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(

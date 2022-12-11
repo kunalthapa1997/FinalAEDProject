@@ -145,7 +145,7 @@ public class EnterpriseAdminJPanel extends javax.swing.JPanel {
 
             },
             new String [] {
-                "Enterprise Name", "Network", "Username"
+                "Enterprise Name", "Coverage", "Username"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -163,7 +163,7 @@ public class EnterpriseAdminJPanel extends javax.swing.JPanel {
 
         jLayeredPane1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jLabel1.setText("Network");
+        jLabel1.setText("Coverage");
 
         cancelJButton.setText("Cancel");
         cancelJButton.addActionListener(new java.awt.event.ActionListener() {

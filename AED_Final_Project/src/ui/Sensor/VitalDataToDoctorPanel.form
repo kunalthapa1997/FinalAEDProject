@@ -22,10 +22,6 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="262" max="-2" attributes="0"/>
-                      <Component id="getAlertFromHH" min="-2" pref="384" max="-2" attributes="0"/>
-                  </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="153" max="-2" attributes="0"/>
                       <Component id="sendToDoctorPanel" min="-2" max="-2" attributes="0"/>
@@ -33,6 +29,10 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
                       <Component id="backBtn" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="262" max="-2" attributes="0"/>
+                      <Component id="getAlertFromHH" min="-2" pref="294" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace pref="209" max="32767" attributes="0"/>
@@ -203,7 +203,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Malayalam MN" size="24" style="3"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Send Vital Sign Data to Doctor"/>
+        <Property name="text" type="java.lang.String" value="Vital Sign Data to Doctor"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="backBtn">

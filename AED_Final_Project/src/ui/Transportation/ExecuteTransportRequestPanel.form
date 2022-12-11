@@ -80,7 +80,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Malayalam MN" size="24" style="3"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Process Work Request:"/>
+        <Property name="text" type="java.lang.String" value="Execute Transport Request:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JComboBox" name="resultComboBox">
