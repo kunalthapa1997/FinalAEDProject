@@ -100,7 +100,7 @@ public class DonationRequestPanel extends javax.swing.JPanel {
             }
         });
 
-        jLabel1.setText("Request Result");
+        jLabel1.setText("Request");
 
         jLabel7.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
         jLabel7.setText("Process Donation Work Request:");

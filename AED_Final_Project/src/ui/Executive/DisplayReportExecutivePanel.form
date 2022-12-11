@@ -100,16 +100,16 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
                   <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
                       <Component id="hasNoSensor" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="totalSeniorPpl" min="-2" pref="458" max="-2" attributes="0"/>
+                      <Component id="totalSeniorPpl" pref="458" max="32767" attributes="0"/>
                       <Component id="hasHeartPblm" alignment="0" min="-2" pref="378" max="-2" attributes="0"/>
                       <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
                           <Component id="hasSensor" alignment="0" max="32767" attributes="0"/>
                           <Component id="noheartPrblm" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Component id="totTransReq1" alignment="0" min="-2" pref="399" max="-2" attributes="0"/>
-                      <Component id="sendToDoc" alignment="0" min="-2" pref="431" max="-2" attributes="0"/>
+                      <Component id="sendToDoc" alignment="0" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
@@ -182,7 +182,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Malayalam MN" size="18" style="3"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Total No of Seniors who send data to doctor"/>
+            <Property name="text" type="java.lang.String" value="Total no of patients who required doctor interaction"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="seniorsWithHeartPrbField">
@@ -198,7 +198,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Malayalam MN" size="18" style="3"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Total No of Seniors who share Vital Info"/>
+            <Property name="text" type="java.lang.String" value="Patient with Common Vital Information"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="totalSeniorPpl">
@@ -206,7 +206,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Malayalam MN" size="18" style="3"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Total No of Senior People who are in need of Help"/>
+            <Property name="text" type="java.lang.String" value="Total No of People who require services"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="senShareInfoField">
@@ -222,7 +222,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Malayalam MN" size="18" style="3"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="No of Senior people with no heart problem "/>
+            <Property name="text" type="java.lang.String" value="Not a Pateint "/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="hasHeartPblm">
@@ -230,7 +230,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Malayalam MN" size="18" style="3"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="No of Senior people with heart problem"/>
+            <Property name="text" type="java.lang.String" value="Patients"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="senWithNoHeartProbField">
@@ -254,7 +254,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Malayalam MN" size="18" style="3"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Total No of Seniors who dont have sensor device"/>
+            <Property name="text" type="java.lang.String" value="Patient with no Vital Sign device"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="senWithSensorField">
@@ -270,7 +270,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Malayalam MN" size="18" style="3"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Total No of seniors who has sensor device"/>
+            <Property name="text" type="java.lang.String" value="Patients with Vital Sign device"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="senNoSensorDevField">
@@ -308,7 +308,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="barchartBtn">
       <Properties>
-        <Property name="text" type="java.lang.String" value="View Bar Chart"/>
+        <Property name="text" type="java.lang.String" value="View Analytics"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="barchartBtnActionPerformed"/>

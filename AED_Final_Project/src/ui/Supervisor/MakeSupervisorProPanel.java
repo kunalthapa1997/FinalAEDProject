@@ -151,7 +151,7 @@ public class MakeSupervisorProPanel extends javax.swing.JPanel {
         occupation.setText("Occupation:");
 
         manageEnt.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
-        manageEnt.setText("Supervisor Work Area");
+        manageEnt.setText("Supervisor Creation");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);

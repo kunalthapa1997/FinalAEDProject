@@ -67,8 +67,8 @@
               <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="196" max="-2" attributes="0"/>
-                      <Component id="manageEnt2" min="-2" pref="394" max="-2" attributes="0"/>
-                      <EmptySpace pref="592" max="32767" attributes="0"/>
+                      <Component id="manageEnt2" min="-2" pref="324" max="-2" attributes="0"/>
+                      <EmptySpace pref="662" max="32767" attributes="0"/>
                   </Group>
               </Group>
           </Group>
@@ -145,7 +145,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Malayalam MN" size="24" style="3"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Heart Help Admin Work Area"/>
+            <Property name="text" type="java.lang.String" value="StepOne Admin Operations"/>
           </Properties>
         </Component>
       </SubComponents>

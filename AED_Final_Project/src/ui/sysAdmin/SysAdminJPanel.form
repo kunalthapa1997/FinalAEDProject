@@ -140,7 +140,7 @@
           <SubComponents>
             <Component class="javax.swing.JButton" name="manageNetworkJButton">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Manage Network"/>
+                <Property name="text" type="java.lang.String" value="Manage Coverage"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="manageNetworkJButtonActionPerformed"/>
@@ -156,7 +156,7 @@
             </Component>
             <Component class="javax.swing.JButton" name="manageEnterpriseJButton">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Manage Enterprise"/>
+                <Property name="text" type="java.lang.String" value="Manage Enterprises"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="manageEnterpriseJButtonActionPerformed"/>
@@ -177,12 +177,12 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Malayalam MN" size="24" style="3"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="System Admin Work Area"/>
+                <Property name="text" type="java.lang.String" value="System Admin Operations"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JButton" name="helpOfferedButton">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Create Help Offered "/>
+                <Property name="text" type="java.lang.String" value="Create Services Given "/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="helpOfferedButtonActionPerformed"/>

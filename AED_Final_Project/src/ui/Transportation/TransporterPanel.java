@@ -109,7 +109,7 @@ public class TransporterPanel extends javax.swing.JPanel {
 
             },
             new String [] {
-                "Destination Location", "Requestor", "Requested Date", "Status"
+                "Destination", "Requestor", "Requested Date", "Status"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -122,7 +122,7 @@ public class TransporterPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(transportRequestListTable);
 
-        processHelpRquestJButton.setText("Process");
+        processHelpRquestJButton.setText("Execute");
         processHelpRquestJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 processHelpRquestJButtonActionPerformed(evt);
@@ -136,7 +136,7 @@ public class TransporterPanel extends javax.swing.JPanel {
             }
         });
 
-        assignJButton.setText("Assign to me");
+        assignJButton.setText("Assign");
         assignJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 assignJButtonActionPerformed(evt);

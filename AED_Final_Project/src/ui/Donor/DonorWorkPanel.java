@@ -76,7 +76,7 @@ public class DonorWorkPanel extends javax.swing.JPanel {
         donateMoneyBtn = new javax.swing.JButton();
         viewProfileBtn = new javax.swing.JButton();
 
-        manageProfile.setText("Create Profile");
+        manageProfile.setText("Become a Donor");
         manageProfile.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 manageProfileActionPerformed(evt);
@@ -91,23 +91,23 @@ public class DonorWorkPanel extends javax.swing.JPanel {
         });
 
         manageEnt.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
-        manageEnt.setText("Donor Work Area");
+        manageEnt.setText("Donor Operations");
 
-        viewDonationRequestsBtn.setText("View Donation Requests");
+        viewDonationRequestsBtn.setText("Display Donation Requests");
         viewDonationRequestsBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 viewDonationRequestsBtnActionPerformed(evt);
             }
         });
 
-        donateMoneyBtn.setText("Donate Money");
+        donateMoneyBtn.setText("Donate Financially");
         donateMoneyBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 donateMoneyBtnActionPerformed(evt);
             }
         });
 
-        viewProfileBtn.setText("View/Update Profile");
+        viewProfileBtn.setText("View/Update Donor");
         viewProfileBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 viewProfileBtnActionPerformed(evt);
@@ -121,9 +121,6 @@ public class DonorWorkPanel extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(233, 233, 233)
-                        .addComponent(manageEnt, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
                         .addGap(183, 183, 183)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(donationHistory, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -132,15 +129,18 @@ public class DonorWorkPanel extends javax.swing.JPanel {
                         .addGap(32, 32, 32)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(manageProfile, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(viewProfileBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(viewProfileBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(268, 268, 268)
+                        .addComponent(manageEnt, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(195, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(28, 28, 28)
+                .addGap(26, 26, 26)
                 .addComponent(manageEnt)
-                .addGap(83, 83, 83)
+                .addGap(85, 85, 85)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(viewDonationRequestsBtn)
                     .addComponent(manageProfile))

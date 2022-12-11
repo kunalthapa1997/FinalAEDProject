@@ -26,13 +26,13 @@
                       <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel7" min="-2" pref="198" max="-2" attributes="0"/>
-                                  <Component id="viewReqToBeProcessedBtn" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="jLabel7" min="-2" pref="226" max="-2" attributes="0"/>
+                                  <Component id="viewReqToBeProcessedBtn" alignment="1" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="265" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="259" max="-2" attributes="0"/>
                                       <Component id="refreshJButton" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
@@ -155,7 +155,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Malayalam MN" size="24" style="3"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Supervisor Work Area"/>
+        <Property name="text" type="java.lang.String" value="Supervisor Operations"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel7">
@@ -163,12 +163,12 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Malayalam MN" size="24" style="3"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Work Requests:"/>
+        <Property name="text" type="java.lang.String" value="Service Requests:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="assignJButton">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Assign to me"/>
+        <Property name="text" type="java.lang.String" value="Assign "/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="assignJButtonActionPerformed"/>
@@ -176,7 +176,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="processJButton">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Process"/>
+        <Property name="text" type="java.lang.String" value="Execute"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="processJButtonActionPerformed"/>

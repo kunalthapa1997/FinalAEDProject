@@ -88,7 +88,7 @@ public class ExecuteTransportRequestPanel extends javax.swing.JPanel {
         jLabel1.setText("Request Result");
 
         jLabel7.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
-        jLabel7.setText("Process Work Request:");
+        jLabel7.setText("Execute Transport Request:");
 
         resultComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 

@@ -127,7 +127,7 @@ public class EnterpriseJPanel extends javax.swing.JPanel {
 
             },
             new String [] {
-                "Enterprise Name", "Network", "Type"
+                "Enterprise Name", "Coverage", "Type"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -171,7 +171,7 @@ public class EnterpriseJPanel extends javax.swing.JPanel {
         jLabel5.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
         jLabel5.setText("Add New Enterprise:");
 
-        jLabel1.setText("Network");
+        jLabel1.setText("Coverage");
 
         jLabel2.setText("Name");
 
