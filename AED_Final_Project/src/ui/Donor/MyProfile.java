@@ -29,7 +29,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author tejageetla
+ * @author keerthi
  */
 public class MyProfile extends javax.swing.JPanel {
 

@@ -138,7 +138,9 @@ public class EnterpriseAdminJPanel extends javax.swing.JPanel {
         deleteNetwork = new javax.swing.JButton();
         backJButton1 = new javax.swing.JButton();
 
-        jPanel1.setBackground(new java.awt.Color(182, 201, 233));
+        setBackground(new java.awt.Color(153, 153, 255));
+
+        jPanel1.setBackground(new java.awt.Color(153, 153, 255));
 
         enterpriseUserJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -158,7 +160,7 @@ public class EnterpriseAdminJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(enterpriseUserJTable);
 
-        jLabel6.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Arial", 3, 24)); // NOI18N
         jLabel6.setText("Manage Enterprise Admin:");
 
         jLayeredPane1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));

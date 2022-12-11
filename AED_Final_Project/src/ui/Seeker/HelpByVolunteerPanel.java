@@ -31,7 +31,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author tejageetla
+ * @author keerthi
  */
 public class HelpByVolunteerPanel extends javax.swing.JPanel {
     

@@ -29,7 +29,7 @@ import userInterface.sensorPckg.ManageHelpSeekerProfileJPanel;
 
 /**
  *
- * @author tejageetla
+ * @author keerthi
  */
 public class HelpSeekerWorkPanel extends javax.swing.JPanel {
 

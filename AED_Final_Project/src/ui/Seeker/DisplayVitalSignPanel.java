@@ -30,7 +30,7 @@ import org.jfree.data.category.DefaultCategoryDataset;
 
 /**
  *
- * @author tejageetla
+ * @author keerthi
  */
 public class DisplayVitalSignPanel extends javax.swing.JPanel {
     

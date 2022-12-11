@@ -28,7 +28,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author tejageetla
+ * @author keerthi
  */
 public class DonorProfilePanel extends javax.swing.JPanel {
     private JPanel userProcessContainer;

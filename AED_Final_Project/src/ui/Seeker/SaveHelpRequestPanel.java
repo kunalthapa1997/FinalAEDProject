@@ -25,7 +25,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author tejageetla
+ * @author keerthi
  */
 public class SaveHelpRequestPanel extends javax.swing.JPanel {
 
@@ -122,7 +122,7 @@ public class SaveHelpRequestPanel extends javax.swing.JPanel {
         manageEnt3.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
         manageEnt3.setText("Request Volunteer For Help:");
 
-        submitRequest.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
+        submitRequest.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
         submitRequest.setText("Submit Request toVolunteer For Help:");
 
         LastName.setText("Last Name:");
@@ -197,17 +197,14 @@ public class SaveHelpRequestPanel extends javax.swing.JPanel {
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(dateOfBirth)
-                                                .addComponent(LastName))
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED))
+                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(dateOfBirth)
+                                            .addComponent(LastName))
                                         .addGroup(layout.createSequentialGroup()
                                             .addComponent(gender)
                                             .addGap(12, 12, 12)))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(firstName, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(21, 21, 21)))
+                                    .addComponent(firstName, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(13, 13, 13)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                     .addComponent(genderField)
                                     .addComponent(lastNameField, javax.swing.GroupLayout.Alignment.LEADING)
