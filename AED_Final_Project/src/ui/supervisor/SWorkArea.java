@@ -183,7 +183,7 @@ public class SWorkArea extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void assignJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_assignJButtonActionPerformed
-
+//gets the selected row from WorkrequestTable
         int selectedRow = workRequestJTable.getSelectedRow();
 
         if (selectedRow < 0){
