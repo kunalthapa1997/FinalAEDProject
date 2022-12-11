@@ -157,6 +157,7 @@ public class DonorWorkPanel extends javax.swing.JPanel {
     private void manageProfileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_manageProfileActionPerformed
         DonorProfilePanel createDonorProfile = new DonorProfilePanel(userProcessContainer, userAccount);
         userProcessContainer.add("CreateDonorProfile", createDonorProfile);
+        //inserting card type of layout
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.next(userProcessContainer);
     }//GEN-LAST:event_manageProfileActionPerformed

@@ -346,6 +346,7 @@ public class doctorPanel extends javax.swing.JPanel {
          JOptionPane.showMessageDialog(null, "Please Select a Patient to view Data!","warning", JOptionPane.WARNING_MESSAGE);
          return;        
        }
+       //get the selected item from the use from helpSeekerComboBx
        Seeker customer = (Seeker)helpSeekerComboBx.getSelectedItem();
         populateVitalSignsJTable(customer);
         
