@@ -45,7 +45,7 @@ public class SProcessReq extends javax.swing.JPanel {
             }
         });
 
-        submitJButton.setForeground(new java.awt.Color(255, 0, 0));
+        submitJButton.setForeground(new java.awt.Color(153, 255, 153));
         submitJButton.setText("Submit ");
         submitJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -53,12 +53,14 @@ public class SProcessReq extends javax.swing.JPanel {
             }
         });
 
+        jLabel1.setForeground(new java.awt.Color(153, 153, 255));
         jLabel1.setText("Request Result");
 
         jLabel7.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(255, 51, 51));
+        jLabel7.setForeground(new java.awt.Color(204, 204, 0));
         jLabel7.setText("Process Work Request:");
 
+        resultComboBox.setForeground(new java.awt.Color(51, 255, 153));
         resultComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         jLabel2.setForeground(new java.awt.Color(102, 102, 255));
@@ -166,7 +168,7 @@ private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {
         }
 
         request.setStatus(SupervisorWorkRequest.REQUEST_COMPLETED);
-        request.setResolveDate(new Date());
+        
         request.setTestResult((String)resultComboBox.getSelectedItem());
         request.setComments(commentsJTextField.getText());
         request.getSender().setNetwork(net);
