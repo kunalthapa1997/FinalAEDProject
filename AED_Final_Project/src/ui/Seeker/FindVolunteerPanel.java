@@ -39,7 +39,7 @@ import userInterface.volunteer.ViewVolunteerProfile;
 
 /**
  *
- * @author tejageetla
+ * @author keerthi
  */
 public class FindVolunteerPanel extends javax.swing.JPanel implements JMapViewerEventListener{
     
