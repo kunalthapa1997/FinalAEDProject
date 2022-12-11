@@ -59,6 +59,7 @@ public class DisplayHelpSeekerPro extends javax.swing.JPanel {
     
     public void populateFields()
     {
+        //gives the data in the given format
          DateFormat dateformat = new SimpleDateFormat("MM/dd/yyyy");
         
         try

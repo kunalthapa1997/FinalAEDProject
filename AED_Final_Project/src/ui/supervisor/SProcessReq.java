@@ -36,6 +36,7 @@ public class SProcessReq extends javax.swing.JPanel {
         assignNetworkCombo = new javax.swing.JComboBox();
         jLabel3 = new javax.swing.JLabel();
 
+        backJButton.setForeground(new java.awt.Color(0, 51, 255));
         backJButton.setText("Back");
         backJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -43,6 +44,7 @@ public class SProcessReq extends javax.swing.JPanel {
             }
         });
 
+        submitJButton.setForeground(new java.awt.Color(255, 0, 0));
         submitJButton.setText("Submit ");
         submitJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -53,10 +55,12 @@ public class SProcessReq extends javax.swing.JPanel {
         jLabel1.setText("Request Result");
 
         jLabel7.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(102, 204, 0));
         jLabel7.setText("Process Work Request:");
 
         resultComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
+        jLabel2.setForeground(new java.awt.Color(102, 102, 255));
         jLabel2.setText("Add comments: ");
 
         assignNetworkCombo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
@@ -140,15 +144,15 @@ public class SProcessReq extends javax.swing.JPanel {
             assignNetworkCombo.getSelectedIndex()<1)
         {
             JOptionPane.showMessageDialog(null, "Please enter data in all fields", "warning", JOptionPane.WARNING_MESSAGE);
-            return;
+           
         }
         Network net = (Network)assignNetworkCombo.getSelectedItem();
 
         if((request.getSender().getRole().toString()).equalsIgnoreCase("VolunteerRole"))
         {
-            Volunteer volunteer = (Volunteer)request.getSender().getPerson();
+            
 
-            String[] longlat = LatLong.getLatLongForVolunteer(net.getCity());
+            
             volunteer.setLongitude(longlat[0]);
             volunteer.setLatitiude(longlat[1]);
         }
@@ -176,7 +180,7 @@ public class SProcessReq extends javax.swing.JPanel {
             emailMsgTxt.append(System.lineSeparator());
             emailMsgTxt.append(System.lineSeparator());
             emailMsgTxt.append("Thank You");
-            emailMsgTxt.append("HeartHelp");
+            
 
             boolean emailSent = SendEmailAndTextMessage.sendEmail(emailMsgTxt.toString(),emailId,userName, password);
             if(!emailSent)
