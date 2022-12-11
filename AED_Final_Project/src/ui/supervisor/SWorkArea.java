@@ -239,7 +239,8 @@ public class SWorkArea extends javax.swing.JPanel {
                 return;
             }
         }
-
+layout.next(userProcessContainer);
+    }                                       
         //next phase is to change request 
 
         SupervisorProcessRequestAreaJPanel swrajp = new SupervisorProcessRequestAreaJPanel(userProcessContainer, request, ecoSystem);
@@ -251,7 +252,7 @@ public class SWorkArea extends javax.swing.JPanel {
     private void refreshJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refreshJButtonActionPerformed
         populateWorkRequestTable();
     }//GEN-LAST:event_refreshJButtonActionPerformed
-
+CreateSupervisorProfileJPanel createSupervisorProfileJPanel = new CreateSupervisorProfileJPanel(userProcessContainer, userAccount);
     private void updateSupervisorProfileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateSupervisorProfileActionPerformed
         CreateSupervisorProfileJPanel createSupervisorProfileJPanel = new CreateSupervisorProfileJPanel(userProcessContainer, userAccount);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
@@ -271,7 +272,7 @@ public class SWorkArea extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null, "Please select a row", "warning", JOptionPane.WARNING_MESSAGE);
             return;
         }
-
+private void refreshJButtonActionPerformed(java.awt.event.ActionEvent evt)
         SupervisorWorkRequest request = (SupervisorWorkRequest)workRequestJTable.getValueAt(selectedRow, 0);
         UserAccount ua = request.getSender();
 
@@ -289,7 +290,7 @@ public class SWorkArea extends javax.swing.JPanel {
         userProcessContainer.add("ViewMyProfile", viewMyProfile);
         layout.next(userProcessContainer);
     }//GEN-LAST:event_viewProfileBtnActionPerformed
-
+return;
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton assignJButton;
@@ -304,4 +305,5 @@ public class SWorkArea extends javax.swing.JPanel {
     private javax.swing.JButton viewRequestorProfile;
     private javax.swing.JTable workRequestJTable;
     // End of variables declaration//GEN-END:variables
+private javax.swing.JButton assignJButton;
 }
