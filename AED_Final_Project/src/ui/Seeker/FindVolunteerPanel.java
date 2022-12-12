@@ -237,10 +237,10 @@ public class FindVolunteerPanel extends javax.swing.JPanel implements JMapViewer
             }
         });
 
-        manageEnt1.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
+        manageEnt1.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
         manageEnt1.setText("Search For Volunteer");
 
-        manageEnt2.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
+        manageEnt2.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
         manageEnt2.setText("Heart Help");
 
         jLabel1.setText("Network:");
