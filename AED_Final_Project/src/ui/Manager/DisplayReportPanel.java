@@ -133,7 +133,7 @@ public class DisplayReportPanel extends javax.swing.JPanel {
         backJButton = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
 
-        volunteerPanel.setBackground(new java.awt.Color(204, 255, 153));
+        volunteerPanel.setBackground(new java.awt.Color(255, 153, 153));
 
         volTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -172,7 +172,7 @@ public class DisplayReportPanel extends javax.swing.JPanel {
                 .addContainerGap(126, Short.MAX_VALUE))
         );
 
-        donorPanel.setBackground(new java.awt.Color(204, 255, 153));
+        donorPanel.setBackground(new java.awt.Color(255, 153, 153));
 
         donTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
