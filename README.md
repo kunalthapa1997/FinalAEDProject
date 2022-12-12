@@ -31,3 +31,6 @@ A supervisor and manager can approve the registration requests raised by volunte
 
 An executive role is the one which looks at all the analytics of the network. Pie charts and graphs are also used for visually defining the statistics. 
 
+
+![WhatsApp Image 2022-12-11 at 11 09 11 PM](https://user-images.githubusercontent.com/114625925/206963668-ddcb61f6-ea81-403b-8bfa-5fab07f63ec5.jpeg)
+
