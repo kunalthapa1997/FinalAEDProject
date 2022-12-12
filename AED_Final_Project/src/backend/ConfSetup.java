@@ -35,7 +35,7 @@ public class ConfSetup extends Organization{
     }
     return ecoSystem;
    }
-
+//Arraylist
     public ArrayList<Coverage> getNetworkList() {
         return networkList;
     }
