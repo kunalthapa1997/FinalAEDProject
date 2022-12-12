@@ -53,7 +53,7 @@ public class EnterpriseAdminJPanel extends javax.swing.JPanel {
         int w = getWidth();
         int h = getHeight();
         
-        Color c1 = new Color(153,197,85);
+        Color c1 = new Color(200, 162, 200);
         Color c2 = Color.white;
      
         GradientPaint gp = new GradientPaint(w/4, 0, c2, w/4, h, c1);
@@ -138,7 +138,7 @@ public class EnterpriseAdminJPanel extends javax.swing.JPanel {
         deleteNetwork = new javax.swing.JButton();
         backJButton1 = new javax.swing.JButton();
 
-        jPanel1.setBackground(new java.awt.Color(182, 201, 233));
+        jPanel1.setBackground(new java.awt.Color(255, 204, 204));
 
         enterpriseUserJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {

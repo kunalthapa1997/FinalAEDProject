@@ -54,7 +54,7 @@ public class DisplayReportPanel extends javax.swing.JPanel {
         int w = getWidth();
         int h = getHeight();
         
-        Color c1 = new Color(153,197,85);
+        Color c1 = new Color(200, 162, 200);
         Color c2 = Color.white;
      
         GradientPaint gp = new GradientPaint(w/4, 0, c2, w/4, h, c1);
@@ -132,6 +132,8 @@ public class DisplayReportPanel extends javax.swing.JPanel {
         jLabel8 = new javax.swing.JLabel();
         backJButton = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
+
+        setBackground(new java.awt.Color(255, 204, 204));
 
         volunteerPanel.setBackground(new java.awt.Color(204, 255, 153));
 

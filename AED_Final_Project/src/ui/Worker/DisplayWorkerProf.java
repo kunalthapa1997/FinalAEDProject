@@ -61,7 +61,7 @@ public class DisplayWorkerProf extends javax.swing.JPanel {
         int w = getWidth();
         int h = getHeight();
         
-        Color c1 = new Color(153,197,85);
+        Color c1 = new Color(200, 162, 200);
         Color c2 = Color.white;
      
         GradientPaint gp = new GradientPaint(w/4, 0, c2, w/4, h, c1);
@@ -106,6 +106,8 @@ public class DisplayWorkerProf extends javax.swing.JPanel {
         firstNameField = new javax.swing.JTextField();
         emailID = new javax.swing.JLabel();
         emailIDField = new javax.swing.JTextField();
+
+        setBackground(new java.awt.Color(255, 204, 204));
 
         viewYourProfile2.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         viewYourProfile2.setText("Address: ");

@@ -42,6 +42,14 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashSet;
+import java.util.Properties;
+import javax.mail.Message;
+import javax.mail.MessagingException;
+import javax.mail.PasswordAuthentication;
+import javax.mail.Session;
+import javax.mail.Transport;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeMessage;
 import javax.swing.InputVerifier;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
@@ -86,7 +94,7 @@ public class RegistrationWorkAreaPanel extends javax.swing.JPanel {
         int w = getWidth();
         int h = getHeight();
         
-        Color c1 = new Color(153,197,85);
+        Color c1 = new Color(200, 162, 200);
         Color c2 = Color.white;
      
         GradientPaint gp = new GradientPaint(w/4, 0, c2, w/4, h, c1);
@@ -223,6 +231,8 @@ public class RegistrationWorkAreaPanel extends javax.swing.JPanel {
         isDoctorRadioBtn = new javax.swing.JRadioButton();
         volNetwork = new javax.swing.JLabel();
         volNetworkCombo = new javax.swing.JComboBox();
+
+        setBackground(new java.awt.Color(255, 204, 204));
 
         emailID1.setText("Confirm Email Address:");
 
@@ -809,7 +819,50 @@ public class RegistrationWorkAreaPanel extends javax.swing.JPanel {
                     String password = SendMail.generatePassword(firstNameField.getText());
                     String emailMsg = buildEmailTxtMsg(userName, password);
                     
-                    boolean emailSent = SendMail.sendEmail(emailMsg, emailIDField.getText(),userName, password);
+//                    boolean emailSent = SendMail.sendEmail(emailMsg, emailIDField.getText(),userName, password);
+//                    System.out.print(emailSent);
+       String emailFromAddress = "projectstepone1@gmail.com";
+       String emailFromPassword = "mbxjznotdtfqqorp";
+       String emailSubjectText = "Thank You!";
+
+
+
+       Properties properties = new Properties();
+//        properties.put("mail.smtp.starttls.enable","true");
+//        properties.put("mail.smtp.host", "smtp.gmail.com");
+//        properties.put("mail.smtp.auth","true");
+//        properties.put("mail.smtp.port", "587");
+        
+        properties.put("mail.smtp.host", "smtp.gmail.com");
+        properties.put("mail.smtp.port", "587");
+        properties.put("mail.smtp.auth", "true");
+        properties.put("mail.smtp.starttls.enable", "true");
+        properties.put("mail.smtp.starttls.required", "true");
+        properties.put("mail.smtp.ssl.protocols", "TLSv1.2");
+        properties.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
+
+
+
+       Session session = Session.getDefaultInstance(properties, new javax.mail.Authenticator() {
+            
+            protected PasswordAuthentication getPasswordAuthentication() {
+                return new PasswordAuthentication(emailFromAddress, emailFromPassword);
+            }
+        });
+
+
+
+       try{
+            MimeMessage message = new  MimeMessage(session);
+            message.setFrom(new InternetAddress(emailFromAddress));
+            message.addRecipient(Message.RecipientType.TO, new InternetAddress(emailIDField.getText()));
+            message.setSubject(emailSubjectText);
+            message.setText(emailMsg);
+            Transport.send(message);
+        }
+        catch(MessagingException ex){
+            System.out.println(""+ex);
+        }
 //                    if(!emailSent)
 //                    {
 //                    JOptionPane.showMessageDialog(null, "Please Enter a valid Email address! ","warning", JOptionPane.WARNING_MESSAGE);

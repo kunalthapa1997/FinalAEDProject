@@ -55,7 +55,7 @@ public class TransporterPanel extends javax.swing.JPanel {
         int w = getWidth();
         int h = getHeight();
         
-        Color c1 = new Color(153,197,85);
+        Color c1 = new Color(200, 162, 200);
         Color c2 = Color.white;
      
         GradientPaint gp = new GradientPaint(w/4, 0, c2, w/4, h, c1);
@@ -100,6 +100,8 @@ public class TransporterPanel extends javax.swing.JPanel {
         refreshJButton = new javax.swing.JButton();
         assignJButton = new javax.swing.JButton();
         viewVolProfileBtn = new javax.swing.JButton();
+
+        setBackground(new java.awt.Color(255, 204, 204));
 
         manageEnt.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
         manageEnt.setText("Transport Requests");

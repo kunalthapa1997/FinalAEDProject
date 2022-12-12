@@ -52,7 +52,7 @@ public class VitalDataToDoctorPanel extends javax.swing.JPanel {
         int w = getWidth();
         int h = getHeight();
         
-        Color c1 = new Color(153,197,85);
+        Color c1 = new Color(200, 162, 200);
         Color c2 = Color.white;
      
         GradientPaint gp = new GradientPaint(w/4, 0, c2, w/4, h, c1);
@@ -84,6 +84,8 @@ public class VitalDataToDoctorPanel extends javax.swing.JPanel {
         sendDataLabel = new javax.swing.JLabel();
         getAlertFromHH = new javax.swing.JLabel();
         backBtn = new javax.swing.JButton();
+
+        setBackground(new java.awt.Color(255, 204, 204));
 
         sendToDoctorPanel.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 

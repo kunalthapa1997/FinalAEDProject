@@ -59,7 +59,7 @@ public class SaveHelpRequestPanel extends javax.swing.JPanel {
         int w = getWidth();
         int h = getHeight();
         
-        Color c1 = new Color(153,197,85);
+        Color c1 = new Color(200, 162, 200);
         Color c2 = Color.white;
      
         GradientPaint gp = new GradientPaint(w/4, 0, c2, w/4, h, c1);
@@ -121,6 +121,8 @@ public class SaveHelpRequestPanel extends javax.swing.JPanel {
 
         manageEnt3.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
         manageEnt3.setText("Request Volunteer For Help:");
+
+        setBackground(new java.awt.Color(255, 204, 204));
 
         submitRequest.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
         submitRequest.setText("Request Volunteer for Service:");

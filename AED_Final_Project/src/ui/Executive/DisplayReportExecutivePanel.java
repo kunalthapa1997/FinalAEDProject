@@ -52,7 +52,7 @@ public class DisplayReportExecutivePanel extends javax.swing.JPanel {
         int w = getWidth();
         int h = getHeight();
         
-        Color c1 = new Color(153,197,85);
+        Color c1 = new Color(200, 162, 200);
         Color c2 = Color.white;
      
         GradientPaint gp = new GradientPaint(w/4, 0, c2, w/4, h, c1);
@@ -202,6 +202,8 @@ public class DisplayReportExecutivePanel extends javax.swing.JPanel {
         barchartBtn = new javax.swing.JButton();
         manageEnt2 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(255, 204, 204));
+
         manageEnt1.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
         manageEnt1.setText("View Detailed Report");
 
@@ -324,6 +326,8 @@ public class DisplayReportExecutivePanel extends javax.swing.JPanel {
                     .addComponent(senSendDataToDocField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(25, Short.MAX_VALUE))
         );
+
+        pieChartDetailedReportPanel.setBackground(new java.awt.Color(255, 204, 204));
 
         javax.swing.GroupLayout pieChartDetailedReportPanelLayout = new javax.swing.GroupLayout(pieChartDetailedReportPanel);
         pieChartDetailedReportPanel.setLayout(pieChartDetailedReportPanelLayout);

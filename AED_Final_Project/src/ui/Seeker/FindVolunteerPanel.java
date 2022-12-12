@@ -64,7 +64,7 @@ public class FindVolunteerPanel extends javax.swing.JPanel implements JMapViewer
         this.ecoSystem = ecoSystem;
        
         populateNetworkComboBox();
-        setBackground(new Color(182,201,233));
+        setBackground(new Color(200, 162, 200));
          
        
         mperpLabelName = new JLabel("Meters/Pixels: ");
@@ -86,7 +86,7 @@ public class FindVolunteerPanel extends javax.swing.JPanel implements JMapViewer
         int w = getWidth();
         int h = getHeight();
         
-        Color c1 = new Color(153,197,85);
+        Color c1 = new Color(200, 162, 200);
         Color c2 = Color.white;
      
         GradientPaint gp = new GradientPaint(w/4, 0, c2, w/4, h, c1);
@@ -231,6 +231,8 @@ public class FindVolunteerPanel extends javax.swing.JPanel implements JMapViewer
         jInternalFrame1 = new javax.swing.JInternalFrame();
         jMapViewerVolunteer = new org.openstreetmap.gui.jmapviewer.JMapViewer();
         backJButton1 = new javax.swing.JButton();
+
+        setBackground(new java.awt.Color(255, 204, 204));
 
         networkListComboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

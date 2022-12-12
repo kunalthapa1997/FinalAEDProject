@@ -129,6 +129,8 @@ public class doctorPanel extends javax.swing.JPanel {
         jLabel3 = new javax.swing.JLabel();
         viewDetailsJButton = new javax.swing.JButton();
 
+        setBackground(new java.awt.Color(255, 204, 204));
+
         getDataForPatient.setText("Get Vital Sign Data");
         getDataForPatient.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -141,6 +143,7 @@ public class doctorPanel extends javax.swing.JPanel {
         getAlertFromHH.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
         getAlertFromHH.setText("View Patient Vital Signs");
 
+        sendMedicationsPanel.setBackground(new java.awt.Color(200, 162, 200));
         sendMedicationsPanel.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         currentMedicationsTxtArea.setColumns(20);

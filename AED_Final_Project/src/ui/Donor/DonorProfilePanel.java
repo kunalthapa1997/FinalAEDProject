@@ -54,7 +54,7 @@ public class DonorProfilePanel extends javax.swing.JPanel {
         int w = getWidth();
         int h = getHeight();
         
-        Color c1 = new Color(153,197,85);
+        Color c1 = new Color(200, 162, 200);
         Color c2 = Color.white;
      
         GradientPaint gp = new GradientPaint(w/4, 0, c2, w/4, h, c1);
@@ -116,6 +116,8 @@ public class DonorProfilePanel extends javax.swing.JPanel {
         createProfileButton = new javax.swing.JButton();
         donorDobField = new javax.swing.JFormattedTextField();
         manageEnt = new javax.swing.JLabel();
+
+        setBackground(new java.awt.Color(255, 204, 204));
 
         dateOfBirth.setText("Date Of Birth (MM/DD/YYYY):");
 

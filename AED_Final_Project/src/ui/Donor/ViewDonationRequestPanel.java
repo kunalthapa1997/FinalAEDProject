@@ -43,7 +43,7 @@ public class ViewDonationRequestPanel extends javax.swing.JPanel {
         
         populateDonationWorkRequestTable();
         
-         setBackground(new Color(182,201,233));
+         setBackground(new Color(200, 162, 200));
     }
     
     @Override
@@ -99,6 +99,8 @@ public class ViewDonationRequestPanel extends javax.swing.JPanel {
         workRequestJTable = new javax.swing.JTable();
         viewAndUpdateProfileBtn = new javax.swing.JButton();
         backJButton = new javax.swing.JButton();
+
+        setBackground(new java.awt.Color(255, 204, 204));
 
         donationREq.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
         donationREq.setText("Donation History:");

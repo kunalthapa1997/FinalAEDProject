@@ -56,7 +56,7 @@ public class SuperProcessRequestPanel extends javax.swing.JPanel {
         int w = getWidth();
         int h = getHeight();
         
-        Color c1 = new Color(153,197,85);
+        Color c1 = new Color(200, 162, 200);
         Color c2 = Color.white;
      
         GradientPaint gp = new GradientPaint(w/4, 0, c2, w/4, h, c1);
@@ -102,6 +102,8 @@ public class SuperProcessRequestPanel extends javax.swing.JPanel {
         commentsJTextField = new javax.swing.JTextField();
         assignNetworkCombo = new javax.swing.JComboBox();
         jLabel3 = new javax.swing.JLabel();
+
+        setBackground(new java.awt.Color(255, 204, 204));
 
         backJButton.setText("Back");
         backJButton.addActionListener(new java.awt.event.ActionListener() {
