@@ -65,7 +65,7 @@ public class HelpByVolunteerPanel extends javax.swing.JPanel {
         int w = getWidth();
         int h = getHeight();
         
-        Color c1 = new Color(153,197,85);
+        Color c1 = new Color(200, 162, 200);
         Color c2 = Color.white;
      
         GradientPaint gp = new GradientPaint(w/4, 0, c2, w/4, h, c1);
@@ -159,6 +159,8 @@ public class HelpByVolunteerPanel extends javax.swing.JPanel {
         backJButton = new javax.swing.JButton();
         newHelpRadioBtn = new javax.swing.JRadioButton();
 
+        setBackground(new java.awt.Color(255, 204, 204));
+
         helpListJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -183,6 +185,8 @@ public class HelpByVolunteerPanel extends javax.swing.JPanel {
                 createRequestButtonActionPerformed(evt);
             }
         });
+
+        otherHelpPanelFrame.setBackground(new java.awt.Color(204, 255, 204));
 
         helpDetails.setFont(new java.awt.Font("Malayalam MN", 3, 14)); // NOI18N
         helpDetails.setText(" Enter details about the service needed.");
@@ -234,6 +238,7 @@ public class HelpByVolunteerPanel extends javax.swing.JPanel {
         manageEnt1.setFont(new java.awt.Font("Malayalam MN", 3, 14)); // NOI18N
         manageEnt1.setText("Service not available in the Table:");
 
+        manageEnt5.setBackground(new java.awt.Color(255, 204, 204));
         manageEnt5.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
         manageEnt5.setText("Request Service : Random Volunteer");
 
@@ -304,7 +309,7 @@ public class HelpByVolunteerPanel extends javax.swing.JPanel {
                                 .addComponent(manageEnt4)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(newHelpRadioBtn)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 153, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 126, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(manageEnt3, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 496, javax.swing.GroupLayout.PREFERRED_SIZE))

@@ -52,7 +52,7 @@ public class MakeSupervisorProPanel extends javax.swing.JPanel {
         int w = getWidth();
         int h = getHeight();
         
-        Color c1 = new Color(153,197,85);
+        Color c1 = new Color(200, 162, 200);
         Color c2 = Color.white;
      
         GradientPaint gp = new GradientPaint(w/4, 0, c2, w/4, h, c1);
@@ -113,6 +113,8 @@ public class MakeSupervisorProPanel extends javax.swing.JPanel {
         occupation = new javax.swing.JLabel();
         manageEnt = new javax.swing.JLabel();
         phoneNumberField = new javax.swing.JTextField();
+
+        setBackground(new java.awt.Color(255, 204, 204));
 
         supNameField.setEditable(false);
         supNameField.setEnabled(false);

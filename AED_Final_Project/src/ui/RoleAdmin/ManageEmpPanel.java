@@ -48,7 +48,7 @@ public class ManageEmpPanel extends javax.swing.JPanel {
         int w = getWidth();
         int h = getHeight();
         
-        Color c1 = new Color(153,197,85);
+        Color c1 = new Color(200, 162, 200);
         Color c2 = Color.white;
      
         GradientPaint gp = new GradientPaint(w/4, 0, c2, w/4, h, c1);
@@ -149,6 +149,8 @@ public class ManageEmpPanel extends javax.swing.JPanel {
         lastNameJTextField = new javax.swing.JTextField();
         cancelJButton = new javax.swing.JButton();
 
+        jPanel1.setBackground(new java.awt.Color(255, 204, 204));
+
         organizationJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -193,6 +195,7 @@ public class ManageEmpPanel extends javax.swing.JPanel {
         manageOrg.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
         manageOrg.setText("Manage Organization Employee");
 
+        jLayeredPane1.setBackground(new java.awt.Color(255, 255, 204));
         jLayeredPane1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         organizationEmpJComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));

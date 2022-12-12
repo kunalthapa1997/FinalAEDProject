@@ -49,7 +49,7 @@ public class HelpSeekerWorkPanel extends javax.swing.JPanel {
         this.enterprise = enterprise; 
         this.userAccount = userAccount;
         this.ecoSystem = ecoSystem;
-        setBackground(new Color(182,201,233));
+        setBackground(new Color(200, 162, 200));
        
        
         person  = (Seeker)userAccount.getPerson();
@@ -67,7 +67,7 @@ public class HelpSeekerWorkPanel extends javax.swing.JPanel {
         int w = getWidth();
         int h = getHeight();
         
-        Color c1 = new Color(153,197,85);
+        Color c1 = new Color(200, 162, 200);
         Color c2 = Color.white;
      
         GradientPaint gp = new GradientPaint(w/4, 0, c2, w/4, h, c1);
@@ -119,7 +119,7 @@ public class HelpSeekerWorkPanel extends javax.swing.JPanel {
          boolean flag = false;
             if(patientCond)
             {
-            txtField = new JTextField("Alert Message From Heart Help!");   
+            txtField = new JTextField("Alert Message From Project StepOne!");   
             txtField.setFont(new Font(Font.SANS_SERIF, Font.BOLD, 14));
             txtField.setVisible(true);
             txtField.setEditable(false);
@@ -217,6 +217,8 @@ public class HelpSeekerWorkPanel extends javax.swing.JPanel {
         alertsPanel = new javax.swing.JPanel();
         manageHelpFromVolunteer = new javax.swing.JButton();
 
+        setBackground(new java.awt.Color(255, 204, 204));
+
         manageHelpSeekerProfile.setText("Profile and Vital Signs Information");
         manageHelpSeekerProfile.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -234,7 +236,7 @@ public class HelpSeekerWorkPanel extends javax.swing.JPanel {
         manageEnt.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
         manageEnt.setText("Patient Operations");
 
-        alertsPanel.setBackground(new java.awt.Color(153, 204, 0));
+        alertsPanel.setBackground(new java.awt.Color(204, 255, 204));
 
         javax.swing.GroupLayout alertsPanelLayout = new javax.swing.GroupLayout(alertsPanel);
         alertsPanel.setLayout(alertsPanelLayout);

@@ -61,7 +61,7 @@ public class DisplayVitalSignPanel extends javax.swing.JPanel {
         int w = getWidth();
         int h = getHeight();
         
-        Color c1 = new Color(153,197,85);
+        Color c1 = new Color(200, 162, 200);
         Color c2 = Color.white;
      
         GradientPaint gp = new GradientPaint(w/4, 0, c2, w/4, h, c1);
@@ -128,6 +128,8 @@ public class DisplayVitalSignPanel extends javax.swing.JPanel {
         BarCharJButton = new javax.swing.JButton();
         barChartPanel = new javax.swing.JPanel();
 
+        setBackground(new java.awt.Color(255, 204, 204));
+
         vitalSignTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -191,6 +193,8 @@ public class DisplayVitalSignPanel extends javax.swing.JPanel {
                 BarCharJButtonActionPerformed(evt);
             }
         });
+
+        barChartPanel.setBackground(new java.awt.Color(255, 255, 255));
 
         javax.swing.GroupLayout barChartPanelLayout = new javax.swing.GroupLayout(barChartPanel);
         barChartPanel.setLayout(barChartPanelLayout);

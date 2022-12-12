@@ -57,7 +57,7 @@ public class VitalSignPanel extends javax.swing.JPanel {
         int w = getWidth();
         int h = getHeight();
         
-        Color c1 = new Color(153,197,85);
+        Color c1 = new Color(200, 162, 200);
         Color c2 = Color.white;
      
         GradientPaint gp = new GradientPaint(w/4, 0, c2, w/4, h, c1);
@@ -104,6 +104,8 @@ public class VitalSignPanel extends javax.swing.JPanel {
         hasCardiacYes = new javax.swing.JRadioButton();
         hasCardiacRadioNo = new javax.swing.JRadioButton();
 
+        setBackground(new java.awt.Color(255, 204, 204));
+
         getAlertFromHH.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
         getAlertFromHH.setText("Manage Vital Signs");
 
@@ -134,6 +136,7 @@ public class VitalSignPanel extends javax.swing.JPanel {
 
         cancelJBtn.setText("Cancel");
 
+        vitalSignPanel.setBackground(new java.awt.Color(204, 255, 204));
         vitalSignPanel.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         hasSensorGroup.add(hasSensorRadioYes);

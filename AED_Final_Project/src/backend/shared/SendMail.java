@@ -10,6 +10,7 @@ import javax.mail.Authenticator;
 import javax.mail.Message;
 import javax.mail.Message.RecipientType;
 import javax.mail.MessagingException;
+import javax.mail.PasswordAuthentication;
 import javax.mail.Session;
 import javax.mail.Transport;
 import javax.mail.internet.AddressException;
@@ -25,7 +26,7 @@ public class SendMail {
      private static StringBuilder emailMsgTxt ;
         
         private static String emailSubjectTxt = "Thank you!";
-        private static String emailFromAddress = "steponefromvolunteer@gmail.com";
+        
     
 
     public static String generatePassword(String name)
@@ -73,52 +74,49 @@ public class SendMail {
     
     public static boolean sendEmail(String msg, String emailId, String userName, String password)
     {
-      boolean isSent = true;
- 
-    try {
-     Properties props = new Properties();
-        props.put("mail.smtp.host", SMTP_HOST_NAME);                                                        
-        props.put("mail.smtp.auth", "true");  
-        props.put("mail.smtp.starttls.enable","true");
-        props.put("mail.smtp.port", "587");
-        
-        Authenticator mailAuthenticator = new MailAuth();
-        Session mailSession = Session.getDefaultInstance(props,mailAuthenticator);
-        Message message = new MimeMessage(mailSession);
-         InternetAddress fromAddress ;
-        InternetAddress toAddress;
-        try
-           {
-         fromAddress = new InternetAddress(emailFromAddress);
-         toAddress = new InternetAddress(emailId);
-         }
-        
-        catch (AddressException ae) {
-            ae.printStackTrace();
-         isSent= false;
-         return isSent;
-         }
-        
-        
-        message.setFrom(fromAddress);
-        message.setRecipient(RecipientType.TO, toAddress);
-        message.setSubject(emailSubjectTxt);
-        message.setText(msg);
- 
-       Transport.send(message);
-       System.out.println("Email Sent !");
-        } 
-         catch (MessagingException mex) {
-            isSent=false;
-            return isSent;
-       }
-       
-       catch (Exception e) {
-            isSent=false;
-       }
+      String emailFromAddress = "projectstepone1@gmail.com";
+       String emailFromPassword = "mbxjznotdtfqqorp";
+       String emailSubjectText = "Thank You!";
 
-         return isSent;
-     
+
+
+       Properties properties = new Properties();
+//        properties.put("mail.smtp.starttls.enable","true");
+//        properties.put("mail.smtp.host", "smtp.gmail.com");
+//        properties.put("mail.smtp.auth","true");
+//        properties.put("mail.smtp.port", "587");
+        
+        properties.put("mail.smtp.host", "smtp.gmail.com");
+        properties.put("mail.smtp.port", "587");
+        properties.put("mail.smtp.auth", "true");
+        properties.put("mail.smtp.starttls.enable", "true");
+        properties.put("mail.smtp.starttls.required", "true");
+        properties.put("mail.smtp.ssl.protocols", "TLSv1.2");
+        properties.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
+        properties.put("mail.smtp.socketFactory.fallback", "true"); 
+
+
+       Session session = Session.getDefaultInstance(properties, new javax.mail.Authenticator() {
+            
+            protected PasswordAuthentication getPasswordAuthentication() {
+                return new PasswordAuthentication(emailFromAddress, emailFromPassword);
+            }
+        });
+
+
+
+       try{
+            MimeMessage message = new  MimeMessage(session);
+            message.setFrom(new InternetAddress(emailFromAddress));
+            message.addRecipient(Message.RecipientType.TO, new InternetAddress(emailId));
+            message.setSubject(emailSubjectText);
+            message.setText(emailId);
+            Transport.send(message);
+        }
+        catch(MessagingException ex){
+            System.out.println(""+ex);
+        }
+       return true;
     }
     
 }
