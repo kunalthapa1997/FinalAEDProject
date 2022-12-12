@@ -126,7 +126,7 @@ public class OrganizationPanel extends javax.swing.JPanel {
         jLabel1 = new javax.swing.JLabel();
         addJButton = new javax.swing.JButton();
 
-        jPanel1.setBackground(new java.awt.Color(182, 201, 233));
+        jPanel1.setBackground(new java.awt.Color(204, 255, 204));
 
         organizationJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {

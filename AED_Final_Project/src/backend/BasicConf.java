@@ -4,7 +4,7 @@
  */
 package backend;
 
-//import package
+//importing package
 
 import backend.shared.HelpRequired;
 import backend.enterprises.Enterprises;

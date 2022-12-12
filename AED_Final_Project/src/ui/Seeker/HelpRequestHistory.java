@@ -109,7 +109,7 @@ public class HelpRequestHistory extends javax.swing.JPanel {
         manageEnt = new javax.swing.JLabel();
         backJButton = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(153, 204, 0));
+        setBackground(new java.awt.Color(153, 255, 153));
 
         workRequestHistoryTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
