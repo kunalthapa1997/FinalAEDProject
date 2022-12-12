@@ -121,12 +121,12 @@ public class EnterpriseManagerWorkPanel extends javax.swing.JPanel {
         totSenDevReq1 = new javax.swing.JLabel();
         donatedAmntField = new javax.swing.JTextField();
 
-        setBackground(new java.awt.Color(151, 197, 46));
+        setBackground(new java.awt.Color(255, 204, 204));
 
         valueLabel.setFont(new java.awt.Font("Lucida Grande", 3, 18)); // NOI18N
         valueLabel.setText("<value>");
 
-        manageEnt1.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
+        manageEnt1.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
         manageEnt1.setText("Heart Help Manager Work Area");
 
         manageEnt2.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
@@ -160,13 +160,13 @@ public class EnterpriseManagerWorkPanel extends javax.swing.JPanel {
         totTransReq.setText("Total No of Transport Requests");
 
         totSenDevReqField.setEditable(false);
-        totSenDevReqField.setBackground(new java.awt.Color(153, 204, 0));
+        totSenDevReqField.setBackground(new java.awt.Color(204, 204, 255));
 
         totTransReqField.setEditable(false);
-        totTransReqField.setBackground(new java.awt.Color(153, 204, 0));
+        totTransReqField.setBackground(new java.awt.Color(204, 204, 255));
 
         totHelpReqField.setEditable(false);
-        totHelpReqField.setBackground(new java.awt.Color(153, 204, 0));
+        totHelpReqField.setBackground(new java.awt.Color(204, 204, 255));
 
         findTop3Donors.setText("View Top 3 Donors");
         findTop3Donors.addActionListener(new java.awt.event.ActionListener() {
@@ -186,7 +186,7 @@ public class EnterpriseManagerWorkPanel extends javax.swing.JPanel {
         totSenDevReq1.setText("Total Amount Donated By Donors");
 
         donatedAmntField.setEditable(false);
-        donatedAmntField.setBackground(new java.awt.Color(153, 204, 0));
+        donatedAmntField.setBackground(new java.awt.Color(204, 204, 255));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
