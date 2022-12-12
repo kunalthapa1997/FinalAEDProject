@@ -91,7 +91,7 @@ public class SeekerProfilePanel extends javax.swing.JPanel {
             }
         });
 
-        viewAndUpdateProfileBtn.setForeground(new java.awt.Color(51, 51, 51));
+        viewAndUpdateProfileBtn.setForeground(new java.awt.Color(102, 102, 0));
         viewAndUpdateProfileBtn.setText("View / Update Profile");
         viewAndUpdateProfileBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
