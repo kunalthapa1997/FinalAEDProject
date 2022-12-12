@@ -139,7 +139,7 @@ public class doctorPanel extends javax.swing.JPanel {
 
         helpSeekerComboBx.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        getAlertFromHH.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
+        getAlertFromHH.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
         getAlertFromHH.setText("View Patient Vital Signs");
 
         sendMedicationsPanel.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));

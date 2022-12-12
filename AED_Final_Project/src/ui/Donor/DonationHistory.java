@@ -90,6 +90,8 @@ public class DonationHistory extends javax.swing.JPanel {
         viewDonHistry = new javax.swing.JLabel();
         backJButton = new javax.swing.JButton();
 
+        setBackground(new java.awt.Color(204, 255, 204));
+
         donorNameField.setEnabled(false);
 
         donorName.setText("Full Name:");
