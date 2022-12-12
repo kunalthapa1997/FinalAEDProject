@@ -99,6 +99,7 @@ public class SeekerProfilePanel extends javax.swing.JPanel {
             }
         });
 
+        helpSeekerName.setForeground(new java.awt.Color(0, 51, 51));
         helpSeekerName.setText("Patient Name");
 
         backJButton.setText("<< Back");
