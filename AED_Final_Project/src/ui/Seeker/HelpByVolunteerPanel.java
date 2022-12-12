@@ -234,10 +234,10 @@ public class HelpByVolunteerPanel extends javax.swing.JPanel {
         manageEnt1.setFont(new java.awt.Font("Malayalam MN", 3, 14)); // NOI18N
         manageEnt1.setText("Required Help not in the Table:");
 
-        manageEnt5.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
+        manageEnt5.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
         manageEnt5.setText("Request Help : Anonymous Volunteer");
 
-        manageEnt2.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
+        manageEnt2.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
         manageEnt2.setText("Heart Help");
 
         manageEnt3.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N

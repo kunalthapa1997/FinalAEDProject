@@ -271,7 +271,7 @@
     <Component class="javax.swing.JLabel" name="manageEnt5">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Malayalam MN" size="24" style="3"/>
+          <Font name="Malayalam MN" size="24" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Request Help : Anonymous Volunteer"/>
       </Properties>
@@ -279,7 +279,7 @@
     <Component class="javax.swing.JLabel" name="manageEnt2">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Malayalam MN" size="24" style="3"/>
+          <Font name="Malayalam MN" size="24" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Heart Help"/>
       </Properties>

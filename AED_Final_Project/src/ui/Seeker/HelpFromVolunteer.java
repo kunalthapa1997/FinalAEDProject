@@ -93,7 +93,7 @@ public class HelpFromVolunteer extends javax.swing.JPanel {
 
         jLabel2.setText("If you would like to get help from an anonymous volunteer.");
 
-        manageEnt.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
+        manageEnt.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
         manageEnt.setText("Manage Volunteer Help");
 
         backJButton1.setText("<< Back");

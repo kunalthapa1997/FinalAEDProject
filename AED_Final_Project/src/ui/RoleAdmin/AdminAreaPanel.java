@@ -71,6 +71,10 @@ public class AdminAreaPanel extends javax.swing.JPanel {
         enterpriseLabel = new javax.swing.JLabel();
         manageEnt2 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(204, 255, 153));
+
+        jPanel1.setBackground(new java.awt.Color(204, 255, 102));
+
         userJButton.setText("Manage User");
         userJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
