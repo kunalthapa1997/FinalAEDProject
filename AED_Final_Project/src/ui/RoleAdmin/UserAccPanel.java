@@ -158,6 +158,8 @@ public class UserAccPanel extends javax.swing.JPanel {
         cancelJButton = new javax.swing.JButton();
         backJButton1 = new javax.swing.JButton();
 
+        jPanel1.setBackground(new java.awt.Color(204, 204, 255));
+
         userJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -186,6 +188,7 @@ public class UserAccPanel extends javax.swing.JPanel {
         jLabel8.setFont(new java.awt.Font("Malayalam MN", 3, 24)); // NOI18N
         jLabel8.setText("Manage Organization Admin");
 
+        jLayeredPane1.setBackground(new java.awt.Color(255, 204, 204));
         jLayeredPane1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         createUserJButton.setText("Create");
